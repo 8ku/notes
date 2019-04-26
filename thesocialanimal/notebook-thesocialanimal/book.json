@@ -1,0 +1,10 @@
+{
+    "plugins": [
+        "emphasize",
+        "search-jieba",
+        "-fontsettings"
+        ]
+}
+
+
+     
