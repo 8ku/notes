@@ -1,0 +1,31 @@
+# Summary
+
+* [我们都是自己的陌生人](chapter1.md)
+    * [自我概念：我是谁](chapter1.1.md)
+    * [有意识的自我控制](chapter1.2.md)
+    * [自尊](chapter1.3.md)
+    * [自我服务偏见](chapter1.4.md)
+    * [自我表现](chapter1.5.md)
+    
+* [魅力何来 人际吸引的秘密](chapter2.md)
+    * [什么造就了友谊和吸引](chapter2.1.md)
+    * [什么是爱情](chapter2.2.md)
+    * [如何促进亲密关系](chapter2.3.md)
+    * [亲密关系是如何促进健康与幸福感](chapter2.4.md)
+    
+* [他人即地狱 人际冲突的源起与化解](chapter3.md)
+    * [偏见：我们为何不喜欢他人](chapter3.1.md)
+    * [偏见的社会根源](chapter3.2.md)
+    * [偏见的动机根源](chapter3.3.md)
+    * [偏见的认知根源](chapter3.4.md)
+    * [偏见的后果](chapter3.5.md)
+    * [攻击行为：伤害他人](chapter3.6.md)
+    * [攻击行为的影响因素](chapter3.7.md)
+    * [如何减少攻击](chapter3.8.md)
+    * [冲突与和解](chapter3.9.md)
+    * [怎样获得和平](chapter3.10.md)
+    
+* [看不见的影响力](chapter4.md)
+    * [从众](chapter4.1.md)
+    * [说服](chapter4.2.md)
+    * [群体影响](chapter4.3.md)
