@@ -29,6 +29,6 @@
 - 把文件夹/文件拉到本地仓库
 - `git add -A`或`git add .`
 - `git status`查看是否添加成功，都是绿色表示添加成功
-- `git commit`确认添加
+- `git commit -m'内容文本'`确认添加
 - `git push -u origin master`推送到github
 - `git remote -v`查看当前在哪个远程仓库
