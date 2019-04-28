@@ -8,9 +8,9 @@
 
 - `git rm -r --cached 文件夹路径`
 
-- `git commit`
+- `git commit -m'内容文本'` 
 
-- 按Esc，`:wq`,hit Enter
+- （最好不使用）按Esc，`:wq`,hit Enter
 
 - `git push -u origin master`
 
