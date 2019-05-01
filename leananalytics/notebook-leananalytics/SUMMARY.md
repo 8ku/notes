@@ -1,0 +1,14 @@
+# Summary
+
+* [创业记分牌](chapter1.md)
+* [你把生命献给谁](chapter2.md)
+* [以数据为导向与通过数据获取信息](chapter3.md)
+* [数据分析框架](chapter4.md)
+* [第一关键指标的约束力](chapter5.md)
+* [你所在的商业领域](chapter6.md)
+* [商业模式一：电子商务](chapter7.md)
+* [商业模式二：SaaS](chapter8.md)
+* [商业模式三：免费移动应用](chapter9.md)
+* [商业模式四：媒体网站](chapter10.md)
+* [商业模式五：用户生成内容](chapter11.md)
+* [商业模式六：双边市场](chapter12.md)
