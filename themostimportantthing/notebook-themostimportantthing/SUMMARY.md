@@ -2,4 +2,7 @@
 
 * [Introduction](README.md)
 * [学习第二层次思维](chapter1.md)
+* [理解市场有效性及局限性](chapter2.md)
+* [准确估计价值](chapter3.md)
+* [价格与价值的关系](chapter4.md)
 

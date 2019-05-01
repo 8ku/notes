@@ -4,6 +4,8 @@
 
 - `git init`初始化本地仓库
 
+- `git remote add origin https://github.com/PrincetonUniversity/EVCM.git`
+
 - `git pull origin master`
 
 - `git rm -r --cached 文件夹路径`
