@@ -20,4 +20,6 @@
 * [多元化投资](chapter17.md)
 * [避免错误](chapter18.md)
 * [增值的意义](chapter19.md)
+* [合理预期](chapter20.md)
+* [最重要的事](chapter21.md)
 
