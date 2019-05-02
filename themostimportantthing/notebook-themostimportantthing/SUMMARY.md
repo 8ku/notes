@@ -7,4 +7,6 @@
 * [价格与价值的关系](chapter4.md)
 * [理解风险](chapter5.md)
 * [识别风险](chapter6.md)
+* [控制风险](chapter7.md)
+* [关注周期](chapter8.md)
 
