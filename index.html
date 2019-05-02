@@ -6,8 +6,21 @@
 <body>
 
 <h3>notebook-baku</h3>
+
+<p>总计</p>
+
+<button onclick="myFunction()">统计</button>
+
+<p id="count"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("li").length;
+  document.getElementById("count").innerHTML = x;
+}
+</script>
   
-<ul>
+<ul id="con">
   <li><a href="Mozart/Mozart.html">莫扎特</li>
   <li><a href="EvolutionaryPsychology/index.html">进化心理学</li>
   <li><a href="thedesignofeverydaythings/index.html">设计心理学</li>
@@ -56,6 +69,7 @@
   <li><a href="sprint/index.html">设计冲刺</li>
   <li><a href="theelephantintheroom/index.html">房间里的大象</li>
   <li><a href="thesocialanimal/index.html">社会性动物</li>
+  <li><a href="themostimportantthing/index.html">投资最重要的事</li>>
 </ul>
   
 </body>

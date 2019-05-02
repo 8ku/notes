@@ -9,4 +9,6 @@
 * [识别风险](chapter6.md)
 * [控制风险](chapter7.md)
 * [关注周期](chapter8.md)
+* [钟摆意识](chapter9.md)
+* [抵御消极影响](chapter10.md)
 
