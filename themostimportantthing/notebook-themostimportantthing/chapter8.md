@@ -5,7 +5,7 @@
 
 ### 信贷周期
 
-![信贷周期](themostimportantthing/notebook-themostimportantthing/assets/信贷周期.png)
+![信贷周期](/Users/8ku/Desktop/git/themostimportantthing/notebook-themostimportantthing/assets/信贷周期.png)
 
 1. 经济进入繁荣期
 2. 资金提供者增多，资本基础增加
