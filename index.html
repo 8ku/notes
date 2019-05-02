@@ -2,6 +2,14 @@
 <html>
 <head> 
 <title>notebook-baku</title> 
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("li").length;
+  document.getElementById("count").innerHTML = x;
+}
+</script>
+
 </head>
 <body>
 
@@ -13,12 +21,7 @@
 
 <p id="count"></p>
 
-<script>
-function myFunction() {
-  var x = document.getElementsByTagName("li").length;
-  document.getElementById("count").innerHTML = x;
-}
-</script>
+
   
 <ul id="con">
   <li><a href="Mozart/Mozart.html">莫扎特</li>
