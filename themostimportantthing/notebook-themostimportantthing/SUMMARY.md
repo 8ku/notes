@@ -16,4 +16,8 @@
 * [耐心等待机会](chapter13.md)
 * [认识预测的局限性](chapter14.md)
 * [正确认识自身](chapter15.md)
+* [重视运气](chapter16.md)
+* [多元化投资](chapter17.md)
+* [避免错误](chapter18.md)
+* [增值的意义](chapter19.md)
 
