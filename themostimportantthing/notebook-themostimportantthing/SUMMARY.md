@@ -11,4 +11,9 @@
 * [关注周期](chapter8.md)
 * [钟摆意识](chapter9.md)
 * [抵御消极影响](chapter10.md)
+* [逆向投资](chapter11.md)
+* [寻找便宜货](chapter12.md)
+* [耐心等待机会](chapter13.md)
+* [认识预测的局限性](chapter14.md)
+* [正确认识自身](chapter15.md)
 
