@@ -1,3 +1,5 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [README.md](README.md)
+* [日用品心理学](chapter1.md)
+
