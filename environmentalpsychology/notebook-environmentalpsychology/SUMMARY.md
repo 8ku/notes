@@ -9,4 +9,5 @@
 * [噪声](chapter5.md)
     * [声音传播原理相关](chapter5.1.md)
 * [天气、气候和行为](chapter6.md)
+* [灾难、有毒物质及污染](chapter7.md)
 
