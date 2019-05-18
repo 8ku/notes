@@ -6,4 +6,5 @@
 * [头脑中的知识与外界知识](chapter3.md)
 * [知晓：约束、可视性和反馈](chapter4.md)
 * [拙劣的设计](chapter5.md)
+* [设计思维](chapter6.md)
 
