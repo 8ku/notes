@@ -7,4 +7,5 @@
 * [知晓：约束、可视性和反馈](chapter4.md)
 * [拙劣的设计](chapter5.md)
 * [设计思维](chapter6.md)
+* [全球商业化中的设计](chapter7.md)
 
