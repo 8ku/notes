@@ -7,4 +7,6 @@
 * [社会性语义符号](chapter4.md)
 * [善于交际的设计](chapter5.md)
 * [系统和服务](chapter6.md)
+* [对等待的设计](chapter7.md)
+* [管理复杂：设计师和使用者的伙伴关系](chapter8.md)
 
