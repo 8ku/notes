@@ -2,8 +2,6 @@
 
  "plugins": [
 
- "emphasize",
-
  "-fontsettings",
 
  "intopic-toc"
