@@ -10,4 +10,5 @@
 * [记忆术和专家](chapter7.md)
 * [知识的表征](chapter8.md)
 * [心理表象](chapter9.md)
+* [语言：结构和抽象化](chapter10.md)
 
