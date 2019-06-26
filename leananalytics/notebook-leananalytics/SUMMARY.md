@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [创业记分牌](chapter1.md)
 * [你把生命献给谁](chapter2.md)
 * [以数据为导向与通过数据获取信息](chapter3.md)
@@ -12,3 +13,6 @@
 * [商业模式四：媒体网站](chapter10.md)
 * [商业模式五：用户生成内容](chapter11.md)
 * [商业模式六：双边市场](chapter12.md)
+* [创业阶段的划分](chapter13.md)
+* [阶段1：移情](chapter14.md)
+
