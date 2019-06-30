@@ -9,4 +9,5 @@
 * [系统和服务](chapter6.md)
 * [对等待的设计](chapter7.md)
 * [管理复杂：设计师和使用者的伙伴关系](chapter8.md)
+* [挑战](chapter9.md)
 
