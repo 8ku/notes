@@ -15,4 +15,5 @@
 * [商业模式六：双边市场](chapter12.md)
 * [创业阶段的划分](chapter13.md)
 * [阶段1：移情](chapter14.md)
+* [阶段2：黏性](chapter15.md)
 
