@@ -17,4 +17,5 @@
 * [阶段1：移情](chapter14.md)
 * [阶段2：黏性](chapter15.md)
 * [阶段3：病毒性](chapter16.md)
+* [阶段4：营收](chapter17.md)
 

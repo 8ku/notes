@@ -1,6 +1,7 @@
 {
   "plugins": [
-   "-fontsettings",	
+   "-fontsettings",
+   "-lunr", "-search", "search-pro",	
     "intopic-toc"
   ],
   "pluginsConfig": {
