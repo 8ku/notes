@@ -1,13 +1,15 @@
 {
-
- "plugins": [
-
- "-fontsettings",
-
- "intopic-toc"
-
- ]
-
+  "plugins": [
+   "-fontsettings",	
+    "intopic-toc"
+  ],
+  "pluginsConfig": {
+    "intopic-toc": {
+      "selector": ".markdown-section h2",
+      "visible": true,
+      "label": {
+        "en": "In this article"
+      }
+    }
+  }
 }
-
-
