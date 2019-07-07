@@ -6,4 +6,5 @@
 * [设计的三个层次：本能、行为、反思](chapter3.md)
 * [乐趣与游戏](chapter4.md)
 * [人物、地点、事件](chapter5.md)
+* [情感化机器](chapter6.md)
 
