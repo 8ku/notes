@@ -8,4 +8,5 @@
 * [希特勒主义的挑战与失败](chapter5.md)
 * [自由社会和自由政府](chapter6.md)
 * [从卢梭到希特勒](chapter7.md)
+* [1776年的保守主义反革命](chapter8.md)
 
