@@ -18,4 +18,7 @@
 * [阶段2：黏性](chapter15.md)
 * [阶段3：病毒性](chapter16.md)
 * [阶段4：营收](chapter17.md)
+* [阶段5：规模化](chapter18.md)
+* [模式+阶段决定你跟踪的指标](chapter19.md)
+* [我是否足够优秀](chapter20.md)
 
