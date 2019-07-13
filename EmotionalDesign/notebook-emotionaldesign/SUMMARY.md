@@ -7,4 +7,5 @@
 * [乐趣与游戏](chapter4.md)
 * [人物、地点、事件](chapter5.md)
 * [情感化机器](chapter6.md)
+* [总结](chapter7.md)
 
