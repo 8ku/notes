@@ -37,7 +37,7 @@ function myFunction() {
 <form action=".">
  <div class="form-group">
        <input type="search" class="form-control pull-right" style="width:50%; height:3em" id="search" placeholder="Type to search table...">
-       <input id="none" type="text" style="display:none;"/>
+       <input id="hiddenText" type="text" style="display:none" onkeypress="searchKeywordKeyboard(event)" />
      </div>
 <script>
    // Write on keyup event of keyword input element
