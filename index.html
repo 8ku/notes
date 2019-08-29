@@ -1,135 +1,117 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
- 
-<title>notebook-baku</title> 
-
-<script>
-function myFunction() {
-  var x = document.getElementsByTagName("li").length;
-  document.getElementById("count").innerHTML = x;
-}
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-
-<style type="text/css">
-        body {
-　　　　font: normal 100% Helvetica, Arial, sans-serif;
-　　}
-</style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>notebook-baku</title>
+    <script>
+        function myFunction() {
+	  var x = document.getElementsByTagName("li").length;
+	  document.getElementById("count").innerHTML = x;
+	}
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style type="text/css">
+    body {
+        font: normal 100% Helvetica, Arial, sans-serif;
+    }
+    </style>
 </head>
+
 <body>
+    <h3>notebook-baku</h3>
+    <p>总计</p>
+    <button onclick="myFunction()">统计</button>
+    <p id="count"></p>
+    <form action=".">
+        <div class="form-group">
+            <input type="search" class="form-control pull-right" style="width:50%; height:3em" id="search" placeholder="Type to search table...">
+            <input id="hiddenText" type="text" style="display:none" onkeypress="searchKeywordKeyboard(event)" />
+        </div>
+        <script>
+        // Write on keyup event of keyword input element
+        $(document).ready(function() {
+            $("#search").keypress(function() {
+                _this = this;
 
-<h3>notebook-baku</h3>
-
-<p>总计</p>
-
-<button onclick="myFunction()">统计</button>
-
-<p id="count"></p>
-
-
-<form action=".">
- <div class="form-group">
-       <input type="search" class="form-control pull-right" style="width:50%; height:3em" id="search" placeholder="Type to search table...">
-       <input id="hiddenText" type="text" style="display:none" onkeypress="searchKeywordKeyboard(event)" />
-     </div>
-<script>
-   // Write on keyup event of keyword input element
-   $(document).ready(function(){
-     $("#search").keypress(function(){
-     _this = this;
-    
-     // Show only matching TR, hide rest of them
-     $.each($("#con li"), function() {
-       if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
-       {  
-           $(this).hide();
-       }
-       else
-       {
-          $(this).show();
-       }
-     });
-  });
-});
-</script>
-</form>
-  
-<ul id="con">
-  <li><a href="Mozart/Mozart.html">莫扎特</li>
-  <li><a href="EvolutionaryPsychology/index.html">进化心理学</li>
-  <li><a href="thedesignofeverydaythings/index.html">设计心理学1：日常的设计</li>
-  <li><a href="livingwithcomplexity/index.html">设计心理学2：与复杂共处</li>
-  <li><a href="EmotionalDesign/index.html">设计心理学3：情感化设计</li>
-  <li><a href="TheDesignOfFutureThings/index.html">设计心理学4：未来设计</li>
-  <li><a href="AreyouLightsOn/index.html">你的灯还亮着吗——发现问题的真正所在</li>
-  <li><a href="ServiceDesign/index.html">服务设计与创新实践</li>
-  <li><a href="IntuitionPumps/index.html">直觉泵</li>
-  <li><a href="StrategyBeyondTheHockeyStick/index.html">突破现实的困境</li>
-  <li><a href="notebook-theeffectiveexecutive/index.html">卓有成效的管理者</li>
-  <li><a href="TheFutureOfIndustrialMan/index.html">工业人的未来</li>
-  <li><a href="managementchanllengeforthe21stcentury/index.html">21世纪管理挑战</li>
-  <li><a href="ConceptOfTheCorporation/index.html">公司的概念</li>
-  <li><a href="notebook-onbeingaperson/index.html">个人形成论</li>
-  <li><a href="OneDimensionalMan/index.html">单向度的人</li>
-  <li><a href="leananalytics/index.html">精益数据分析</li>
-  <li><a href="thelonelycity/index.html">孤独的城市</li>
-  <li><a href="environmentalpsychology/index.html">环境心理学</li>
-  <li><a href="knowledgeofcoffee/index.html">精品咖啡学</li>
-  <li><a href="thelifeofmichaelangelo/index.html">米开朗琪罗传</li>
-  <li><a href="el_amoren_los_tiempos_del_colera/index.html">霍乱时期的爱情</li>
-  <li><a href="whatilearnedlosingamilliondollars/index.html">止损</li>
-  <li><a href="quackery/index.html">荒诞医学史</li>
-  <li><a href="AboutBiology/index.html">生物学相关</li>
-  <li><a href="madetostick/index.html">让创意更有粘性</li>
-  <li><a href="statisticsforthebehavioralsciences/index.html">行为科学统计</li>
-  <li><a href="cognitivepsychology/index.html">认知心理学</li>
-  <li><a href="zenandartofmotorcyclemaintenance/index.html">禅与摩托车维修艺术</li>
-  <li><a href="howgoogleworks/index.html">重新定义公司 谷歌是如何运营的</li>
-  <li><a href="mechanics/index.html">力学相关</li>
-  <li><a href="thehistoryofmoderneurope/index.html">欧洲现代史</li>
-  <li><a href="WritingOnTheWall/index.html">社交媒体简史</li>
-  <li><a href="childenofodin/index.html">奥丁的子女</li>
-  <li><a href="socialpsychology/index.html">迈尔斯社会心理学</li>
-  <li><a href="IntimateRelationships/index.html">社会心理学-亲密关系</li>
-  <li><a href="tenyearsofrebirth/index.html">十年轮回</li>
-  <li><a href="pre-suasion/index.html">先发影响力</li>
-  <li><a href="economicslecturenotes/index.html">薛兆丰经济学讲义</li>
-  <li><a href="influence/index.html">影响力</li>
-  <li><a href="scarcity/index.html">稀缺</li>
-  <li><a href="toobigtoknow/index.html">知识的边界</li>
-  <li><a href="story/index.html">故事</li>
-  <li><a href="thestoryofart/index.html">艺术的故事</li>
-  <li><a href="themillionairenextdoor/index.html">邻家的百万富翁</li>
-  <li><a href="triz/index.html">创新算法</li>
-  <li><a href="sulvzhiwang/index.html">素履之往</li>
-  <li><a href="insheepsclothing/index.html">如何与控制型人格相处</li>
-  <li><a href="originals/index.html">离经叛道</li>
-  <li><a href="thetimelesswayofbuilding/index.html">建筑的永恒之道</li>
-  <li><a href="motivationandpersonality/index.html">动机与人格</li>
-  <li><a href="theartofgamedesign/index.html">游戏设计艺术</li>
-  <li><a href="microinteractions/index.html">微交互</li>
-  <li><a href="aboutface/index.html">交互设计精髓</li>
-  <li><a href="designingwiththemindinmind/index.html">认知与设计</li>
-  <li><a href="restpectforacting/index.html">尊重表演艺术</li>
-  <li><a href="theexperienceeconomy/index.html">体验经济</li>
-  <li><a href="changebydesign/index.html">IDEO</li>
-  <li><a href="sprint/index.html">设计冲刺</li>
-  <li><a href="theelephantintheroom/index.html">房间里的大象</li>
-  <li><a href="thesocialanimal/index.html">社会性动物</li>
-  <li><a href="themostimportantthing/index.html">投资最重要的事</li>
-  <li><a href="theplenitude/index.html">够了！创意</li>
-  <li><a href="businesslogisticemanagement/index.html">企业物流管理——供应链的规划、组织和控制</li>
-
-</ul>
-
-
-
+                // Show only matching TR, hide rest of them
+                $.each($("#con li"), function() {
+                    if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
+                        $(this).hide();
+                    } else {
+                        $(this).show();
+                    }
+                });
+            });
+        });
+        </script>
+    </form>
+    <ul id="con">
+        <li><a href="Mozart/Mozart.html">莫扎特</li>
+        <li><a href="EvolutionaryPsychology/index.html">进化心理学</li>
+        <li><a href="thedesignofeverydaythings/index.html">设计心理学1：日常的设计</li>
+        <li><a href="livingwithcomplexity/index.html">设计心理学2：与复杂共处</li>
+        <li><a href="EmotionalDesign/index.html">设计心理学3：情感化设计</li>
+        <li><a href="TheDesignOfFutureThings/index.html">设计心理学4：未来设计</li>
+        <li><a href="AreyouLightsOn/index.html">你的灯还亮着吗——发现问题的真正所在</li>
+        <li><a href="ServiceDesign/index.html">服务设计与创新实践</li>
+        <li><a href="IntuitionPumps/index.html">直觉泵</li>
+        <li><a href="StrategyBeyondTheHockeyStick/index.html">突破现实的困境</li>
+        <li><a href="notebook-theeffectiveexecutive/index.html">卓有成效的管理者</li>
+        <li><a href="TheFutureOfIndustrialMan/index.html">工业人的未来</li>
+        <li><a href="managementchanllengeforthe21stcentury/index.html">21世纪管理挑战</li>
+        <li><a href="ConceptOfTheCorporation/index.html">公司的概念</li>
+        <li><a href="notebook-onbeingaperson/index.html">个人形成论</li>
+        <li><a href="OneDimensionalMan/index.html">单向度的人</li>
+        <li><a href="leananalytics/index.html">精益数据分析</li>
+        <li><a href="thelonelycity/index.html">孤独的城市</li>
+        <li><a href="environmentalpsychology/index.html">环境心理学</li>
+        <li><a href="knowledgeofcoffee/index.html">精品咖啡学</li>
+        <li><a href="thelifeofmichaelangelo/index.html">米开朗琪罗传</li>
+        <li><a href="el_amoren_los_tiempos_del_colera/index.html">霍乱时期的爱情</li>
+        <li><a href="whatilearnedlosingamilliondollars/index.html">止损</li>
+        <li><a href="quackery/index.html">荒诞医学史</li>
+        <li><a href="AboutBiology/index.html">生物学相关</li>
+        <li><a href="madetostick/index.html">让创意更有粘性</li>
+        <li><a href="statisticsforthebehavioralsciences/index.html">行为科学统计</li>
+        <li><a href="cognitivepsychology/index.html">认知心理学</li>
+        <li><a href="zenandartofmotorcyclemaintenance/index.html">禅与摩托车维修艺术</li>
+        <li><a href="howgoogleworks/index.html">重新定义公司 谷歌是如何运营的</li>
+        <li><a href="mechanics/index.html">力学相关</li>
+        <li><a href="thehistoryofmoderneurope/index.html">欧洲现代史</li>
+        <li><a href="WritingOnTheWall/index.html">社交媒体简史</li>
+        <li><a href="childenofodin/index.html">奥丁的子女</li>
+        <li><a href="socialpsychology/index.html">迈尔斯社会心理学</li>
+        <li><a href="IntimateRelationships/index.html">社会心理学-亲密关系</li>
+        <li><a href="tenyearsofrebirth/index.html">十年轮回</li>
+        <li><a href="pre-suasion/index.html">先发影响力</li>
+        <li><a href="economicslecturenotes/index.html">薛兆丰经济学讲义</li>
+        <li><a href="influence/index.html">影响力</li>
+        <li><a href="scarcity/index.html">稀缺</li>
+        <li><a href="toobigtoknow/index.html">知识的边界</li>
+        <li><a href="story/index.html">故事</li>
+        <li><a href="thestoryofart/index.html">艺术的故事</li>
+        <li><a href="themillionairenextdoor/index.html">邻家的百万富翁</li>
+        <li><a href="triz/index.html">创新算法</li>
+        <li><a href="sulvzhiwang/index.html">素履之往</li>
+        <li><a href="insheepsclothing/index.html">如何与控制型人格相处</li>
+        <li><a href="originals/index.html">离经叛道</li>
+        <li><a href="thetimelesswayofbuilding/index.html">建筑的永恒之道</li>
+        <li><a href="motivationandpersonality/index.html">动机与人格</li>
+        <li><a href="theartofgamedesign/index.html">游戏设计艺术</li>
+        <li><a href="microinteractions/index.html">微交互</li>
+        <li><a href="aboutface/index.html">交互设计精髓</li>
+        <li><a href="designingwiththemindinmind/index.html">认知与设计</li>
+        <li><a href="restpectforacting/index.html">尊重表演艺术</li>
+        <li><a href="theexperienceeconomy/index.html">体验经济</li>
+        <li><a href="changebydesign/index.html">IDEO</li>
+        <li><a href="sprint/index.html">设计冲刺</li>
+        <li><a href="theelephantintheroom/index.html">房间里的大象</li>
+        <li><a href="thesocialanimal/index.html">社会性动物</li>
+        <li><a href="themostimportantthing/index.html">投资最重要的事</li>
+        <li><a href="theplenitude/index.html">够了！创意</li>
+        <li><a href="businesslogisticemanagement/index.html">企业物流管理——供应链的规划、组织和控制</li>
+    </ul>
 </body>
+
 </html>
