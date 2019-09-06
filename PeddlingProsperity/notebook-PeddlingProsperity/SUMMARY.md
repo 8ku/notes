@@ -5,4 +5,5 @@
 * [税收、管制与经济增长](chapter2.md)
 * [供应学派](chapter3.md)
 * [经济增长问题](chapter4.md)
+* [收入分配](chapter5.md)
 
