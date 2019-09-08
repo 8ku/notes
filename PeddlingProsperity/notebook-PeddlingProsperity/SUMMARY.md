@@ -6,4 +6,5 @@
 * [供应学派](chapter3.md)
 * [经济增长问题](chapter4.md)
 * [收入分配](chapter5.md)
+* [预算赤字](chapter6.md)
 
