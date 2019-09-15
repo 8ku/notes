@@ -8,4 +8,5 @@
 * [收入分配](chapter5.md)
 * [预算赤字](chapter6.md)
 * [国外的保守派](chapter7.md)
+* [凯恩斯主义历久弥新](chapter8.md)
 
