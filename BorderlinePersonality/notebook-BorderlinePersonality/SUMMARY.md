@@ -5,4 +5,5 @@
 * [边缘型症状的起因](chapter2.md)
 * [边缘型的社会](chapter3.md)
 * [理解与治疗](chapter4.md)
+* [寻求治疗](chapter5.md)
 
