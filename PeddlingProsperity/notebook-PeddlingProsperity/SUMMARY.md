@@ -11,3 +11,4 @@
 * [凯恩斯主义历久弥新](chapter8.md)
 * [QWERTY键盘经济学](chapter9.md)
 * [战略贸易论的崛起](chapter10.md)
+* [生产率高低与国际竞争力毫无关系](chapter11.md)
