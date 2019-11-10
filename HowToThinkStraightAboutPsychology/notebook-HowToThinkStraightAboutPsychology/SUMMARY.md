@@ -7,4 +7,5 @@
 * [见证和个案研究证据](chapter4.md)
 * [相关和因果](chapter5.md)
 * [让一切置于控制之下](chapter6.md)
+* [“人为性”批评和心理学](chapter7.md)
 
