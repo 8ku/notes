@@ -9,4 +9,5 @@
 * [把系统观点带入实践，掌握系统基本模式](chapter6.md)
 * [是自我局限，还是自我持续地增长](chapter7.md)
 * [自我超越](chapter8.md)
+* [心智模式](chapter9.md)
 
