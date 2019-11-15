@@ -10,4 +10,5 @@
 * [是自我局限，还是自我持续地增长](chapter7.md)
 * [自我超越](chapter8.md)
 * [心智模式](chapter9.md)
+* [共同愿景](chapter10.md)
 
