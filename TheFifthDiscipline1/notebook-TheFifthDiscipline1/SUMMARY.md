@@ -12,4 +12,5 @@
 * [心智模式](chapter9.md)
 * [共同愿景](chapter10.md)
 * [团队学习](chapter11.md)
+* [反思型文化的基础](chapter12.md)
 
