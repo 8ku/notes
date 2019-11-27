@@ -13,4 +13,5 @@
 * [共同愿景](chapter10.md)
 * [团队学习](chapter11.md)
 * [反思型文化的基础](chapter12.md)
+* [学习型文化的推动力](chapter13.md)
 
