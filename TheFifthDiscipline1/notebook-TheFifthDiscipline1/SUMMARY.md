@@ -14,4 +14,6 @@
 * [团队学习](chapter11.md)
 * [反思型文化的基础](chapter12.md)
 * [学习型文化的推动力](chapter13.md)
+* [战略思考与8种应用策略](chapter14.md)
+* [领导的新工作](chapter15.md)
 
