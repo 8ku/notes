@@ -1,14 +1,25 @@
-### git
+## git
 
-#### 拉取到本地
+### 拉取到本地
 
 - `git clone url`
 
-#### 删除某个文件夹
+### 拉取某个文件夹
+
+- `git init  在本地建立一个空仓库
+- `git remote add -f origin https://github.com/8ku/note.git`
+- `git config core.sparsecheckout true`    开启sparse checkout模式
+- `echo "文件夹/文件" >> .git/info/sparse-checkout`
+- `git pull origin master`  拉取
+- `git add .` 编辑完成后准备上传
+- `git commit -m’add some new stuff`   添加 commit
+- `git push -u origin master`   推到仓库
+
+### 删除某个文件夹
 
 - `git init`初始化本地仓库
 
-- `git remote add origin https://github.com/PrincetonUniversity/EVCM.git`
+- `git remote add origin https://github.com/8ku/note.git`
 
 - `git pull origin master`
 
@@ -30,7 +41,7 @@
 
 - `git pull`
 
-#### 添加文件夹/文件
+### 添加文件夹/文件
 
 - 把文件夹/文件拉到本地仓库
 - `git add -A`或`git add .`
@@ -41,13 +52,13 @@
 
 #### create a readme.md file before build and push a new book (important!)
 
-#### 输出各种格式
+### 输出各种格式
 
 - pdf：gitbook pdf
 - epub： gitbook epub
 - mobi：gitbook mobi
 
-### Topora
+## Topora
 
 - 下划线：ctrl+u
 - 删除线：~~
@@ -57,3 +68,21 @@
 - 数学公式：$$
 - 代码：`
 - 代码块：三个~
+
+## gitbook 
+
+### 安装
+
+需要先安装NodeJS,然后使用命令安装gitbook:
+
+```
+npm install gitbook-cli -g
+```
+
+- 把仓库中的template文件夹copy到新文件夹中
+- 在summary里把每章节的路径写上，用`gitbook init` 生成绑定目录的md文件
+  - 或先新建每章节的文件，最后在summary中把目录写上，用`gitbook init`绑定
+- 在notebook-xxxx，右键 git bash here，`gitbook build` ，如提示插件未安装，则先安装再build
+- 生成后把notebook-xxxx里的 _book 文件夹内的文件剪切到和 notebook-xxxx同级目录下
+- 把书籍路径增加到index.html中
+- 在根目录用git push到仓库中
