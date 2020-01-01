@@ -86,3 +86,19 @@ npm install gitbook-cli -g
 - 生成后把notebook-xxxx里的 _book 文件夹内的文件剪切到和 notebook-xxxx同级目录下
 - 把书籍路径增加到index.html中
 - 在根目录用git push到仓库中
+
+## git clone到本地很慢
+
+设置代理，socks5代理端口号查询代理软件
+
+```
+# 设置代理
+git config --global https.proxy https://127.0.0.1:1086
+# 只对github.com
+git config --global http.https://github.com.proxy socks5://127.0.0.1:1086
+# 取消所有代理 
+unset ALL_PROXY
+# 取消github代理
+git config --global --unset http.https://github.com.proxy
+```
+
