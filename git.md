@@ -6,11 +6,11 @@
 
 ### 拉取某个文件夹
 
-- `git init  在本地建立一个空仓库
+- `git init`  在本地建立一个空仓库
 - `git remote add -f origin https://github.com/8ku/note.git`
 - `git config core.sparsecheckout true`    开启sparse checkout模式
-- `echo "文件夹/文件" >> .git/info/sparse-checkout`
-- `git pull origin master`  拉取
+- `echo 文件夹/文件 >> .git/info/sparse-checkout`
+- `git pull origin master`  拉取，如果失败，可以试试`git checkout master`
 - `git add .` 编辑完成后准备上传
 - `git commit -m’add some new stuff`   添加 commit
 - `git push -u origin master`   推到仓库
