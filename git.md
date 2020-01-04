@@ -15,6 +15,31 @@
 - `git commit -m’add some new stuff`   添加 commit
 - `git push -u origin master`   推到仓库
 
+### Sparse-checkout 文件设置
+
+- 子目录匹配
+
+  - 如果名称前带斜杠，`/docs/`，表示只匹配根目录下的文件目录， 如前不带斜杠，则匹配所有有该目录名称的目录（包括父目录）
+
+- 通配符 *
+
+  - 在sparse-checkout文件中支配通配符 * 
+
+    ```
+    *docs/
+    index.*
+    *.gif
+    ```
+
+  - 支持 ！排除
+
+    ```
+    /*
+    !/docs/
+    ```
+
+    
+
 ### 删除某个文件夹
 
 - `git init`初始化本地仓库
