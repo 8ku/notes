@@ -8,6 +8,7 @@
 
 - `git init`  在本地建立一个空仓库
 - `git remote add -f origin https://github.com/8ku/note.git`
+  - 如果网络错误导致失败，remove它，`git remote rm origin` ，重新remote
 - `git config core.sparsecheckout true`    开启sparse checkout模式
 - `echo 文件夹/文件 >> .git/info/sparse-checkout`
 - `git pull origin master`  拉取，如果失败，可以试试`git checkout master`
