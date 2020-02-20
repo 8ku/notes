@@ -117,14 +117,21 @@ npm install gitbook-cli -g
 
 设置代理，socks5代理端口号查询代理软件
 
-```
-# 设置代理
+```java
+//设置代理
 git config --global https.proxy https://127.0.0.1:1086
-# 只对github.com
+git config --global http.proxy https://127.0.0.1:1086
+//只对github.com
 git config --global http.https://github.com.proxy socks5://127.0.0.1:1086
-# 取消所有代理 
+//取消所有代理 
 unset ALL_PROXY
-# 取消github代理
+//取消github代理
 git config --global --unset http.https://github.com.proxy
+//打开 git 配置文件
+vi ~/.gitconfig
+[http "https://github.com/"]
+    proxy = http://127.0.0.1:1081
+[https "https://github.com/"]
+    proxy = http://127.0.0.1:1081
 ```
 
