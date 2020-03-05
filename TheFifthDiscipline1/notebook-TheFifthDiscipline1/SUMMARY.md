@@ -16,4 +16,5 @@
 * [学习型文化的推动力](chapter13.md)
 * [战略思考与8种应用策略](chapter14.md)
 * [领导的新工作](chapter15.md)
+* [系统的公民](chapter16.md)
 
