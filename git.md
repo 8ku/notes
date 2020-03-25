@@ -141,3 +141,9 @@ vi ~/.gitconfig
 2. 生成新SSH密钥 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 3. 将 SSH 密钥复制到剪贴板 `clip < ~/.ssh/id_rsa.pub`
 4. 打开github账户 设置页面，添加新的SSH密钥
+5. 给SSH密钥添加密码
+   1. `ssh-keygen -p`
+   2. hit enter
+   3. enter password
+   4. enter password again
+   5. done.
