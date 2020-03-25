@@ -135,3 +135,9 @@ vi ~/.gitconfig
     proxy = http://127.0.0.1:1081
 ```
 
+### [使用SSH](https://help.github.com/cn/github/authenticating-to-github/checking-for-existing-ssh-keys)
+
+1. 检查是否存在现有SSH密钥，在Git Bash：`ls -al ~/.ssh`
+2. 生成新SSH密钥 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+3. 将 SSH 密钥复制到剪贴板 `clip < ~/.ssh/id_rsa.pub`
+4. 打开github账户 设置页面，添加新的SSH密钥
