@@ -1,6 +1,20 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+      <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+      <script>mermaid.initialize({startOnLoad:true});</script>
+</head>
+
 # 神经元和神经胶质细胞
 
-**所有组织与器官都是由细胞组成，细胞的特殊功能及其相互作用的方式决定了器官的功能。研究大脑必须先研究脑细胞如何单独工作，再研究其协作方式。
+**所有组织与器官都是由细胞组成，细胞的特殊功能及其相互作用s的方式决定了器官的功能。研究大脑必须先研究脑细胞如何单独工作，再研究其协作方式。**
 
 人脑神经元数量：大约1000亿个，只占脑细胞的10%
 
@@ -18,10 +32,10 @@
 
 | 单位 | 缩写 | 米制单位数值 | 实际生活的对比量       |
 | ---- | ---- | ------------ | ---------------------- |
-| 千米 | km   | $$10^3$$m    | 约 2/3 英里            |
+| 千米 | km   | $10^3$m      | 约 2/3 英里            |
 | 米   | m    | 1m           | 约3英尺（0.9米）       |
-| 厘米 | cm   | $$10^{-2}$$m | 小指厚度               |
-| 毫米 | mm   | $$10^{-3}$$m | 指甲厚度               |
-| 微米 | ㎛   | $$10^{-4}$$m | 接近光学显微镜的分辨率 |
-| 纳米 | nm   | $$10^{-9}$$m | 接近电子显微镜的分辨率 |
+| 厘米 | cm   | $10^{-2}$m   | 小指厚度               |
+| 毫米 | mm   | $10^{-3}$m   | 指甲厚度               |
+| 微米 | ㎛   | $10^{-4}$m   | 接近光学显微镜的分辨率 |
+| 纳米 | nm   | $10^{-9}$m   | 接近电子显微镜的分辨率 |
 

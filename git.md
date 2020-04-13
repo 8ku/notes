@@ -150,37 +150,20 @@ vi ~/.gitconfig
 
 ## 支持数学公式
 
-- `book.json`中添加插件 `mathjax`
+- md头部添加代码
 
-  ```
-  {
-    "plugins": [
-     "-fontsettings",
-     "-lunr", "-search", "search-pro",	
-      "intopic-toc",
-      "mathjax"
-    ],
-    "pluginsConfig": {
-      "intopic-toc": {
-        "selector": ".markdown-section h2,.markdown-section h3",
-        "visible": true,
-        "label": {
-          "en": "In this article"
-        }
-      }
-    }
-  }
-  ```
-
-- 如果`build`时报错 `PluginError: Error with plugin "mathjax": Cannot find module 'mathjax/unpacked/MathJax'`,使用`npm install mathjax@2.7.6`降级，再次`build`
-
-- **mathjax支持的行内公式也是使用`$$`包裹**
-
-- ```
-  公式块
-  $$
-  a \ne 0
-  $$
-  ```
-
-- 不放心可以先build一段看看
+  <head>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+      <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+              tex2jax: {
+              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+              inlineMath: [['$','$']]
+              }
+          });
+      </script>
+        <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+  </head>
+  
+  

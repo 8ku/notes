@@ -15,12 +15,12 @@
 
   - 流行理论：羊脑切开后中间是空的，符合当时流行理论——机体的功能有赖于4种重要的液体或体液的平衡（血液、黏液、黄胆汁、黑胆汁），运动被大脑启动，都是由体液通过神经到达脑室和离开脑室的流动而实现的。当时人们认为神经是一种类似于血管的中空管道。
 
-  - | **Humour**  | **Season** | **Ages**  | **Element**                                                  | **Organ**                                                    | **Qualities**  | **Temperament**                                              |
-    | ----------- | ---------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ |
-    | Blood       | spring     | infancy   | [air](https://en.wikipedia.org/wiki/Air_(classical_element)) | [liver](https://en.wikipedia.org/wiki/Liver)                 | warm and moist | [sanguine](https://en.wikipedia.org/wiki/Four_Temperaments#Sanguine) |
-    | Yellow bile | summer     | youth     | [fire](https://en.wikipedia.org/wiki/Fire_(classical_element)) | [gallbladder](https://en.wikipedia.org/wiki/Gallbladder)     | warm and dry   | [choleric](https://en.wikipedia.org/wiki/Choleric)           |
-    | Black bile  | autumn     | adulthood | [earth](https://en.wikipedia.org/wiki/Earth_(classical_element)) | [spleen](https://en.wikipedia.org/wiki/Spleen)               | cold and dry   | [melancholic](https://en.wikipedia.org/wiki/Melancholia)     |
-    | Phlegm      | winter     | old age   | [water](https://en.wikipedia.org/wiki/Water_(classical_element)) | [brain](https://en.wikipedia.org/wiki/Human_brain)/[lungs](https://en.wikipedia.org/wiki/Lungs) | cold and moist | [phlegmatic](https://en.wikipedia.org/wiki/Phlegmatic)       |
+| **Humour**  | **Season** | **Ages**  | **Element**                                                  | **Organ**                                                    | **Qualities**  | **Temperament**                                              |
+| ----------- | ---------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------- | ------------------------------------------------------------ |
+| Blood       | spring     | infancy   | [air](https://en.wikipedia.org/wiki/Air_(classical_element)) | [liver](https://en.wikipedia.org/wiki/Liver)                 | warm and moist | [sanguine](https://en.wikipedia.org/wiki/Four_Temperaments#Sanguine) |
+| Yellow bile | summer     | youth     | [fire](https://en.wikipedia.org/wiki/Fire_(classical_element)) | [gallbladder](https://en.wikipedia.org/wiki/Gallbladder)     | warm and dry   | [choleric](https://en.wikipedia.org/wiki/Choleric)           |
+| Black bile  | autumn     | adulthood | [earth](https://en.wikipedia.org/wiki/Earth_(classical_element)) | [spleen](https://en.wikipedia.org/wiki/Spleen)               | cold and dry   | [melancholic](https://en.wikipedia.org/wiki/Melancholia)     |
+| Phlegm      | winter     | old age   | [water](https://en.wikipedia.org/wiki/Water_(classical_element)) | [brain](https://en.wikipedia.org/wiki/Human_brain)/[lungs](https://en.wikipedia.org/wiki/Lungs) | cold and moist | [phlegmatic](https://en.wikipedia.org/wiki/Phlegmatic)       |
 
 - 文艺复兴-19世纪：
 
