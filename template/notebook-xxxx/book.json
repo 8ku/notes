@@ -2,7 +2,8 @@
   "plugins": [
    "-fontsettings",
    "-lunr", "-search", "search-pro",	
-    "intopic-toc"
+    "intopic-toc",
+    "mathjax"
   ],
   "pluginsConfig": {
     "intopic-toc": {
