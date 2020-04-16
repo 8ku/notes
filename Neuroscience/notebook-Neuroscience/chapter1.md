@@ -82,3 +82,26 @@
 - 单极神经元（伪单极神经元）
 - 双极神经元
 - 多极神经元
+
+### 基因表达 gene expression
+
+基因表达是把基因信息生成基因产物的过程，基因产物一般是蛋白质，非蛋白质编码基因的产物（例如tRNA, snRNA)的产物是RNA。
+
+基因表达被所有已知生命（真核生物（包括多细胞生物），原核生物（细菌和古细菌））使用，并被病毒利用，以产生构成生命的大分子结构体。
+
+基因表达过程中的所有步骤都可被调节。基因表达的调节可控制细胞中存在的给定基因产物（蛋白质或ncRNA)的时间，位置和数量，是细胞分化、发育、形态发生和任何生物多功能性和适应性的基础。基因调控也可作为进化变化的基础。
+
+**基因表达的机制**：
+
+- 转录 transcription
+  - 把DNA链拷贝成RNA的过程。由RNA聚合酶(RNA polymerase)完成，该酶根据核苷酸碱基的互补定律一次向增长的RNA链中添加一个核糖核苷酸。转录时，DNA中的胸腺嘧啶（T）被RNA中的尿嘧啶（U）替代。
+  - ![image-20200416171333684](chapter1.assets/image-20200416171333684.png)
+  - 原核生物中，转录是由单一类型RNA聚合酶进行的，该酶需要在sigma因子蛋白的帮助下，结合 pribnow box的DNA序列来开始转录。
+- mRNA处理 mRNA processing
+- 非编码RNA熟化  no-coding RNA maturation
+- RNA出口 RNA export
+- 翻译 translation
+- 折叠 folding
+- 易位 translocation
+- 蛋白质转运 protein transport
+
