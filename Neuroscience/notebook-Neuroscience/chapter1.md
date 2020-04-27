@@ -96,11 +96,22 @@
 - 转录 transcription
   - 把DNA链拷贝成RNA的过程。由RNA聚合酶(RNA polymerase)完成，该酶根据核苷酸碱基的互补定律一次向增长的RNA链中添加一个核糖核苷酸。转录时，DNA中的胸腺嘧啶（T）被RNA中的尿嘧啶（U）替代。
   - ![image-20200416171333684](chapter1.assets/image-20200416171333684.png)
-  - 原核生物中，转录是由单一类型RNA聚合酶进行的，该酶需要在sigma因子蛋白的帮助下，结合 pribnow box的DNA序列来开始转录。
+  - 原核生物中，转录是由单一类型RNA聚合酶进行的，该酶需要在sigma因子蛋白的帮助下，结合 pribnow box 的DNA序列来开始转录。
+  - 真核生物中，转录由三咱类型的RNA聚合酶进行，每种都需要一个特殊的DNA序列（称为启动子）和一组DNA结合蛋白（转录因子）来启动该过程。RNA聚合酶I负责核糖体RNA（rRNA）基因的转录，RNA聚合酶II（Pol II）转录所有蛋白质编码基因，也转录一些非编码RNA（如snRNA，snoRNA或长非编码RNA），RNA聚合酶III转录5S rRNA基因，转移RNA（tRNA）的基因，和一些小的非编码RNA，当聚合酶遇到*终止子*的序列时，转录结束。
 - mRNA处理 mRNA processing
+  - 原核蛋白编码基因的转录产生可翻译成蛋白质的信使RNA（mRNA），真核基因的转录留下RNA的主要转录本（pre-RNA）,该转录本必须首先进行一系列的修饰（剪接）才能成为蛋白质--mRNA。
 - 非编码RNA熟化  no-coding RNA maturation
 - RNA出口 RNA export
+  - 真核生物中，大多数成熟的RNA必须从细胞核输出到细胞质。
+  - RNA的输出需要与称为**出口蛋白**的特定蛋白质结合。
 - 翻译 translation
+  - 对某些RNA（非编码RNA）来说，成熟的RNA是最终基因产物。对信使RNA（mRNA）来说，RNA是编码一种或多种蛋白质合成的信息载体。
+  - 每个mRNA均由三部分组成：
+    - 5'非翻译区（5'UTR）
+    - 蛋白质编码区或开放阅读框（ORF），编码区携带由遗传密码编码的蛋白质合成信息，以形成三联体。编码区核苷酸的每个三联体称为密码子，对应于转移RNA（tRNA）中反密码子三联体互补的结合位点。
+    - 三联体密码：决定蛋白质中的氨基酸顺序，由3个连续的核苷酸组成的密码子构成。
+    - 密码子：信使RNA分子上的三个碱基能决定一个氨基酸。科学家把信使RNA链上决定一个氨基酸的相邻三个碱基叫做一个密码子。
+    - 3'非翻译区（3'UTR）
 - 折叠 folding
 - 易位 translocation
 - 蛋白质转运 protein transport
