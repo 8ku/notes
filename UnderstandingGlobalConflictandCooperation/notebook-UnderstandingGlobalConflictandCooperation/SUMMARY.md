@@ -7,4 +7,6 @@
 * [集体安全制度的失败和第二次世界大战](chapter4.md)
 * [解释冷战](chapter5.md)
 * [冷战后的合作,冲突与热点](chapter6.md)
+* [全球化和相互依存](chapter7.md)
+* [信息革命与跨国行为体](chapter8.md)
 
