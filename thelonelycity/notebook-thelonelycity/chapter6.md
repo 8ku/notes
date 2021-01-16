@@ -1,6 +1,6 @@
 ### 克劳斯 诺米 Klaus Nomi
 
-![iShot2021-01-16 12.53.56(1)](chapter6.assets/iShot2021-01-16%2012.53.56(1).jpg)
+![Klaus Nomi](chapter6.assets/Klaus%20Nomi.jpg)
 
 1944.1.24~1983.8.6 德国假声男高音, 死于AIDS, 是最早死于AIDS的名人之一.
 
@@ -10,7 +10,7 @@
 
 摄影师
 
-![iShot2021-01-16 14.25.17(1)](chapter6.assets/iShot2021-01-16%2014.25.17(1).jpg)
+![Peter Hujar](chapter6.assets/Peter%20Hujar.jpg)
 
 > 彼得可能是我遇到过的最孤独的人了. 他生活在孤独之中, 但那是一种被很多人围绕着的孤独.
 >
