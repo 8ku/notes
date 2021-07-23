@@ -1,7 +1,13 @@
 {
+  "styles":{
+      "website":"./websiteStyle.css",
+      "pdf":"./websiteStyle.css",
+      "epub":"./websiteStyle.css",
+      "mobi":"./websiteStyle.css"
+  },
   "plugins": [
    "-fontsettings",
-   "-lunr", "-search", "search-pro",	
+   "-lunr", "-search", "search-pro",  
     "intopic-toc"
   ],
   "pluginsConfig": {
