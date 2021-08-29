@@ -16,14 +16,15 @@
 <body>
   <div id="app"></div>
   <script>
-    // window.$docsify = {
-    //   name: '',
-    //   repo: ''
-    // }
+    window.$docsify = {
+      name: '8ku/notes',
+      repo: ''
+    }
     var num = 0;
         mermaid.initialize({ startOnLoad: false });
         window.$docsify = {
             loadSidebar: true, //显示侧边栏
+            loadSidebar: 'sidebar.md',
             subMaxLevel: 3, //页内导航默认到3级
             name: '可用性测试', //网站标题
             search: {
