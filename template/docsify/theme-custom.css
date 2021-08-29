@@ -1,0 +1,22 @@
+:root {
+  --base-font-size: 14px;
+  /*--theme-color   : purple;*/
+}
+
+
+.highlight {
+    box-shadow:inset 0 -10px 0 #ffff006e, 0 2px 0 #ffff006e;
+    font-weight:bold;
+}
+
+.wavy {
+    text-decoration: underline wavy red;
+}
+
+.frame {
+    border: solid 1px gray;
+    padding: 15px;
+    margin: 10px;
+}
+
+

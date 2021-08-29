@@ -1,2 +1,2 @@
 - [Brief](/)
-- [用户体验与可用性测试](book1/Summary)
+- [用户体验与可用性测试](book1/sidebar)
