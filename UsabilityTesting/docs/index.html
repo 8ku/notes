@@ -28,6 +28,7 @@
     var num = 0;
         mermaid.initialize({ startOnLoad: false });
         window.$docsify = {
+            search: 'auto', //搜索
             loadSidebar: true, //显示侧边栏
             loadSidebar: 'sidebar.md',
             subMaxLevel: 3, //页内导航默认到3级
@@ -62,5 +63,8 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>
     
+  <!-- 搜索 -->
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  
 </body>
 </html>
