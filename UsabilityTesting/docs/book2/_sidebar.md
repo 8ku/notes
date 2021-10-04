@@ -3,4 +3,6 @@
   - [什么是可用性](book2/chapter2)
   - [用户界面的分代](book2/chapter3)
   - [可用新工程的生命周期](book2/chapter4)
+  - [可用性经验准则](book2/chapter5)
+  - [可用性测试](book2/chapter6)
 
