@@ -8,11 +8,12 @@
   "plugins": [
    "-fontsettings",
    "-lunr", "-search", "search-pro",  
-    "intopic-toc"
+    "intopic-toc",
+    "mermaid-gb3-fox"
   ],
   "pluginsConfig": {
     "intopic-toc": {
-      "selector": ".markdown-section h2,.markdown-section h3",
+      "selector": ".markdown-section h2,.markdown-section h3,.markdown-section h4",
       "visible": true,
       "label": {
         "en": "In this article"
