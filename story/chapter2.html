@@ -12,6 +12,7 @@
         
         
     
+    
     <link rel="stylesheet" href="gitbook/style.css">
 
     
@@ -22,6 +23,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-mermaid-gb3-fox/mermaid/mermaid.css">
                 
             
                 
@@ -42,6 +47,9 @@
         
     
         
+    
+
+
     
 
         
@@ -408,7 +416,8 @@
                                 <blockquote>
 <p>&#x4E00;&#x4E2A;&#x8BB2;&#x5F97;&#x7F8E;&#x5999;&#x7684;&#x6545;&#x4E8B;&#x72B9;&#x5982;&#x4E00;&#x90E8;&#x4EA4;&#x54CD;&#x4E50;&#xFF0C;&#x5176;&#x7ED3;&#x6784;&#x3001;&#x80CC;&#x666F;&#x3001;&#x4EBA;&#x7269;&#x3001;&#x7C7B;&#x578B;&#x548C;&#x601D;&#x60F3;&#x878D;&#x5408;&#x4E3A;&#x4E00;&#x4E2A;&#x5929;&#x8863;&#x65E0;&#x7F1D;&#x7684;&#x7EDF;&#x4E00;&#x4F53;&#x3002;&#x8981;&#x60F3;&#x627E;&#x5230;&#x5B83;&#x4EEC;&#x7684;&#x548C;&#x8C10;&#xFF0C;&#x4F5C;&#x5BB6;&#x5FC5;&#x987B;&#x7814;&#x7A76;&#x6545;&#x4E8B;&#x8BF8;&#x8981;&#x7D20;&#xFF0C;&#x628A;&#x5B83;&#x4EEC;&#x5F53;&#x6210;&#x4E00;&#x4E2A;&#x7BA1;&#x5F26;&#x4E50;&#x961F;&#x7684;&#x5404;&#x79CD;&#x4E50;&#x5668;&#x2014;&#x2014;&#x2014;&#x2014;&#x5148;&#x9010;&#x4E00;&#x7CBE;&#x901A;&#xFF0C;&#x518D;&#x6574;&#x4F53;&#x5408;&#x594F;&#x3002;</p>
 </blockquote>
-<pre><code class="lang-mermaid">stateDiagram
+<div class="mermaid">
+stateDiagram
 
     state Story{
         direction LR
@@ -436,7 +445,14 @@
         Act1 --&gt; Act2
         Act2 --&gt; Act3
     }
-</code></pre>
+</div>
+
+
+
+
+
+
+
 <h3 id="&#x7ED3;&#x6784;-structure">&#x7ED3;&#x6784; Structure</h3>
 <p><strong>&#x7ED3;&#x6784;&#x662F;&#x5BF9;&#x4EBA;&#x7269;&#x751F;&#x6D3B;&#x6545;&#x4E8B;&#x4E2D;&#x4E00;&#x7CFB;&#x5217;&#x4E8B;&#x4EF6;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x8FD9;&#x79CD;&#x9009;&#x62E9;&#x5C06;&#x4E8B;&#x4EF6;&#x7EC4;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x6218;&#x7565;&#x610F;&#x4E49;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x4EE5;&#x6FC0;&#x53D1;&#x7279;&#x5B9A;&#x800C;&#x5177;&#x4F53;&#x7684;&#x60C5;&#x611F;&#xFF0C;&#x5E76;&#x8868;&#x8FBE;&#x4E00;&#x79CD;&#x7279;&#x5B9A;&#x800C;&#x5177;&#x4F53;&#x7684;&#x4EBA;&#x751F;&#x89C2;&#x3002;</strong></p>
 <p>&#x6784;&#x601D;&#x8FD9;&#x4E9B;&#x4E8B;&#x4EF6;&#x662F;&#x4E3A;&#x4E86;&#x4EC0;&#x4E48;&#xFF1F;</p>
@@ -575,12 +591,13 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"结构图谱","level":"1.3","depth":1,"next":{"title":"结构与背景","level":"1.4","depth":1,"path":"chapter3.md","ref":"chapter3.md","articles":[]},"previous":{"title":"故事问题","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-fontsettings","-lunr","-search","search-pro","intopic-toc","livereload"],"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h2,.markdown-section h3,.markdown-section h4","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"search-pro":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./websiteStyle.css","pdf":"./websiteStyle.css","epub":"./websiteStyle.css","mobi":"./websiteStyle.css"}},"file":{"path":"chapter2.md","mtime":"2023-10-02T15:21:04.589Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-06T14:04:09.482Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"结构图谱","level":"1.3","depth":1,"next":{"title":"结构与背景","level":"1.4","depth":1,"path":"chapter3.md","ref":"chapter3.md","articles":[]},"previous":{"title":"故事问题","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-fontsettings","-lunr","-search","search-pro","intopic-toc","mermaid-gb3-fox","livereload"],"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h2,.markdown-section h3,.markdown-section h4","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"search-pro":{},"mermaid-gb3-fox":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./websiteStyle.css","pdf":"./websiteStyle.css","epub":"./websiteStyle.css","mobi":"./websiteStyle.css"}},"file":{"path":"chapter2.md","mtime":"2023-10-02T15:21:04.589Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-06T14:22:51.160Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -605,6 +622,10 @@
         
     
         
+        <script src="gitbook/gitbook-plugin-mermaid-gb3-fox/book/plugin.js"></script>
+        
+    
+        
         <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
@@ -612,6 +633,8 @@
         <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
+
+    <script src="gitbook/gitbook-plugin-mermaid-gb3-fox/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>
