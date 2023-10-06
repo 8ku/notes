@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "gitbook-plugin-intopic-toc": "^1.1.1",
-    "gitbook-plugin-search-pro": "^2.0.2",
-    "glob": "^8.0.3"
-  }
-}
