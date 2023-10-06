@@ -8,8 +8,7 @@
   "plugins": [
    "-fontsettings",
    "-lunr", "-search", "search-pro",  
-    "intopic-toc",
-    "mermaid-gb3-fox"
+    "intopic-toc"
   ],
   "pluginsConfig": {
     "intopic-toc": {
