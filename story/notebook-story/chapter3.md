@@ -4,6 +4,35 @@
 
 对笔下故事中的世界进行深入的了解与洞察，才是臻于新颖和卓越的根本。
 
+
+
+```mermaid
+flowchart LR
+	subgraph Background
+			direction TB
+    	Period --> Duration --> Location --> 4(Level of conflict)
+    end
+	Background --> Protagonist --> 5(Inciting Incident) --> Crisis --> Climax --> Resolution
+```
+
+```mermaid
+flowchart LR
+    subgraph subgraph1
+        direction TB
+        top1[top] --> bottom1[bottom]
+    end
+    subgraph subgraph2
+        direction TB
+        top2[top] --> bottom2[bottom]
+    end
+```
+
+
+
+
+
+
+
 ### 背景
 
 **故事的背景是四维的————时代、期限、地点和冲突层面。**

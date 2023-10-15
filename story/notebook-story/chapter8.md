@@ -1,10 +1,10 @@
 故事由5部分组成：
 
-1. **激励事件**
-2. **进展纠葛**
-3. **危机**
-4. **高潮**
-5. **结局**
+1. **激励事件 Inciting Incident**
+2. **进展纠葛 Progressive Complications**
+3. **危机 Crisis**
+4. **高潮 Climax**
+5. **结局 Resolution**
 
 ### 故事的世界
 
