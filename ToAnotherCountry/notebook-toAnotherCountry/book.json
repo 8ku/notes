@@ -1,0 +1,23 @@
+{
+  "styles":{
+      "website":"./websiteStyle.css",
+      "pdf":"./websiteStyle.css",
+      "epub":"./websiteStyle.css",
+      "mobi":"./websiteStyle.css"
+  },
+  "plugins": [
+   "-fontsettings",
+   "-lunr", "-search", "search-pro",  
+    "intopic-toc",
+    "mermaid-gb3-fox"
+  ],
+  "pluginsConfig": {
+    "intopic-toc": {
+      "selector": ".markdown-section h2,.markdown-section h3",
+      "visible": true,
+      "label": {
+        "en": "In this article"
+      }
+    }
+  }
+}
