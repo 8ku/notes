@@ -2,10 +2,66 @@ body {
   background: #e6e6e6;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  padding-top: 40px; 
 }
 
-/*===== Vertical Timeline =====*/
 
+/* dropdown selection */
+.filter-options {
+  position: fixed; /* Fixed position */
+  top: 10px; /* Distance from the top of the page */
+  right: 10px;
+  z-index: 1000;
+}
+
+.dropdown-button {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  max-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu label {
+  display: block;
+  padding: 10px;
+  clear: both;
+  font-weight: normal;
+}
+
+.confirm-btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/* dropdown selection */
+
+
+
+/*===== Vertical Timeline =====*/
 
 #conference-timeline {
   position: relative;
