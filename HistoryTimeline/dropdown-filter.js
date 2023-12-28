@@ -96,16 +96,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // Combined filter function
   function filterContent() {
     const selectedAreas = Array.from(document.querySelectorAll('.area-option:checked')).map(chk => chk.value);
-    const containers = document.querySelectorAll('.timeline-article');
+    const containers = document.querySelectorAll('.timeline-article .content-left-container, .timeline-article .content-right-container');
 
-    containers.forEach(article => {
-      const areaMatch = selectedAreas.includes('all') || Array.from(article.querySelectorAll('.area')).some(areaEl => selectedAreas.includes(areaEl.textContent.trim()));
-      const dateMatch = Array.from(article.querySelectorAll('.century')).some(centuryEl => {
+    containers.forEach(container => {
+      const area = container.querySelector('.area')?.textContent.trim();
+      const areaMatch = selectedAreas.includes('all') || selectedAreas.includes(area);
+      const dateMatch = Array.from(container.querySelectorAll('.century')).some(centuryEl => {
         const year = convertTextToYear(centuryEl.textContent.trim());
         return year >= selectedStartDate && year <= selectedEndDate;
       });
 
-      article.style.display = (areaMatch && dateMatch) ? '' : 'none';
+      container.style.display = (areaMatch && dateMatch) ? '' : 'none';
     });
   }
 
