@@ -2,15 +2,38 @@ body {
   background: rgb(240, 240, 240);
   font-family: 'Circular',-apple-system,'BlinkMacSystemFont','Roboto','Helvetica Neue',sans-serif;
   font-weight: 400;
-  padding-top: 40px; 
+  margin-top: 40px; 
+}
+
+/* nav */
+.nav {
+  position: fixed; 
+  top: 20px; 
+  right: 40px;
+  z-index: 1000; 
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.nav .nav-btn {
+  text-align: center;
+  /* padding: 4px; */
+  border-radius: 100%;;
+}
+
+/* .nav a:hover, a:active {
+  background-color: #dddddd;
+} */
+
+.nav a i{
+  font-size: 1.75rem;
+  color: #242424;
 }
 
 /* switch */
 .switch {
-  position: fixed; 
-  top: 10px; 
-  right: 10px;
-  z-index: 1000; 
+  position: relative;
   display: flex;
   width: 40px;
   height: 24px;
@@ -83,8 +106,8 @@ input:checked + .slider:before {
 /* dropdown selection */
 .filter-wrapper {
   position: fixed; /* Fixed position */
-  top: 40px; /* Distance from the top of the page */
-  right: 10px; /* Distance from the right of the page */
+  top: 56px;
+  right: 40px; /* Distance from the right of the page */
   width: 260px;
   display: flex; /* Use Flexbox */
   flex-direction: column;
@@ -290,6 +313,7 @@ input:checked + .slider:before {
 
 .timeline-article .timeline-author a {
   color: #717171;
+  text-decoration: none;
 }
 
 .timeline-article .timeline-author i {
