@@ -1,36 +1,43 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title>notebook-baku</title>
     <script>
         function myFunction() {
-	  var x = document.getElementsByTagName("li").length;
-	  document.getElementById("count").innerHTML = x;
-	}
-	</script>
+            var x = document.getElementsByTagName("li").length;
+            document.getElementById("count").innerHTML = x;
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <style type="text/css">
-    body {
-        font: normal 100% Helvetica, Arial, sans-serif;
-    }
-    .con {
-      max-width: 1200px;
-      margin: 20px;
-      display: grid;
-      grid-gap: 1rem;
-    }
-    @media (min-width: 600px) {
-      .con {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (min-width: 900px) {
-      .con {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
+        body {
+            font:
+                normal 100% Helvetica,
+                Arial,
+                sans-serif;
+        }
+
+        .con {
+            max-width: 1200px;
+            margin: 20px;
+            display: grid;
+            grid-gap: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .con {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .con {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     </style>
 </head>
 
@@ -42,25 +49,32 @@
 
     <form action=".">
         <div class="form-group">
-            <input type="search" class="form-control pull-right" style="width:50%; height:3em" id="search" placeholder="Type to search table...">
-            <input id="hiddenText" type="text" style="display:none" onkeypress="searchKeywordKeyboard(event)" />
+            <input type="search" class="form-control pull-right" style="width: 50%; height: 3em" id="search"
+                placeholder="Type to search table..." />
+            <input id="hiddenText" type="text" style="display: none" onkeypress="searchKeywordKeyboard(event)" />
         </div>
         <script>
-        // Write on keyup event of keyword input element
-        $(document).ready(function() {
-            $("#search").keypress(function() {
-                _this = this;
+            // Write on keyup event of keyword input element
+            $(document).ready(function () {
+                $("#search").keypress(function () {
+                    _this = this;
 
-                // Show only matching TR, hide rest of them
-                $.each($(".con li"), function() {
-                    if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1) {
-                        $(this).hide();
-                    } else {
-                        $(this).show();
-                    }
+                    // Show only matching TR, hide rest of them
+                    $.each($(".con li"), function () {
+                        if (
+                            $(this)
+                                .text()
+                                .toLowerCase()
+                                .indexOf($(_this).val().toLowerCase()) ===
+                            -1
+                        ) {
+                            $(this).hide();
+                        } else {
+                            $(this).show();
+                        }
+                    });
                 });
             });
-        });
         </script>
     </form>
 
@@ -68,201 +82,363 @@
         <div>
             <h2>心理学</h2>
             <ul>
-            <li><a href="Psychology/Psychology.html">心理学与生活</a></li>
-            <li><a href="EvolutionaryPsychology/index.html">进化心理学</a></li>
-            <li><a href="AbnormalPsychology/index.html">变态心理学</a></li>
-            <li><a href="HowToThinkStraightAboutPsychology/index.html">对伪心理学说不</a></li>
-            <li><a href="FortyStudiesThatChangedPsychology/index.html">改变心理学的40项研究</a></li>
-            <li><a href="TheArtOfDeception/index.html">欺骗的艺术</a></li>
-            <li><a href="ConsciousnessAndTheBrain/index.html">意识与脑</a></li>
-            <li><a href="Neuroscience/index.html">神经科学——探索脑</a></li>
-            <li><a href="thedesignofeverydaythings/index.html">设计心理学1：日常的设计</a></li>
-            <li><a href="livingwithcomplexity/index.html">设计心理学2：与复杂共处</a></li>
-            <li><a href="EmotionalDesign/index.html">设计心理学3：情感化设计</a></li>
-            <li><a href="TheDesignOfFutureThings/index.html">设计心理学4：未来设计</a></li>
-            <li><a href="TheBookOfWhy/index.html">为什么——关于因果关系的新科学</a></li>
-            <li><a href="CriticalThinking/index.html">批判性思维</a></li>
-            <li><a href="PlatoAndAPlatypusWalkIntoABar/index.html">柏拉图和鸭嘴兽一起去酒吧</a></li>
-            <li><a href="TheModelThinker/index.html">模型思维</a></li>
-            <li><a href="statisticsforthebehavioralsciences/index.html">行为科学统计</a></li>
-            <li><a href="cognitivepsychology/index.html">认知心理学</a></li>
-            <li><a href="socialpsychology/index.html">迈尔斯社会心理学</a></li>
-            <li><a href="IntimateRelationships/index.html">社会心理学-亲密关系</a></li>
-            <li><a href="insheepsclothing/index.html">如何与控制型人格相处</a></li>
-            <li><a href="BorderlinePersonality/index.html">边缘型人格障碍</a></li>
-            <li><a href="motivationandpersonality/index.html">动机与人格</a></li>
-            <li><a href="theelephantintheroom/index.html">房间里的大象</a></li>
-            <li><a href="thesocialanimal/index.html">社会性动物</a></li>
-            <li><a href="TheNakedApe/index.html">裸猿</a></li>
+                <li>
+                    <a href="Psychology/Psychology.html">心理学与生活</a>
+                </li>
+                <li>
+                    <a href="EvolutionaryPsychology/index.html">进化心理学</a>
+                </li>
+                <li>
+                    <a href="AbnormalPsychology/index.html">变态心理学</a>
+                </li>
+                <li>
+                    <a href="HowToThinkStraightAboutPsychology/index.html">对伪心理学说不</a>
+                </li>
+                <li>
+                    <a href="FortyStudiesThatChangedPsychology/index.html">改变心理学的40项研究</a>
+                </li>
+                <li>
+                    <a href="TheArtOfDeception/index.html">欺骗的艺术</a>
+                </li>
+                <li>
+                    <a href="ConsciousnessAndTheBrain/index.html">意识与脑</a>
+                </li>
+                <li>
+                    <a href="Neuroscience/index.html">神经科学——探索脑</a>
+                </li>
+                <li>
+                    <a href="thedesignofeverydaythings/index.html">设计心理学1：日常的设计</a>
+                </li>
+                <li>
+                    <a href="livingwithcomplexity/index.html">设计心理学2：与复杂共处</a>
+                </li>
+                <li>
+                    <a href="EmotionalDesign/index.html">设计心理学3：情感化设计</a>
+                </li>
+                <li>
+                    <a href="TheDesignOfFutureThings/index.html">设计心理学4：未来设计</a>
+                </li>
+                <li>
+                    <a href="TheBookOfWhy/index.html">为什么——关于因果关系的新科学</a>
+                </li>
+                <li>
+                    <a href="CriticalThinking/index.html">批判性思维</a>
+                </li>
+                <li>
+                    <a href="PlatoAndAPlatypusWalkIntoABar/index.html">柏拉图和鸭嘴兽一起去酒吧</a>
+                </li>
+                <li><a href="TheModelThinker/index.html">模型思维</a></li>
+                <li>
+                    <a href="statisticsforthebehavioralsciences/index.html">行为科学统计</a>
+                </li>
+                <li>
+                    <a href="cognitivepsychology/index.html">认知心理学</a>
+                </li>
+                <li>
+                    <a href="socialpsychology/index.html">迈尔斯社会心理学</a>
+                </li>
+                <li>
+                    <a href="IntimateRelationships/index.html">社会心理学-亲密关系</a>
+                </li>
+                <li>
+                    <a href="insheepsclothing/index.html">如何与控制型人格相处</a>
+                </li>
+                <li>
+                    <a href="BorderlinePersonality/index.html">边缘型人格障碍</a>
+                </li>
+                <li>
+                    <a href="motivationandpersonality/index.html">动机与人格</a>
+                </li>
+                <li>
+                    <a href="theelephantintheroom/index.html">房间里的大象</a>
+                </li>
+                <li><a href="thesocialanimal/index.html">社会性动物</a></li>
+                <li><a href="TheNakedApe/index.html">裸猿</a></li>
             </ul>
         </div>
 
         <div>
             <h2>社会学</h2>
             <ul>
-            <li><a href="AskingTheRightQuestions/index.html">学会提问</a></li>
-            <li><a href="AreyouLightsOn/index.html">你的灯还亮着吗——发现问题的真正所在</a></li>
-            <li><a href="BecomingaTechicalLeader/index.html">成为技术领导者</a></li>
-            <li><a href="ServiceDesign/index.html">服务设计与创新实践</a></li>
-            <li><a href="ServicesMarketing/index.html">服务营销</a></li>
-            <li><a href="UnderstandingMedia/index.html">理解媒介</a></li>
-            <li><a href="TheMiddlemanEconomy/index.html">中间人经济</a></li>
-            <li><a href="IntuitionPumps/index.html">直觉泵</a></li>
-            <li><a href="StrategyBeyondTheHockeyStick/index.html">突破现实的困境</a></li>
-            <li><a href="notebook-theeffectiveexecutive/index.html">卓有成效的管理者</a></li>
-            <li><a href="NoRulesRules/index.html">不拘一格：网飞的自由与责任工作法</a></li>
-            <li><a href="TheFutureOfIndustrialMan/index.html">工业人的未来</a></li>
-            <li><a href="managementchanllengeforthe21stcentury/index.html">21世纪管理挑战</a></li>
-            <li><a href="ConceptOfTheCorporation/index.html">公司的概念</a></li>
-            <li><a href="OnlyTheParanoidSurvive/index.html">只有偏执狂才能生存</a></li>
-            <li><a href="notebook-onbeingaperson/index.html">个人形成论</a></li>
-            <li><a href="OneDimensionalMan/index.html">单向度的人</a></li>
-            <li><a href="leananalytics/index.html">精益数据分析</a></li>
-            <li><a href="Factfulness/index.html">事实：用数据思考，避免情绪化决策</a></li>
-            <li><a href="Misbehaving/index.html">“错误”的行为</a></li>
-            <li><a href="whatilearnedlosingamilliondollars/index.html">止损</a></li>
-            <li><a href="madetostick/index.html">让创意更有粘性</a></li>
-            <li><a href="howgoogleworks/index.html">重新定义公司 谷歌是如何运营的</a></li>
-            <li><a href="TheFifthDiscipline1/index.html">第五项修炼1 学习型组织的艺术与实践</a></li>
-            <li><a href="influence/index.html">影响力</a></li>
-            <li><a href="scarcity/index.html">稀缺</a></li>
-            <li><a href="toobigtoknow/index.html">知识的边界</a></li>
-            <li><a href="themillionairenextdoor/index.html">邻家的百万富翁</a></li>
-            <li><a href="triz/index.html">创新算法</a></li>
-            <li><a href="pre-suasion/index.html">先发影响力</a></li>
-            <li><a href="originals/index.html">离经叛道</a></li>
-            <li><a href="theartofgamedesign/index.html">游戏设计艺术</a></li>
-            <li><a href="microinteractions/index.html">微交互</a></li>
-            <li><a href="aboutface/index.html">交互设计精髓</a></li>
-            <li><a href="designingwiththemindinmind/index.html">认知与设计</a></li>
-            <li><a href="theexperienceeconomy/index.html">体验经济</a></li>
-            <li><a href="UsabilityTesting/docs/#/">用户体验与可用性测试</a></li>
-            <li><a href="changebydesign/index.html">IDEO</a></li>
-            <li><a href="sprint/index.html">设计冲刺</a></li>
-            <li><a href="themostimportantthing/index.html">投资最重要的事</a></li>
-            <li><a href="Priceless/index.html">无价</a></li>
-            <li><a href="theplenitude/index.html">够了！创意</a></li>
+                <li>
+                    <a href="AskingTheRightQuestions/index.html">学会提问</a>
+                </li>
+                <li>
+                    <a href="AreyouLightsOn/index.html">你的灯还亮着吗——发现问题的真正所在</a>
+                </li>
+                <li>
+                    <a href="BecomingaTechicalLeader/index.html">成为技术领导者</a>
+                </li>
+                <li>
+                    <a href="ServiceDesign/index.html">服务设计与创新实践</a>
+                </li>
+                <li><a href="ServicesMarketing/index.html">服务营销</a></li>
+                <li>
+                    <a href="UnderstandingMedia/index.html">理解媒介</a>
+                </li>
+                <li>
+                    <a href="TheMiddlemanEconomy/index.html">中间人经济</a>
+                </li>
+                <li><a href="IntuitionPumps/index.html">直觉泵</a></li>
+                <li>
+                    <a href="StrategyBeyondTheHockeyStick/index.html">突破现实的困境</a>
+                </li>
+                <li>
+                    <a href="notebook-theeffectiveexecutive/index.html">卓有成效的管理者</a>
+                </li>
+                <li>
+                    <a href="NoRulesRules/index.html">不拘一格：网飞的自由与责任工作法</a>
+                </li>
+                <li>
+                    <a href="TheFutureOfIndustrialMan/index.html">工业人的未来</a>
+                </li>
+                <li>
+                    <a href="managementchanllengeforthe21stcentury/index.html">21世纪管理挑战</a>
+                </li>
+                <li>
+                    <a href="ConceptOfTheCorporation/index.html">公司的概念</a>
+                </li>
+                <li>
+                    <a href="OnlyTheParanoidSurvive/index.html">只有偏执狂才能生存</a>
+                </li>
+                <li>
+                    <a href="notebook-onbeingaperson/index.html">个人形成论</a>
+                </li>
+                <li>
+                    <a href="OneDimensionalMan/index.html">单向度的人</a>
+                </li>
+                <li><a href="leananalytics/index.html">精益数据分析</a></li>
+                <li>
+                    <a href="Factfulness/index.html">事实：用数据思考，避免情绪化决策</a>
+                </li>
+                <li><a href="Misbehaving/index.html">“错误”的行为</a></li>
+                <li>
+                    <a href="whatilearnedlosingamilliondollars/index.html">止损</a>
+                </li>
+                <li><a href="madetostick/index.html">让创意更有粘性</a></li>
+                <li>
+                    <a href="howgoogleworks/index.html">重新定义公司 谷歌是如何运营的</a>
+                </li>
+                <li>
+                    <a href="TheFifthDiscipline1/index.html">第五项修炼1 学习型组织的艺术与实践</a>
+                </li>
+                <li><a href="influence/index.html">影响力</a></li>
+                <li><a href="scarcity/index.html">稀缺</a></li>
+                <li><a href="toobigtoknow/index.html">知识的边界</a></li>
+                <li>
+                    <a href="themillionairenextdoor/index.html">邻家的百万富翁</a>
+                </li>
+                <li><a href="triz/index.html">创新算法</a></li>
+                <li><a href="pre-suasion/index.html">先发影响力</a></li>
+                <li><a href="originals/index.html">离经叛道</a></li>
+                <li>
+                    <a href="theartofgamedesign/index.html">游戏设计艺术</a>
+                </li>
+                <li><a href="microinteractions/index.html">微交互</a></li>
+                <li><a href="aboutface/index.html">交互设计精髓</a></li>
+                <li>
+                    <a href="designingwiththemindinmind/index.html">认知与设计</a>
+                </li>
+                <li>
+                    <a href="theexperienceeconomy/index.html">体验经济</a>
+                </li>
+                <li>
+                    <a href="UsabilityTesting/docs/#/">用户体验与可用性测试</a>
+                </li>
+                <li><a href="changebydesign/index.html">IDEO</a></li>
+                <li><a href="sprint/index.html">设计冲刺</a></li>
+                <li>
+                    <a href="FundamentalsOfGameDesign/index.html">游戏设计基础</a>
+                </li>
+                <li>
+                    <a href="themostimportantthing/index.html">投资最重要的事</a>
+                </li>
+                <li><a href="Priceless/index.html">无价</a></li>
+                <li><a href="theplenitude/index.html">够了！创意</a></li>
             </ul>
         </div>
-
 
         <div>
             <h2>历史</h2>
             <ul>
-            <li><a href="MedievalEurope/8kuNoteBook_MedievalEurope.html">欧洲中世纪史</a></li>
-            <li><a href="aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html">欧洲现代史</a></li>
-            <li><a href="Art_Painting/8kuNoteBook_Painting.html">美术史/艺术的故事</a></li>
-            <li><a href="Art_Music/8kuNoteBook_Music.html">音乐史</a></li>
-            <li><a href="HistoryOfJapan/8kuNoteBook_HistoryOfJapan.html">日本史</a></li>
-            <li><a href="worldHistoryMap/index.html">世界历史地图</a></li>
-            <li><a href="HistoryTimeline/history_timeline.html">历史时间线</a></li>
-            <li><a href="ArtHistoryTimeline/art_history_timeline.html">艺术史时间线</a></li>
-            <li><a href="quackery/index.html">荒诞医学史</a></li>
-            <li><a href="EmpireOfCotton/8kuNoteBook_EmpireOfCotton.html">棉花帝国 7%</a></li>
-            <li><a href="zenandartofmotorcyclemaintenance/index.html">禅与摩托车维修艺术</a></li>
+                <li>
+                    <a href="MedievalEurope/8kuNoteBook_MedievalEurope.html">欧洲中世纪史</a>
+                </li>
+                <li>
+                    <a href="aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html">欧洲现代史</a>
+                </li>
+                <li>
+                    <a href="Art_Painting/8kuNoteBook_Painting.html">美术史/艺术的故事</a>
+                </li>
+                <li>
+                    <a href="Art_Music/8kuNoteBook_Music.html">音乐史</a>
+                </li>
+                <li>
+                    <a href="HistoryOfJapan/8kuNoteBook_HistoryOfJapan.html">日本史</a>
+                </li>
+                <li>
+                    <a href="worldHistoryMap/index.html">世界历史地图</a>
+                </li>
+                <li>
+                    <a href="HistoryTimeline/history_timeline.html">历史时间线</a>
+                </li>
+                <li>
+                    <a href="ArtHistoryTimeline/art_history_timeline.html">艺术史时间线</a>
+                </li>
+                <li><a href="quackery/index.html">荒诞医学史</a></li>
+                <li>
+                    <a href="EmpireOfCotton/8kuNoteBook_EmpireOfCotton.html">棉花帝国 7%</a>
+                </li>
+                <li>
+                    <a href="zenandartofmotorcyclemaintenance/index.html">禅与摩托车维修艺术</a>
+                </li>
             </ul>
         </div>
 
         <div>
             <h2>政治和社会关系</h2>
             <ul>
-            <li><a href="UnderstandingGlobalConflictandCooperation/index.html">理解国际冲突与合作</a></li>
-            <li><a href="CountriesAndConcepts/countries_and_concepts_notebook.html">国家的常识</a></li>
-            <li><a href="TheHumanSwarm/index.html">从部落到国家 人类社会的崛起,繁荣与衰落</a></li>
-            <li><a href="TheCulturalOriginsOfHumanCognition/index.html">人类认知的文化起源</a></li>
-            <li><a href="WritingOnTheWall/index.html">社交媒体简史</a></li>
-            <li><a href="AmusingOurselvesToDeath/index.html">娱乐至死</a></li>
-            <li><a href="OnnaGirai/index.html">厌女————日本的女性嫌恶</a></li>
-            <li><a href="DownGirl/index.html">不只是厌女 26%</a></li>
-            <li><a href="Evicted/index.html">扫地出门--美国的贫穷与暴利</a></li>
-            <li><a href="SoulStealers/index.html">叫魂</a></li>
-            <li><a href="DisposablePeople/index.html">用后即弃的人</a></li>
+                <li>
+                    <a href="UnderstandingGlobalConflictandCooperation/index.html">理解国际冲突与合作</a>
+                </li>
+                <li>
+                    <a href="CountriesAndConcepts/countries_and_concepts_notebook.html">国家的常识</a>
+                </li>
+                <li>
+                    <a href="TheHumanSwarm/index.html">从部落到国家 人类社会的崛起,繁荣与衰落</a>
+                </li>
+                <li>
+                    <a href="TheCulturalOriginsOfHumanCognition/index.html">人类认知的文化起源</a>
+                </li>
+                <li>
+                    <a href="WritingOnTheWall/index.html">社交媒体简史</a>
+                </li>
+                <li>
+                    <a href="AmusingOurselvesToDeath/index.html">娱乐至死</a>
+                </li>
+                <li>
+                    <a href="OnnaGirai/index.html">厌女————日本的女性嫌恶</a>
+                </li>
+                <li><a href="DownGirl/index.html">不只是厌女 26%</a></li>
+                <li>
+                    <a href="Evicted/index.html">扫地出门--美国的贫穷与暴利</a>
+                </li>
+                <li><a href="SoulStealers/index.html">叫魂</a></li>
+                <li>
+                    <a href="DisposablePeople/index.html">用后即弃的人</a>
+                </li>
             </ul>
         </div>
-
 
         <div>
             <h2>传记</h2>
             <ul>
-            <li><a href="Mozart/Mozart.html">莫扎特</a></li>
-            <li><a href="TheAutobiographyOfYayoiKusama/TheAutobiographyOfYayoiKusama.html">无限的网: 草间弥生自传</a></li>
-            <li><a href="ToAnotherCountry/index.html">迈向另一个国度——森山大道</a></li>
-            <li><a href="TheLettersofVincentVanGoah/index.html">亲爱的提奥：梵高传</a></li>
-            <li><a href="thelifeofmichaelangelo/index.html">米开朗琪罗传</a></li>
-            <li><a href="MichelangeloAndThePopesCeiling/index.html">米开朗琪罗与教皇的天花板</a></li>
+                <li><a href="Mozart/Mozart.html">莫扎特</a></li>
+                <li>
+                    <a href="TheAutobiographyOfYayoiKusama/TheAutobiographyOfYayoiKusama.html">无限的网: 草间弥生自传</a>
+                </li>
+                <li>
+                    <a href="ToAnotherCountry/index.html">迈向另一个国度——森山大道</a>
+                </li>
+                <li>
+                    <a href="TheLettersofVincentVanGoah/index.html">亲爱的提奥：梵高传</a>
+                </li>
+                <li>
+                    <a href="thelifeofmichaelangelo/index.html">米开朗琪罗传</a>
+                </li>
+                <li>
+                    <a href="MichelangeloAndThePopesCeiling/index.html">米开朗琪罗与教皇的天花板</a>
+                </li>
             </ul>
         </div>
-
 
         <div>
             <h2>环境</h2>
             <ul>
-            <li><a href="thelonelycity/index.html">孤独的城市</a></li>
-            <li><a href="OnPhotography/index.html">论摄影</a></li>
-            <li><a href="environmentalpsychology/index.html">环境心理学</a></li>
-            <li><a href="TheSocialLifeOfSmallUrbanSpaces/index.html">小城市空间的社会生活</a></li>
-            <li><a href="thetimelesswayofbuilding/index.html">建筑的永恒之道</a></li>
-            <li><a href="TheDeathAndLIfeOfGreatAmericanCities/index.html">美国大城市的生与死 66%</a></li>
+                <li><a href="thelonelycity/index.html">孤独的城市</a></li>
+                <li><a href="OnPhotography/index.html">论摄影</a></li>
+                <li>
+                    <a href="environmentalpsychology/index.html">环境心理学</a>
+                </li>
+                <li>
+                    <a href="TheSocialLifeOfSmallUrbanSpaces/index.html">小城市空间的社会生活</a>
+                </li>
+                <li>
+                    <a href="thetimelesswayofbuilding/index.html">建筑的永恒之道</a>
+                </li>
+                <li>
+                    <a href="TheDeathAndLIfeOfGreatAmericanCities/index.html">美国大城市的生与死 66%</a>
+                </li>
             </ul>
         </div>
-
 
         <div>
             <h2>文学和表演</h2>
             <ul>
-            <li><a href="el_amoren_los_tiempos_del_colera/index.html">霍乱时期的爱情</a></li>
-            <li><a href="story/index.html">故事</a></li>
-            <li><a href="sulvzhiwang/index.html">素履之往</a></li>
-            <li><a href="restpectforacting/index.html">尊重表演艺术</a></li>
+                <li>
+                    <a href="el_amoren_los_tiempos_del_colera/index.html">霍乱时期的爱情</a>
+                </li>
+                <li><a href="story/index.html">故事</a></li>
+                <li><a href="sulvzhiwang/index.html">素履之往</a></li>
+                <li>
+                    <a href="restpectforacting/index.html">尊重表演艺术</a>
+                </li>
             </ul>
         </div>
 
         <div>
             <h2>生物学</h2>
             <ul>
-            <li><a href="AboutBiology/index.html">生物学相关</a></li>
-            <li><a href="TheOmnivoresDilemma/index.html">杂食者的两难</a></li>
+                <li><a href="AboutBiology/index.html">生物学相关</a></li>
+                <li>
+                    <a href="TheOmnivoresDilemma/index.html">杂食者的两难</a>
+                </li>
             </ul>
         </div>
-
 
         <div>
             <h2>物理学</h2>
             <ul>
-            <li><a href="mechanics/index.html">力学相关</a></li>
+                <li><a href="mechanics/index.html">力学相关</a></li>
             </ul>
         </div>
-
 
         <div>
             <h2>生活工具书</h2>
             <ul>
-            <li><a href="knowledgeofcoffee/index.html">精品咖啡学</a></li>
-            <li><a href="Language/English.html">English</a></li>
+                <li>
+                    <a href="knowledgeofcoffee/index.html">精品咖啡学</a>
+                </li>
+                <li><a href="Language/English.html">English</a></li>
             </ul>
         </div>
-
 
         <div>
             <h2>神话</h2>
             <ul>
-            <li><a href="Myth/8kuNoteBook_Myth.html">神话</a></li>
+                <li><a href="Myth/8kuNoteBook_Myth.html">神话</a></li>
             </ul>
         </div>
 
         <div>
             <h2>经济学</h2>
             <ul>
-            <li><a href="tenyearsofrebirth/index.html">十年轮回</a></li>
-            <li><a href="economicslecturenotes/index.html">薛兆丰经济学讲义</a></li>
-            <li><a href="PeddlingProsperity/index.html">兜售繁荣</a></li>
+                <li><a href="tenyearsofrebirth/index.html">十年轮回</a></li>
+                <li>
+                    <a href="economicslecturenotes/index.html">薛兆丰经济学讲义</a>
+                </li>
+                <li>
+                    <a href="PeddlingProsperity/index.html">兜售繁荣</a>
+                </li>
             </ul>
         </div>
 
         <div>
             <h2>哲学</h2>
             <ul>
-            <li><a href="Philosophy/8kuNoteBook_Philosophy.html">哲学</a></li>
+                <li>
+                    <a href="Philosophy/8kuNoteBook_Philosophy.html">哲学</a>
+                </li>
             </ul>
         </div>
     </div>
