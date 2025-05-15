@@ -15,12 +15,25 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title>Notebooks 8ku</title>
+
     <script>
         function myFunction() {
-            var x = document.getElementsByTagName("li").length;
-            document.getElementById("count").innerHTML = x;
+            var countElement = document.getElementById("count");
+
+            // If count is already showing, hide it
+            if (countElement.style.display !== "none" && countElement.innerHTML !== "") {
+                countElement.innerHTML = "";
+            }
+            // Otherwise, calculate and show the count
+            else {
+                var x = document.getElementsByTagName("li").length;
+                countElement.innerHTML = x;
+            }
         }
     </script>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <style type="text/css">
         body {
@@ -119,13 +132,14 @@
 
             .form-control {
                 display: flex;
-                width: 30em;
+                width: 20em;
                 height: 3em;
             }
 
             p#count {
                 margin-left: 0.2em;
                 font-size: smaller;
+                font-weight: bold;
             }
 
         }
@@ -218,14 +232,13 @@
     <div class="head">
         <h3>Notebooks 8ku</h3>
         <div class="counts">
-            <button class="calculation" onclick="myFunction()"><i class="fa-solid fa-gamepad"></i></button>
+            <button class="calculation" onclick="myFunction()"><i class="fa-solid fa-bomb"></i></button>
             <p id="count"></p>
 
 
             <form action=".">
                 <div class="form-group">
-                    <input type="search" class="form-control pull-right" id="search"
-                        placeholder="Type to search table..." />
+                    <input type="search" class="form-control pull-right" id="search" placeholder="Search" />
                     <input id="hiddenText" type="text" style="display: none"
                         onkeypress="searchKeywordKeyboard(event)" />
                 </div>
