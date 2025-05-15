@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
     <title>Notebooks 8ku</title>
@@ -14,12 +23,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <style type="text/css">
         body {
-            font:
-                normal 100% Helvetica,
-                Arial,
-                sans-serif;
-            font-family: "Source Han Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-family: "Source Han Serif", "Noto Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            color: #373737;
         }
+
 
         .head {
             display: flex;
@@ -44,7 +51,6 @@
 
         #count {
             margin-left: 0.5em;
-            color: #373737;
         }
 
         a:link {
@@ -119,6 +125,18 @@
                 margin: 0 1em;
             }
 
+            .calculation {
+                background-color: transparent;
+                border: none;
+            }
+            .calculation i {
+                font-size: 2em;
+                color: #373737;
+            }
+            .calculation:hover i {
+                color: #89ad64;
+            }
+
             .con {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -165,8 +183,9 @@
     <div class="head">
         <h3>Notebooks 8ku</h3>
         <div class="counts">
-            <button onclick="myFunction()">统计</button>
+            <button class="calculation" onclick="myFunction()"><i class="fa-solid fa-calculator"></i></button>
             <p id="count"></p>
+            
 
             <form action=".">
                 <div class="form-group">
