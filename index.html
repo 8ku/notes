@@ -9,7 +9,7 @@
         rel="stylesheet">
 
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
@@ -71,6 +71,20 @@
             padding: 0.5em 0;
         }
 
+        .calculation {
+            background-color: transparent;
+            border: none;
+        }
+
+        .calculation i {
+            font-size: 2em;
+            color: #373737;
+        }
+
+        .calculation:hover i {
+            color: #89ad64;
+        }
+
 
 
 
@@ -125,17 +139,6 @@
                 margin: 0 1em;
             }
 
-            .calculation {
-                background-color: transparent;
-                border: none;
-            }
-            .calculation i {
-                font-size: 2em;
-                color: #373737;
-            }
-            .calculation:hover i {
-                color: #89ad64;
-            }
 
             .con {
                 grid-template-columns: repeat(2, 1fr);
@@ -183,9 +186,9 @@
     <div class="head">
         <h3>Notebooks 8ku</h3>
         <div class="counts">
-            <button class="calculation" onclick="myFunction()"><i class="fa-solid fa-calculator"></i></button>
+            <button class="calculation" onclick="myFunction()"><i class="fa-solid fa-gamepad"></i></button>
             <p id="count"></p>
-            
+
 
             <form action=".">
                 <div class="form-group">
