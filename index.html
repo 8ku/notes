@@ -22,6 +22,7 @@
         />
         <title>Notebooks 8ku</title>
 
+
         <script>
             function myFunction() {
                 var countElement = document.getElementById("count");
@@ -40,7 +41,34 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <style type="text/css">
+            :root {
+                --text: #373737;
+                --bg: #fafafa;
+                --card: #f5f5f5;
+                --border: #00000026;
+
+            }
+
+            .dark {
+                --text: #fafafa;
+                --bg: #212121;
+                --card: #212121;
+                --border: #ffffff26;
+            }
+
+            .card {
+                background: var(--card);
+                padding: 30px;
+                border-radius: 10px;
+                border-color: var(--border);
+                margin: 20px 0;
+            }
+
             body {
+                background: var(--bg);
+                color: var(--text);
+                transition: all 0.3s ease-in-out;
+
                 font-family:
                     "Source Han Serif",
                     "Noto Serif",
@@ -55,8 +83,31 @@
                     "Open Sans",
                     "Helvetica Neue",
                     sans-serif;
-                color: #373737;
             }
+
+            .theme-switch {
+                background-color: transparent;
+                border: none;
+            }
+
+            .theme-switch i {
+                transition: all 0.3s ease-in-out;
+                font-size: 1.7em;
+                color: var(--text);
+                padding: 0 4px;
+            }
+
+            #search {
+                transition: all 0.3s ease-in-out;
+                background: var(--bg);
+                color: var(--text);
+                border: 1px solid var(--border);
+                border-radius: 5px;
+                padding: 0 10px;
+            }
+
+
+
 
             .head {
                 display: flex;
@@ -81,7 +132,6 @@
 
             .form-control {
                 display: flex;
-                width: 40em;
                 height: 3em;
                 margin: 0 0 0 1em;
             }
@@ -91,7 +141,7 @@
             }
 
             a:link {
-                color: #373737;
+                color: var(--text);
                 text-decoration: none;
             }
 
@@ -114,8 +164,8 @@
             }
 
             .calculation i {
-                font-size: 2em;
-                color: #373737;
+                font-size: 1.7em;
+                color: var(--text);
             }
 
             .calculation:hover i {
@@ -242,8 +292,14 @@
     <body>
         <div class="head">
             <h3>Notebooks 8ku</h3>
+
             <div class="counts">
-                <button class="calculation" onclick="myFunction()"><i class="fa-solid fa-bomb"></i></button>
+
+                <button class="theme-switch" onclick="toggleTheme()" id="themeBtn">
+                    <i class="fas fa-cloud-moon"></i>
+                </button>
+        
+                <button class="calculation" onclick="myFunction()"><i class="fa-solid fa-flag"></i></button>
                 <p id="count"></p>
 
                 <form action=".">
@@ -259,7 +315,7 @@
                     <script>
                         // Write on keyup event of keyword input element
                         $(document).ready(function () {
-                            $("#search").keypress(function () {
+                            $("#search").on("input", function () {
                                 _this = this;
 
                                 // Show only matching TR, hide rest of them
@@ -276,6 +332,54 @@
                 </form>
             </div>
         </div>
+
+        <!-- theme switch -->
+         <script>
+        // Check system theme and apply on load
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme) {
+                applyTheme(savedTheme);
+            } else if (systemDark) {
+                applyTheme('dark');
+            }
+        }
+
+        // Apply theme
+        function applyTheme(theme) {
+            const body = document.body;
+            const btn = document.getElementById('themeBtn');
+            
+            if (theme === 'dark') {
+                body.classList.add('dark');
+                btn.innerHTML = '<i class="fas fa-cloud-moon"></i>';
+            } else {
+                body.classList.remove('dark');
+                btn.innerHTML = '<i class="fas fa-cloud-sun"></i>';
+            }
+        }
+
+        // Toggle theme
+        function toggleTheme() {
+            const isDark = document.body.classList.contains('dark');
+            const newTheme = isDark ? 'light' : 'dark';
+            
+            applyTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+
+        // Initialize on page load
+        initTheme();
+    </script>
 
         <div class="con">
             <div>
