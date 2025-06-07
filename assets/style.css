@@ -72,7 +72,7 @@ body {
 .counts {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
     width: 50%;
 }
 
@@ -193,7 +193,7 @@ li {
     .counts {
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: baseline; */
         width: 100%;
     }
 
@@ -221,7 +221,7 @@ li {
     .counts {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        /* align-items: baseline; */
         width: 100%;
     }
 
@@ -248,7 +248,7 @@ li {
     .counts {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        /* align-items: baseline; */
         width: 50%;
     }
 
@@ -275,7 +275,7 @@ li {
     .counts {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: baseline;
         width: 50%;
     }
 
