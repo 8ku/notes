@@ -1,61 +1,71 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Art History Timeline</title>
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css">
   <link rel="stylesheet" href="style.css">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 
   <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900' rel='stylesheet'
+    type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet" />
   <!-- // Fonts -->
 
 </head>
+
 <body>
   <div class="nav">
-    <a  class="nav-btn" href="https://www.bakumatata.com/notes/"><i class="material-symbols-outlined">home</i></a>
+    <a class="nav-btn" href="https://www.bakumatata.com/notes/"><i class="material-symbols-outlined">home</i></a>
     <label class="switch">
       <input type="checkbox" id="toggleFilters" checked>
       <span class="slider round"></span>
     </label>
   </div>
 
-<!-- Filter Options -->
-<div class="filter-wrapper">
+  <!-- Filter Options -->
+  <div class="filter-wrapper">
 
-  <!-- Date Filter -->
-  <div class="filter-options">
-    <div id="dateSliderContainer"></div>
+    <!-- Date Filter -->
+    <div class="filter-options">
+      <div id="dateSliderContainer"></div>
       <div id="dateSliderInfo">
         <span id="dateRangeStart">5000 BC</span> - <span id="dateRangeEnd">2000 AD</span>
-      <button id="confirmDateSelection" class="confirm-btn">Confirm</button>
-    </div>
-  </div>
-
-  <!-- Area Filter -->
-  <div class="filter-options">
-    <div id="dropdownAreaButton" class="dropdown-button">
-      Select Areas <i class="fa fa-caret-down"></i>
-    </div>
-    <div id="dropdownAreaMenu" class="dropdown-menu">
-      <label><input type="checkbox" class="area-option" value="all" checked> All Areas</label>
-      <label><input type="checkbox" class="area-option" value="China"> China</label>
-      <label><input type="checkbox" class="area-option" value="Asia"> Asia</label>
-      <label><input type="checkbox" class="area-option" value="Europe"> Europe</label>
-      <label><input type="checkbox" class="area-option" value="North America"> North America</label>
-      <label><input type="checkbox" class="area-option" value="Africa"> Africa</label>
-      <!-- Add other areas as needed -->
-      <div class="areaSelectionBtn">
-        <button id="confirmAreaSelection" class="confirm-btn">Confirm</button>
+        <button id="confirmDateSelection" class="confirm-btn">Confirm</button>
       </div>
     </div>
-  </div>
 
-</div>
+    <!-- Area Filter -->
+    <div class="filter-options">
+      <div id="dropdownAreaButton" class="dropdown-button">
+        Select Areas <i class="fa fa-caret-down"></i>
+      </div>
+      <div id="dropdownAreaMenu" class="dropdown-menu">
+        <label><input type="checkbox" class="area-option" value="all" checked> All Areas</label>
+        <label><input type="checkbox" class="area-option" value="China"> China</label>
+        <label><input type="checkbox" class="area-option" value="Asia"> Asia</label>
+        <label><input type="checkbox" class="area-option" value="Europe"> Europe</label>
+        <label><input type="checkbox" class="area-option" value="North America"> North America</label>
+        <label><input type="checkbox" class="area-option" value="Africa"> Africa</label>
+        <!-- Add other areas as needed -->
+        <div class="areaSelectionBtn">
+          <button id="confirmAreaSelection" class="confirm-btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
   <!-- Vertical Timeline -->
   <section id="conference-timeline">
@@ -79,7 +89,7 @@
           <span class="month">BC</span>
         </div>
       </div>
-      <!-- // Article --> 
+      <!-- // Article -->
 
       <!-- Article -->
       <div class="timeline-article">
@@ -93,7 +103,7 @@
           <!-- <span class="timeline-author">Africa</span> -->
         </div>
       </div>
-      <!-- // Article -->      
+      <!-- // Article -->
 
       <!-- Article -->
       <div class="timeline-article">
@@ -102,7 +112,9 @@
           <div class="content-left">
             <h4 class="area">Africa</h4>
             <h3>2560 B.C. 胡夫金字塔建成</h3>
-            <p class="timeline-author"><a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E9%87%91%E5%AD%97%E5%A1%94%E6%97%B6%E4%BB%A3:%E9%87%91%E5%AD%97%E5%A1%94%E6%97%B6%E4%BB%A3">金字塔时代</a></p>
+            <p class="timeline-author"><a
+                href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E9%87%91%E5%AD%97%E5%A1%94%E6%97%B6%E4%BB%A3:%E9%87%91%E5%AD%97%E5%A1%94%E6%97%B6%E4%BB%A3">金字塔时代</a>
+            </p>
           </div>
           <!-- <span class="timeline-author">Africa</span> -->
         </div>
@@ -111,7 +123,7 @@
           <span class="month">BC</span>
         </div>
       </div>
-      <!-- // Article -->  
+      <!-- // Article -->
 
       <!-- Article -->
       <div class="timeline-article">
@@ -131,7 +143,7 @@
         </div>
       </div>
       <!-- // Article -->
-      
+
       <!-- Article -->
       <div class="timeline-article">
         <div class="content-right-container">
@@ -171,8 +183,10 @@
           <div class="content-left">
             <h4 class="area">Europe</h4>
             <h3>800 B.C. 荷马史诗</h3>
-            <p class="timeline-author"><a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E9%BB%91%E6%9A%97%E6%97%B6%E4%BB%A3%20Greek%20Dark%20Ages%20c.1200%20BC~c.800%20BC:%5B%5B%E9%BB%91%E6%9A%97%E6%97%B6%E4%BB%A3%20Greek%20Dark%20Ages%20c.1200%20BC~c.800%20BC%5D%5D">希腊 黑暗时代</a></p>
-          </div>   
+            <p class="timeline-author"><a
+                href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E9%BB%91%E6%9A%97%E6%97%B6%E4%BB%A3%20Greek%20Dark%20Ages%20c.1200%20BC~c.800%20BC:%5B%5B%E9%BB%91%E6%9A%97%E6%97%B6%E4%BB%A3%20Greek%20Dark%20Ages%20c.1200%20BC~c.800%20BC%5D%5D">希腊
+                黑暗时代</a></p>
+          </div>
         </div>
         <div class="meta-date">
           <span class="date">800</span>
@@ -205,7 +219,9 @@
           <div class="content-left">
             <h4 class="area">Europe</h4>
             <h3>776 B.C. 第一届奥运会</h3>
-            <p class="timeline-author"><a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%8F%A4%E9%A3%8E%E6%97%B6%E4%BB%A3%20Archaic%20period%20c.800%20BC~c.600%20BC:%5B%5B%E5%8F%A4%E9%A3%8E%E6%97%B6%E4%BB%A3%20Archaic%20period%20c.800%20BC~c.600%20BC%5D%5D">希腊 古风时代</a></p>
+            <p class="timeline-author"><a
+                href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%8F%A4%E9%A3%8E%E6%97%B6%E4%BB%A3%20Archaic%20period%20c.800%20BC~c.600%20BC:%5B%5B%E5%8F%A4%E9%A3%8E%E6%97%B6%E4%BB%A3%20Archaic%20period%20c.800%20BC~c.600%20BC%5D%5D">希腊
+                古风时代</a></p>
           </div>
           <!-- <span class="timeline-author">John Doe</span> -->
         </div>
@@ -241,7 +257,7 @@
           <span class="month">BC</span>
         </div>
       </div>
-      
+
 
       <!-- Article -->
       <div class="timeline-article">
@@ -254,7 +270,9 @@
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B0%91%E6%97%8F%E5%A4%A7%E8%BF%81%E5%BE%99%20400-500">Read more</a>
+            <a
+              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B0%91%E6%97%8F%E5%A4%A7%E8%BF%81%E5%BE%99%20400-500">Read
+              more</a>
           </span>
 
           <div class="meta-date">
@@ -286,11 +304,15 @@
           <div class="content-right">
             <h4 class="area">Europe</h4>
             <h3>331 B.C. - 323 B.C. 亚历山大帝国</h3>
-            <p>亚历山大帝国的奠基对希腊艺术是件了不起的大事，因为希腊艺术原来仅仅在几个小城市内颇有影响，现在得以发展成为几乎半个世界的图画语言了。这种发展必然影响希腊艺术的性质。我们大都不把这后一时期的艺术叫做希腊艺术（Greek art），而把它叫做希腊化艺术（Hellenistic art），因为亚历山大的继承者在东方国土上建立的一些帝国通常就以此为名。</p>
+            <p>
+              亚历山大帝国的奠基对希腊艺术是件了不起的大事，因为希腊艺术原来仅仅在几个小城市内颇有影响，现在得以发展成为几乎半个世界的图画语言了。这种发展必然影响希腊艺术的性质。我们大都不把这后一时期的艺术叫做希腊艺术（Greek
+              art），而把它叫做希腊化艺术（Hellenistic art），因为亚历山大的继承者在东方国土上建立的一些帝国通常就以此为名。</p>
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%A4%A7%E5%B8%9D%20Alexander%20the%20Great:%5B%5B%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%A4%A7%E5%B8%9D%20Alexander%20the%20Great%5D%5D">Read more</a>
+            <a
+              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%A4%A7%E5%B8%9D%20Alexander%20the%20Great:%5B%5B%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%E5%A4%A7%E5%B8%9D%20Alexander%20the%20Great%5D%5D">Read
+              more</a>
           </span>
         </div>
         <div class="meta-date">
@@ -309,7 +331,9 @@
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%B8%8C%E8%85%8A%E5%8C%96%E6%97%B6%E6%9C%9F%20Hellenistic%20period%20323%20BC~146%20BC:%5B%5B%E5%B8%8C%E8%85%8A%E5%8C%96%E6%97%B6%E6%9C%9F%20Hellenistic%20period%20323%20BC~146%20BC%5D%5D">Read more</a>
+            <a
+              href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%B8%8C%E8%85%8A%E5%8C%96%E6%97%B6%E6%9C%9F%20Hellenistic%20period%20323%20BC~146%20BC:%5B%5B%E5%B8%8C%E8%85%8A%E5%8C%96%E6%97%B6%E6%9C%9F%20Hellenistic%20period%20323%20BC~146%20BC%5D%5D">Read
+              more</a>
           </span>
         </div>
       </div>
@@ -360,10 +384,12 @@
             <p>A.D. 395 - 476 西罗马</p>
             <p>A.D. 395 - 1453 东罗马</p>
           </div>
-          
+
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%20Roman%20Empire">Read more</a></span>
+            <a
+              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%20Roman%20Empire">Read
+              more</a></span>
         </div>
       </div>
       <!-- // Article -->
@@ -430,7 +456,9 @@
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E7%BD%97%E9%A9%AC%E6%96%97%E5%85%BD%E5%9C%BA%20Colosseum%2072~82:%5B%5B%E7%BD%97%E9%A9%AC%E6%96%97%E5%85%BD%E5%9C%BA%20Colosseum%2072~82%5D%5D">Read more</a>
+            <a
+              href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E7%BD%97%E9%A9%AC%E6%96%97%E5%85%BD%E5%9C%BA%20Colosseum%2072~82:%5B%5B%E7%BD%97%E9%A9%AC%E6%96%97%E5%85%BD%E5%9C%BA%20Colosseum%2072~82%5D%5D">Read
+              more</a>
           </span>
         </div>
       </div>
@@ -497,11 +525,15 @@
           <div class="content-right">
             <h4 class="area">Europe</h4>
             <h3>A.D. 313 罗马帝国皇帝君士坦丁大帝信奉基督教</h3>
-            <p>313年颁布《米兰赦令》，宣布罗马帝国境内有信仰基督教的自由，并且发还了已经没收的教会财产，亦承认了基督教的合法地位。米兰敕令是基督教历史上的转折点，标志著罗马帝国的统治者对基督教从镇压和宽容相结合的政策转为保护和利用的政策、从被戴克里先迫害的地下宗教成为被承认的宗教，而基督教也开始了与帝国政府的政教合一。</p>
+            <p>
+              313年颁布《米兰赦令》，宣布罗马帝国境内有信仰基督教的自由，并且发还了已经没收的教会财产，亦承认了基督教的合法地位。米兰敕令是基督教历史上的转折点，标志著罗马帝国的统治者对基督教从镇压和宽容相结合的政策转为保护和利用的政策、从被戴克里先迫害的地下宗教成为被承认的宗教，而基督教也开始了与帝国政府的政教合一。
+            </p>
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E5%A4%A7%E5%B8%9D%2F%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E4%B8%80%E4%B8%96%20Constantine%20the%20Great:%5B%5B%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E5%A4%A7%E5%B8%9D%2F%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E4%B8%80%E4%B8%96%20Constantine%20the%20Great%5D%5D">Read more</a>
+            <a
+              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E5%A4%A7%E5%B8%9D%2F%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E4%B8%80%E4%B8%96%20Constantine%20the%20Great:%5B%5B%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E5%A4%A7%E5%B8%9D%2F%E5%90%9B%E5%A3%AB%E5%9D%A6%E4%B8%81%E4%B8%80%E4%B8%96%20Constantine%20the%20Great%5D%5D">Read
+              more</a>
           </span>
         </div>
         <div class="meta-date">
@@ -547,7 +579,9 @@
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%B7%B4%E8%A5%BF%E5%88%A9%E5%8D%A1%20basilicas:%5B%5B%E5%B7%B4%E8%A5%BF%E5%88%A9%E5%8D%A1%20basilicas%5D%5D">Read more</a>
+            <a
+              href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%B7%B4%E8%A5%BF%E5%88%A9%E5%8D%A1%20basilicas:%5B%5B%E5%B7%B4%E8%A5%BF%E5%88%A9%E5%8D%A1%20basilicas%5D%5D">Read
+              more</a>
           </span>
         </div>
       </div>
@@ -593,7 +627,9 @@
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B3%95%E5%85%B0%E5%85%8B%E7%8E%8B%E5%9B%BD%20Francia%EF%BC%88481%E2%80%93843%EF%BC%89">Read more</a></span>
+            <a
+              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B3%95%E5%85%B0%E5%85%8B%E7%8E%8B%E5%9B%BD%20Francia%EF%BC%88481%E2%80%93843%EF%BC%89">Read
+              more</a></span>
         </div>
 
       </div>
@@ -640,7 +676,9 @@
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E4%BC%8A%E6%96%AF%E5%85%B0%E6%95%99%E7%9A%84%E8%AF%9E%E7%94%9F%20600-661">Read more</a></span>
+            <a
+              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E4%BC%8A%E6%96%AF%E5%85%B0%E6%95%99%E7%9A%84%E8%AF%9E%E7%94%9F%20600-661">Read
+              more</a></span>
         </div>
 
         <div class="meta-date">
@@ -674,7 +712,9 @@
           </div>
           <span class="timeline-author">
             <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E7%A5%9E%E5%9C%A3%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%20Holy%20Roman%20Empire%20800/962%EF%BC%8D1806">Read more</a></span>
+            <a
+              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E7%A5%9E%E5%9C%A3%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD%20Holy%20Roman%20Empire%20800/962%EF%BC%8D1806">Read
+              more</a></span>
         </div>
         <div class="meta-date">
           <span class="date">800</span>
@@ -698,53 +738,55 @@
           </div>
           <!-- <span class="timeline-author">John Doe</span> -->
         </div>
-          <div class="meta-date">
-            <span class="date">900</span>
-            <span class="month">AD</span>
-          </div>
-        </div>
-
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">907 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 907 - 979 十国</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+        <div class="meta-date">
+          <span class="date">900</span>
+          <span class="month">AD</span>
         </div>
       </div>
-      <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">916 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 916 - 1125 辽</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">907 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 907 - 979 十国</h3>
         </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">927 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 927 英格兰统一</h3>
-            <p>英格兰王国诞生</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E8%8B%B1%E6%A0%BC%E5%85%B0%E7%BB%9F%E4%B8%80%20927">Read more</a></span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">916 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 916 - 1125 辽</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">927 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 927 英格兰统一</h3>
+          <p>英格兰王国诞生</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E8%8B%B1%E6%A0%BC%E5%85%B0%E7%BB%9F%E4%B8%80%20927">Read
+            more</a></span>
 
       </div>
       <!-- // Article -->
@@ -767,686 +809,746 @@
 
       <!-- Article -->
       <div class="timeline-article"></div>
-        <div class="content-right-container">
-          <div class="century">987 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 987 - 1792 法兰西王国诞生</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B3%95%E5%85%B0%E8%A5%BF%E7%8E%8B%E5%9B%BD%20Kingdom%20of%20France%20987-1792">Read more</a></span>
+      <div class="content-right-container">
+        <div class="century">987 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 987 - 1792 法兰西王国诞生</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B3%95%E5%85%B0%E8%A5%BF%E7%8E%8B%E5%9B%BD%20Kingdom%20of%20France%20987-1792">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1038 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1038 - 1227 西夏</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+      <div class="meta-date">
+        <span class="date">1000</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1054 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1054 天主教和东正教分裂</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism:%5B%5B%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism%5D%5D">Read
+            more</a>
+        </span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+
+      <div class="content-left-container">
+        <div class="century">1066 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1066 诺曼风格兴起</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%AF%BA%E6%9B%BC%E9%A3%8E%E6%A0%BC%E5%85%B4%E8%B5%B7%201066:%5B%5B%E8%AF%BA%E6%9B%BC%E9%A3%8E%E6%A0%BC%E5%85%B4%E8%B5%B7%201066%5D%5D">Read
+            more</a></span>
+      </div>
+
+      <div class="content-right-container">
+        <div class="century">1066 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1066 诺曼征服英格兰</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066:%5B%5B%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1096 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1096 - 1291 十字军东征</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%8D%81%E5%AD%97%E5%86%9B%E4%B8%9C%E5%BE%81%20Crusades%201096-1291">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1115 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1115 - 1234 金</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+      <div class="meta-date">
+        <span class="date">1100</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1170 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1170 - 1500 哥特风格兴起</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1200 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1200 - 1300 主教堂世纪</h3>
+          <p>欧洲各处新建教堂</p>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+      <div class="meta-date">
+        <span class="date">1200</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1267 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1267 - 1337 乔托 Giotto</h3>
+          <p>意大利文艺复兴时期的开创者, 欧洲绘画之父、西方绘画之父。被认为是第一个企图画出有透视感和深度空间的画家。</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E4%B9%94%E6%89%98%20Giotto%20c.%201267%E2%80%931337:%5B%5B%E4%B9%94%E6%89%98%20Giotto%20c.%201267%E2%80%931337%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1271 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1271 - 1368 元</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1299 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1299 - 1922 奥斯曼帝国诞生</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire:%5B%5B%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1315 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1315 - 1322 大饥荒</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%A4%A7%E9%A5%A5%E8%8D%92%20the%20Great%20Famine%201315-1322">Read
+            more</a></span>
+      </div>
+
+      <div class="meta-date">
+        <span class="date">1300</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1346 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1346 - 1353 黑死病</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E9%BB%91%E6%AD%BB%E7%97%85%20Black%20Death%201346~1353">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1368 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1368 - 1644 明</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1377 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1377 - 1446 菲利波·布鲁内莱斯基 Filippo Brumelleschi</h3>
+          <p>文艺复兴时期建筑的奠基人; 线性透视法发现者</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%8F%B2%E5%88%A9%E6%B3%A2%C2%B7%E5%B8%83%E9%B2%81%E5%86%85%E8%8E%B1%E6%96%AF%E5%9F%BA%20Filippo%20Brumelleschi%201377-1446:%5B%5B%E8%8F%B2%E5%88%A9%E6%B3%A2%C2%B7%E5%B8%83%E9%B2%81%E5%86%85%E8%8E%B1%E6%96%AF%E5%9F%BA%20Filippo%20Brumelleschi%201377-1446%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1378 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1378～1417年天主教会大分裂</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1400 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>1400 - 1600 文艺复兴</h3>
+          <p><a
+              href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance:%5B%5B%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance%5D%5D">欧洲近代史</a>
+          </p>
+          <p><a
+              href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance:%5B%5B%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance%5D%5D">艺术史</a>
+          </p>
         </div>
       </div>
-      <!-- // Article -->
+      <div class="meta-date">
+        <span class="date">1400</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1038 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1038 - 1227 西夏</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
-        </div>
-        <div class="meta-date">
-          <span class="date">1000</span>
-          <span class="month">AD</span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1405 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1405 - 1433 郑和下西洋</h3>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1054 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1054 天主教和东正教分裂</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism:%5B%5B%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism%5D%5D">Read more</a>
-          </span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1452 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1452 - 1519 列奥纳多·达·芬奇 Leonardo da Vinci</h3>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
 
-        <div class="content-left-container">
-          <div class="century">1066 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1066 诺曼风格兴起</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%AF%BA%E6%9B%BC%E9%A3%8E%E6%A0%BC%E5%85%B4%E8%B5%B7%201066:%5B%5B%E8%AF%BA%E6%9B%BC%E9%A3%8E%E6%A0%BC%E5%85%B4%E8%B5%B7%201066%5D%5D">Read more</a></span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1455 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1455 古登堡印刷版《圣经》出版</h3>
+          <p>加快了知识流通和欧洲人的识字率，在随后兴起的欧洲文艺复兴、宗教改革、启蒙时代和科学革命等运动中都扮演了重要角色，为现代知识经济和知识传播奠定物质性的基础。</p>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%8F%A4%E7%99%BB%E5%A0%A1%E5%8D%B0%E5%88%B7%E7%89%88%E3%80%8A%E5%9C%A3%E7%BB%8F%E3%80%8B%E5%87%BA%E7%89%88%201455:%5B%5B%E5%8F%A4%E7%99%BB%E5%A0%A1%E5%8D%B0%E5%88%B7%E7%89%88%E3%80%8A%E5%9C%A3%E7%BB%8F%E3%80%8B%E5%87%BA%E7%89%88%201455%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
 
-        <div class="content-right-container">
-          <div class="century">1066 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1066 诺曼征服英格兰</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066:%5B%5B%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066%5D%5D">Read more</a></span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1475 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1475 - 1564 米开朗基罗 Michelangelo</h3>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1096 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1096 - 1291 十字军东征</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%8D%81%E5%AD%97%E5%86%9B%E4%B8%9C%E5%BE%81%20Crusades%201096-1291">Read more</a></span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1483 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1483 - 1520 拉斐尔 Raphael</h3>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1115 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1115 - 1234 金</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
-        </div>
-        <div class="meta-date">
-          <span class="date">1100</span>
-          <span class="month">AD</span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1492 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1492 哥伦布发现美洲</h3>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1170 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1170 - 1500 哥特风格兴起</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1506 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1506 - 1626 圣彼得大教堂开始修建</h3>
+          <p>用于资助建造旧伯多禄大殿的一种方法是给予赎罪券以换取捐款， 糜费了大量钱财，使得教皇在筹集足够的资金时，加速了危机的到来，最后引起了<b>宗教改革运动</b>。</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read
+            more</a></span>
+      </div>
+      <div class="meta-date">
+        <span class="date">1500</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1517 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1517 宗教改革开始</h3>
+          <p>1517年，路德发表的《九十五条论纲》引发了宗教改革的开始，即德意志宗教改革。</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1543 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1543 - 1687 科学革命</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution:%5B%5B%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1558 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1558 - 1603 伊丽莎白时代 Elizabethan era</h3>
+          <p>英国历史上的<b>黄金时代</b></p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era:%5B%5B%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era%5D%5D">Read
+            more</a></span>
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1600 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1600 - 1750 巴洛克艺术时期</h3>
+          <p><b>早期巴洛克</b>：1548-1625</p>
+          <p><b>盛期巴洛克</b>：1625-1675</p>
+          <p><b>晚期巴洛克/洛可可</b>：1675-1750</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%B7%B4%E6%B4%9B%E5%85%8B%E8%89%BA%E6%9C%AF%20Baroque%20c.1600-c.1750:%5B%5B%E5%B7%B4%E6%B4%9B%E5%85%8B%E8%89%BA%E6%9C%AF%20Baroque%20c.1600-c.1750%5D%5D">Read
+            more</a></span>
+      </div>
+
+      <div class="meta-date">
+        <span class="date">1600</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1603 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1603 - 1867 日本江户时代</h3>
+          <p>葛饰北斋的浮世绘对印象派产生巨大影响</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%91%9B%E9%A5%B0%E5%8C%97%E6%96%8B%20Hokusai%201760%E2%80%931849:%5B%5B%E8%91%9B%E9%A5%B0%E5%8C%97%E6%96%8B%20Hokusai%201760%E2%80%931849%5D%5D%20%5B%5B%E6%B1%9F%E6%88%B7%E6%97%B6%E4%BB%A3%20Edo%20period%201603-1867%5D%5D%20Introduce">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1618 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1618 - 1648 三十年战争</h3>
+          <p>欧洲大陆最后一次重大战争</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War:%5B%5B%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1644 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1644 - 1911 清</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1688 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1688 - 1689 光荣革命</h3>
+          <p>这场政变以不流血著名, 诞生了 1689年权利法案, 是英国君主立宪制形成的重要事件。</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution:%5B%5B%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1740 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1740 - 1890 哥特复兴建筑时期</h3>
+          <p>修建了英国国会大厦和大本钟</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%93%A5%E7%89%B9%E5%A4%8D%E5%85%B4%E5%BB%BA%E7%AD%91%20Gothic%20Revival%20architecture%201740-1890:%5B%5B%E5%93%A5%E7%89%B9%E5%A4%8D%E5%85%B4%E5%BB%BA%E7%AD%91%20Gothic%20Revival%20architecture%201740-1890%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1760 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1760 - 1840 第一次工业革命</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution:%5B%5B%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution%5D%5D">Read
+            more</a></span>
+      </div>
+      <div class="meta-date">
+        <span class="date">1700</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1765 AD</div>
+        <div class="content-right">
+          <h4 class="area">North America</h4>
+          <h3>A.D. 1765 - 1783 美国独立战争</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD:%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1789 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1789 法国大革命</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD:%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1789 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1789 - 1804 启蒙运动</h3>
+          <p>时间跨度: 确切开始时间没有共识, 但通常以1789年法国大革命或拿破仑战争开始(1804~1815)为结束.</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment:%5B%5B%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1826 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1826 法国人尼埃普斯在1826年拍摄了世界上第一张照片</h3>
         </div>
       </div>
-      <!-- // Article -->
+      <div class="meta-date">
+        <span class="date">1800</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
 
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1200 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1200 - 1300 主教堂世纪</h3>
-            <p>欧洲各处新建教堂</p>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1837 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1837 - 1901 维多利亚时期 Victorian era</h3>
         </div>
-        <div class="meta-date">
-          <span class="date">1200</span>
-          <span class="month">AD</span>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era:%5B%5B%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1840 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1840 - 1842 第一次鸦片战争</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War%5D%5D">Read
+            more</a></span>
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1860 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1860 印象派</h3>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1267 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1267 - 1337 乔托 Giotto</h3>
-            <p>意大利文艺复兴时期的开创者, 欧洲绘画之父、西方绘画之父。被认为是第一个企图画出有透视感和深度空间的画家。</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E4%B9%94%E6%89%98%20Giotto%20c.%201267%E2%80%931337:%5B%5B%E4%B9%94%E6%89%98%20Giotto%20c.%201267%E2%80%931337%5D%5D">Read more</a></span>
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1870 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1870 - 1914 第二次工业革命</h3>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution%5D%5D">Read
+            more</a></span>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1271 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1271 - 1368 元</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1911 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1911 - 1949 中华民国</h3>
         </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1299 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1299 - 1922 奥斯曼帝国诞生</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire:%5B%5B%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1315 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1315 - 1322 大饥荒</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%A4%A7%E9%A5%A5%E8%8D%92%20the%20Great%20Famine%201315-1322">Read more</a></span>
-        </div>        
-
-        <div class="meta-date">
-          <span class="date">1300</span>
-          <span class="month">AD</span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1346 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1346 - 1353 黑死病</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E9%BB%91%E6%AD%BB%E7%97%85%20Black%20Death%201346~1353">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1368 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1368 - 1644 明</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
-        </div>
-
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1377 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1377 - 1446 菲利波·布鲁内莱斯基 Filippo Brumelleschi</h3>
-            <p>文艺复兴时期建筑的奠基人; 线性透视法发现者</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%8F%B2%E5%88%A9%E6%B3%A2%C2%B7%E5%B8%83%E9%B2%81%E5%86%85%E8%8E%B1%E6%96%AF%E5%9F%BA%20Filippo%20Brumelleschi%201377-1446:%5B%5B%E8%8F%B2%E5%88%A9%E6%B3%A2%C2%B7%E5%B8%83%E9%B2%81%E5%86%85%E8%8E%B1%E6%96%AF%E5%9F%BA%20Filippo%20Brumelleschi%201377-1446%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1378 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1378～1417年天主教会大分裂</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1400 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>1400 - 1600 文艺复兴</h3>
-            <p><a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance:%5B%5B%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance%5D%5D">欧洲近代史</a></p>
-            <p><a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance:%5B%5B%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4%20Renaissance%5D%5D">艺术史</a></p>
-          </div>
-        </div>
-        <div class="meta-date">
-          <span class="date">1400</span>
-          <span class="month">AD</span>
-        </div>
-      </div>
-      <!-- // Article --> 
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1405 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1405 - 1433 郑和下西洋</h3>
-          </div>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1452 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1452 - 1519 列奥纳多·达·芬奇 Leonardo da Vinci</h3>
-          </div>
-        </div>
-      </div>
-      <!-- // Article -->
-
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1455 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1455 古登堡印刷版《圣经》出版</h3>
-            <p>加快了知识流通和欧洲人的识字率，在随后兴起的欧洲文艺复兴、宗教改革、启蒙时代和科学革命等运动中都扮演了重要角色，为现代知识经济和知识传播奠定物质性的基础。</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%8F%A4%E7%99%BB%E5%A0%A1%E5%8D%B0%E5%88%B7%E7%89%88%E3%80%8A%E5%9C%A3%E7%BB%8F%E3%80%8B%E5%87%BA%E7%89%88%201455:%5B%5B%E5%8F%A4%E7%99%BB%E5%A0%A1%E5%8D%B0%E5%88%B7%E7%89%88%E3%80%8A%E5%9C%A3%E7%BB%8F%E3%80%8B%E5%87%BA%E7%89%88%201455%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1475 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1475 - 1564 米开朗基罗 Michelangelo</h3>
-          </div>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1483 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1483 - 1520 拉斐尔 Raphael</h3>
-          </div>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1492 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1492 哥伦布发现美洲</h3>
-          </div>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1506 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1506 - 1626 圣彼得大教堂开始修建</h3>
-            <p>用于资助建造旧伯多禄大殿的一种方法是给予赎罪券以换取捐款， 糜费了大量钱财，使得教皇在筹集足够的资金时，加速了危机的到来，最后引起了<b>宗教改革运动</b>。</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read more</a></span>
-        </div>
-        <div class="meta-date">
-          <span class="date">1500</span>
-          <span class="month">AD</span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1517 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1517 宗教改革开始</h3>
-            <p>1517年，路德发表的《九十五条论纲》引发了宗教改革的开始，即德意志宗教改革。</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1543 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1543 - 1687 科学革命</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution:%5B%5B%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1558 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1558 - 1603 伊丽莎白时代 Elizabethan era</h3>
-            <p>英国历史上的<b>黄金时代</b></p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era:%5B%5B%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era%5D%5D">Read more</a></span>
-        </div>
-
-      </div>
-      <!-- // Article -->
-
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1600 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1600 - 1750 巴洛克艺术时期</h3>
-            <p><b>早期巴洛克</b>：1548-1625</p>
-            <p><b>盛期巴洛克</b>：1625-1675</p>
-            <p><b>晚期巴洛克/洛可可</b>：1675-1750</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%B7%B4%E6%B4%9B%E5%85%8B%E8%89%BA%E6%9C%AF%20Baroque%20c.1600-c.1750:%5B%5B%E5%B7%B4%E6%B4%9B%E5%85%8B%E8%89%BA%E6%9C%AF%20Baroque%20c.1600-c.1750%5D%5D">Read more</a></span>
-        </div>
-
-        <div class="meta-date">
-          <span class="date">1600</span>
-          <span class="month">AD</span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1603 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1603 - 1867 日本江户时代</h3>
-            <p>葛饰北斋的浮世绘对印象派产生巨大影响</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%91%9B%E9%A5%B0%E5%8C%97%E6%96%8B%20Hokusai%201760%E2%80%931849:%5B%5B%E8%91%9B%E9%A5%B0%E5%8C%97%E6%96%8B%20Hokusai%201760%E2%80%931849%5D%5D%20%5B%5B%E6%B1%9F%E6%88%B7%E6%97%B6%E4%BB%A3%20Edo%20period%201603-1867%5D%5D%20Introduce">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1618 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1618 - 1648 三十年战争</h3>
-            <p>欧洲大陆最后一次重大战争</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War:%5B%5B%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1644 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1644 - 1911 清</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
-        </div>
-
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1688 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1688 - 1689 光荣革命</h3>
-            <p>这场政变以不流血著名, 诞生了 1689年权利法案, 是英国君主立宪制形成的重要事件。</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution:%5B%5B%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1740 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1740 - 1890 哥特复兴建筑时期</h3>
-            <p>修建了英国国会大厦和大本钟</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E5%93%A5%E7%89%B9%E5%A4%8D%E5%85%B4%E5%BB%BA%E7%AD%91%20Gothic%20Revival%20architecture%201740-1890:%5B%5B%E5%93%A5%E7%89%B9%E5%A4%8D%E5%85%B4%E5%BB%BA%E7%AD%91%20Gothic%20Revival%20architecture%201740-1890%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1760 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1760 - 1840 第一次工业革命</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution:%5B%5B%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution%5D%5D">Read more</a></span>
-        </div>
-        <div class="meta-date">
-          <span class="date">1700</span>
-          <span class="month">AD</span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1765 AD</div>
-          <div class="content-right">
-            <h4 class="area">North America</h4>
-            <h3>A.D. 1765 - 1783 美国独立战争</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD:%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1789 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1789 法国大革命</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD:%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1789 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1789 - 1804 启蒙运动</h3>
-            <p>时间跨度: 确切开始时间没有共识, 但通常以1789年法国大革命或拿破仑战争开始(1804~1815)为结束.</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment:%5B%5B%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1826 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1826 法国人尼埃普斯在1826年拍摄了世界上第一张照片</h3>
-          </div>
-        </div>
-        <div class="meta-date">
-          <span class="date">1800</span>
-          <span class="month">AD</span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1837 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1837 - 1901 维多利亚时期 Victorian era</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era:%5B%5B%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1840 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1840 - 1842 第一次鸦片战争</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War%5D%5D">Read more</a></span>
-        </div>
-
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1860 AD</div>
-          <div class="content-left">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1860 印象派</h3>
-          </div>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1870 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1870 - 1914 第二次工业革命</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution%5D%5D">Read more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1911 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1911 - 1949 中华民国</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
-        </div>
-      </div>
-      <!-- // Article -->    
-      
     <!-- Article -->
     <div class="timeline-article">
       <div class="content-right-container">
@@ -1457,10 +1559,12 @@
         </div>
         <span class="timeline-author">
           <i class="material-symbols-outlined">travel_explore</i>
-          <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I%5D%5D">Read more</a></span>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I%5D%5D">Read
+            more</a></span>
       </div>
     </div>
-    <!-- // Article -->   
+    <!-- // Article -->
 
     <!-- Article -->
     <div class="timeline-article">
@@ -1472,107 +1576,119 @@
         </div>
         <span class="timeline-author">
           <i class="material-symbols-outlined">travel_explore</i>
-          <a href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%BE%BE%E8%BE%BE%E4%B8%BB%E4%B9%89%20Dada%201916-1920s:%5B%5B%E8%BE%BE%E8%BE%BE%E4%B8%BB%E4%B9%89%20Dada%201916-1920s%5D%5D">Read more</a></span>
+          <a
+            href="https://www.bakumatata.com/notes/Art_Painting/8kuNoteBook_Painting.html#%E8%BE%BE%E8%BE%BE%E4%B8%BB%E4%B9%89%20Dada%201916-1920s:%5B%5B%E8%BE%BE%E8%BE%BE%E4%B8%BB%E4%B9%89%20Dada%201916-1920s%5D%5D">Read
+            more</a></span>
       </div>
     </div>
-    <!-- // Article -->   
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
+    <!-- Article -->
+    <div class="timeline-article">
 
-        <div class="content-right-container">
-          <div class="century">1917 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1917 1917年俄国革命 Russian Revolution</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution:%5B%5B1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution%5D%5D">Read more</a></span>
+      <div class="content-right-container">
+        <div class="century">1917 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1917 1917年俄国革命 Russian Revolution</h3>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution:%5B%5B1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution%5D%5D">Read
+            more</a></span>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
+    <!-- Article -->
+    <div class="timeline-article">
 
-        <div class="content-right-container">
-          <div class="century">1929 AD</div>
-          <div class="content-right">
-            <h4 class="area">North America</h4>
-            <h3>A.D. 1929 - 1933 大萧条 Great Depression</h3>
-            <p>20世纪时间最长, 最深刻, 影响范围最广的经济衰退。</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression:%5B%5B%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression%5D%5D">Read more</a></span>
+      <div class="content-right-container">
+        <div class="century">1929 AD</div>
+        <div class="content-right">
+          <h4 class="area">North America</h4>
+          <h3>A.D. 1929 - 1933 大萧条 Great Depression</h3>
+          <p>20世纪时间最长, 最深刻, 影响范围最广的经济衰退。</p>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression:%5B%5B%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression%5D%5D">Read
+            more</a></span>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
+    <!-- Article -->
+    <div class="timeline-article">
 
-        <div class="content-right-container">
-          <div class="century">1939 AD</div>
-          <div class="content-right">
-            <h4 class="area">North America</h4>
-            <h3>A.D. 1939 - 1945 第二次世界大战 World War II</h3>
-            <p>人类史上规模最大的战争，人类死伤人数最多的战争。</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II%5D%5D">Read more</a></span>
+      <div class="content-right-container">
+        <div class="century">1939 AD</div>
+        <div class="content-right">
+          <h4 class="area">North America</h4>
+          <h3>A.D. 1939 - 1945 第二次世界大战 World War II</h3>
+          <p>人类史上规模最大的战争，人类死伤人数最多的战争。</p>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II%5D%5D">Read
+            more</a></span>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
+    <!-- Article -->
+    <div class="timeline-article">
 
-        <div class="content-right-container">
-          <div class="century">1947 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1947 - 1991 冷战 Cold War</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%86%B7%E6%88%98%20Cold%20War:%5B%5B%E5%86%B7%E6%88%98%20Cold%20War%5D%5D">Read more</a></span>
+      <div class="content-right-container">
+        <div class="century">1947 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1947 - 1991 冷战 Cold War</h3>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%86%B7%E6%88%98%20Cold%20War:%5B%5B%E5%86%B7%E6%88%98%20Cold%20War%5D%5D">Read
+            more</a></span>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1949 AD</div>
-          <div class="content-right">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1949 - recent 中华人民共和国</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1949 AD</div>
+        <div class="content-right">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1949 - recent 中华人民共和国</h3>
         </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
+    <!-- Article -->
+    <div class="timeline-article">
 
-        <div class="content-right-container">
-          <div class="century">1986 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1986 切尔诺贝利事故</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster:%5B%5B%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster%5D%5D">Read more</a></span>
+      <div class="content-right-container">
+        <div class="century">1986 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1986 切尔诺贝利事故</h3>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster:%5B%5B%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster%5D%5D">Read
+            more</a></span>
       </div>
-      <!-- // Article -->
-      
-      
+    </div>
+    <!-- // Article -->
+
+
     </div>
     <div class="timeline-end">End</div>
   </section>
@@ -1580,7 +1696,8 @@
 
   <script src="dropdown-filter.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
 
 </body>
+
 </html>

@@ -177,7 +177,6 @@ li {
 
 
 .con {
-    max-width: 1200px;
     margin: 20px;
     display: grid;
     grid-gap: 1rem;

@@ -1,6 +1,13 @@
-body {
+.confirm-btn, body {
   background: rgb(240, 240, 240);
-  font-family: 'Circular',-apple-system,'BlinkMacSystemFont','Roboto','Helvetica Neue',sans-serif;
+  font-family: "Noto Serif",
+        "Noto Serif SC",
+        'Circular',
+        -apple-system,
+        'BlinkMacSystemFont',
+        'Roboto',
+        'Helvetica Neue',
+        sans-serif;
   font-weight: 400;
   margin-top: 40px; 
 }
@@ -258,7 +265,6 @@ input:checked + .slider:before {
 #conference-timeline .timeline-start,
 #conference-timeline .timeline-end {
   display: table;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
