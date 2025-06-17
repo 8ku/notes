@@ -174,13 +174,18 @@ li {
 }
 
 
-
-
-.con {
+.con, #search-results {
     margin: 20px;
     display: grid;
     grid-gap: 1rem;
 }
+
+/* #search-results {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr);
+} */
+
 
 @media (min-width: 300px) {
     .head {
@@ -230,7 +235,7 @@ li {
         height: 3em;
     }
 
-    .con {
+    .con, #search-results {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -257,7 +262,7 @@ li {
         height: 3em;
     }
 
-    .con {
+    .con, #search-results {
         grid-template-columns: repeat(3, 1fr);
     }
 }
