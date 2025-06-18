@@ -48,8 +48,7 @@ body {
 .theme-switch {
     background-color: transparent;
     border: none;
-    display: none;
-    /* Hide by default */
+    display: none; /* Hide by default */
 }
 
 .theme-switch i {
@@ -72,7 +71,7 @@ body {
 .counts {
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: baseline;  /* if themeSwich button is showing, align-items: center  */
     width: 50%;
 }
 

@@ -47,113 +47,18 @@
                     <input id="hiddenText" type="text" style="display: none"
                         onkeypress="searchKeywordKeyboard(event)" />
                 </div>
-
-                <script>
-                    // Write on keyup event of keyword input element
-                    $(document).ready(function () {
-                        $("#search").on("input", function () {
-                            var searchVal = $(this).val().toLowerCase();
-                            var $results = $("#search-results");
-                            $results.empty();
-
-                            if (searchVal === "") {
-                                // Show original content, hide results
-                                $(".con").show();
-                                $results.hide();
-                                return;
-                            }
-
-                            // Hide original content
-                            $(".con").hide();
-
-                            // Collect matches, grouped by parent div
-                            var html = "";
-                            $(".con > div").each(function () {
-                                var $div = $(this);
-                                var $h2 = $div.find("h2").first();
-                                var $ol = $div.find("ol").first();
-                                var matchedLis = [];
-
-                                $ol.find("li").each(function () {
-                                    if ($(this).text().toLowerCase().indexOf(searchVal) !== -1) {
-                                        matchedLis.push($(this).clone());
-                                    }
-                                });
-
-                                if (matchedLis.length > 0) {
-                                    // Build a new div with h2 and only matched lis
-                                    var $newDiv = $("<div></div>");
-                                    $newDiv.append($h2.clone());
-                                    var $newOl = $("<ol></ol>");
-                                    matchedLis.forEach(function ($li) {
-                                        $newOl.append($li);
-                                    });
-                                    $newDiv.append($newOl);
-                                    html += $newDiv.prop("outerHTML");
-                                }
-                            });
-
-                            if (html === "") {
-                                $results.html("<p>No results found.</p>").show();
-                            } else {
-                                $results.html(html).show();
-                            }
-                        });
-                    });
-                </script>
             </form>
         </div>
     </div>
 
+    <!-- search -->
+    <script src ="assets/search.js"></script>
+    
+    <!-- notebooks counting bubble -->
     <script src="assets/bubble-animation.js"></script>
 
     <!-- theme switch -->
-    <script>
-        // Check system theme and apply on load
-        function initTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme) {
-                applyTheme(savedTheme);
-            } else if (systemDark) {
-                applyTheme('dark');
-            }
-        }
-
-        // Apply theme
-        function applyTheme(theme) {
-            const body = document.body;
-            const btn = document.getElementById('themeBtn');
-
-            if (theme === 'dark') {
-                body.classList.add('dark');
-                btn.innerHTML = '<i class="fas fa-cloud-moon"></i>';
-            } else {
-                body.classList.remove('dark');
-                btn.innerHTML = '<i class="fas fa-cloud-sun"></i>';
-            }
-        }
-
-        // Toggle theme
-        function toggleTheme() {
-            const isDark = document.body.classList.contains('dark');
-            const newTheme = isDark ? 'light' : 'dark';
-
-            applyTheme(newTheme);
-            localStorage.setItem('theme', newTheme);
-        }
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-            if (!localStorage.getItem('theme')) {
-                applyTheme(e.matches ? 'dark' : 'light');
-            }
-        });
-
-        // Initialize on page load
-        initTheme();
-    </script>
+    <script src="assets/themeSwitch.js"></script>
 
 
     <div id="search-results" style="display:none;"></div>

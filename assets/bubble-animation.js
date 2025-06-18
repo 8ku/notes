@@ -28,28 +28,31 @@ function createNewBubble(containerId, message) {
 
 // Your original counting function with smooth animation
 function myFunction() {
-    var x = document.getElementsByTagName("li").length;
-    // var message = "Total count: " + x;
+    let x;
+    const $results = $("#search-results");
+    if ($results.is(":visible")) {
+        // Count <li> in search results only
+        x = $results.find("li").length;
+    } else {
+        // Count <li> in the main content only
+        x = $(".con li").length;
+    }
     var message = x;
 
     // Add jump animation to button
     const button = document.querySelector('.calculation');
     button.classList.add('jump-animation');
-    
-    // Remove jump animation class after it completes
     setTimeout(() => {
         button.classList.remove('jump-animation');
     }, 300);
 
-    
-    // Use your container ID or create a default one
-    var containerId = 'bubble-container'; // You can change this to match your HTML
+    var containerId = 'bubble-container';
     createNewBubble(containerId, message);
 }
 
 // Alternative version if you want to use a specific bubble ID (like your original code)
 function myFunctionWithId(bubbleId) {
-    var x = document.getElementsByTagName("li").length;
+    var x = $("li:visible").length;
     var container = document.getElementById(bubbleId).parentNode;
     // var message = "Total count: " + x;
     var message = x;
