@@ -1,0 +1,1419 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter2/">
+      
+      
+        <link rel="next" href="../chapter4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>从研究到洞见和行动 - Service Design</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Service Design" class="md-header__button md-logo" aria-label="Service Design" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Service Design
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              从研究到洞见和行动
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Service Design" class="md-nav__button md-logo" aria-label="Service Design" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Service Design
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计与创新实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计的本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    理解人与人际关系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从研究到洞见和行动
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从研究到洞见和行动
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见的三大层次
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="洞见的三大层次">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初级目标：人们在说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        中级目标：我们看到了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高级目标：意味着什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见采集方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="洞见采集方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深度访谈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        观察参与者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参与：化身用户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务猎奇
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用户工作坊（？）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        探查工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实施观点研究的可操作性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实施观点研究的可操作性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        做足准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        准时到达目的地
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        确认自己的身份
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        照相
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        材料
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        穿着得体
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        披露协议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小奖励
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表示感谢
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见的整理与呈现
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="洞见的整理与呈现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见博客
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见海报（用户画像）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用户工作坊
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    描述服务生态
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    构建服务主张
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务体验的原型化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务评价
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计面临的挑战
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见的三大层次
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="洞见的三大层次">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初级目标：人们在说什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        中级目标：我们看到了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        高级目标：意味着什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见采集方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="洞见采集方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深度访谈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        观察参与者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参与：化身用户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务猎奇
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用户工作坊（？）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        探查工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实施观点研究的可操作性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实施观点研究的可操作性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        做足准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        准时到达目的地
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        确认自己的身份
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        照相
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        材料
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        穿着得体
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        披露协议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小奖励
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表示感谢
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见的整理与呈现
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="洞见的整理与呈现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见博客
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洞见海报（用户画像）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        用户工作坊
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">从研究到洞见和行动<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>洞见形成过程基于以下几个方面的工作，主要包括：一系列的调查研究方法、专业化设计、可用性以及人种志学的方法。</p>
+<h2 id="_2">洞见的三大层次<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">初级目标：人们在说什么<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>小样本分析指的是以较小数量的样本（约四五个参与者）在短时间深度采访中对所述内容的总结。</p>
+<p>得到的是一个简单可行的纲要和从深度访谈中得出的前五个观察结果。</p>
+<h3 id="_4">中级目标：我们看到了什么<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>第二层调研一般基于参与人数在10人左右的调查。</p>
+<p>设计研究的输出包括关键洞见与概要描述，需要发现项目中的重大问题，这些问题应该来源于由独立设计机构主持的且有客户成员参与的内部研讨会。</p>
+<h3 id="_5">高级目标：意味着什么<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>高级目标的设计研究是一个相当细致的分析，需要深层次的采访并通过其他综合性技巧来得出洞见。这样的分析更有深度且更系统化，而且包含更多信息，足以为客户委托方的项目及其行业提供战略性的洞见，进而向客户提出建议和解决方案。</p>
+<h2 id="_6">洞见采集方法<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">深度访谈<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>深度访谈是长时间有语境的访谈，其结构相当开放，是一种启发式访谈方法。深度访谈非常适用于发现价值和意见，显性和隐性信息，交互关系以及灵感的激发。</p>
+<p>这类访谈常常用一个主题来引导，探索参与者潜在的问题、疑问以及验证受访者的言论及其意义。</p>
+<p>访谈是一种能让人设身处地地说出他们对事物有何看法最有效的方法。通过一系列方法，用写写画画或其他新奇的方式，尽量让受访者觉得身处一个有意思、轻松、互动的氛围。</p>
+<p>让受访者讲述他们自己的故事，能够为调研提供生动的素材以确定他们对问题的感知和理解。</p>
+<ul>
+<li><strong>深度访谈的类型</strong></li>
+<li>成对访谈<ul>
+<li>几对朋友同时参与的采访更有成效。</li>
+<li>需要留心成对访谈中其中一人把自己的观点强加于另一个人的情况。</li>
+</ul>
+</li>
+<li>企业对企业访谈<ul>
+<li>在工作场所进行采访或观察是有很多好处的，特别是你对工作场所和工作流程感兴趣的时候，但如果想让人们敞开心扉说出自己对工作的感受，最好还是选择比较中立的环境，比如咖啡厅。</li>
+</ul>
+</li>
+<li>准备工作<ul>
+<li>招募受访者</li>
+<li>领域研究：注意避免预设观点，学着故意问一些幼稚的问题</li>
+<li>话题设计：当话题太多时，可以编一些提示卡</li>
+<li>访谈道具：要设计一些合理的书面活动使访谈更吸引人并有利于互动</li>
+<li>流程梳理：把深度访谈流程所有可能的细节都梳理一遍</li>
+</ul>
+</li>
+</ul>
+<h3 id="_8">观察参与者<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>对参与者进行观察和跟踪有利于将准确的深层次洞见转化为“用户如何使用产品？”以及使用流程或程序。这对于理解语境、行为、动机、互动以及人们在现实生活中真正的行为非常有益，而不仅仅是看到或听到他们表面的言行，从而找准机会将深度洞见转化为潜在需求。</p>
+<p>当研究小组对要调查的领域不熟悉时，可以从短时观察开始。它能让你知道人们的基本行为状况（例如购买、销售、诊断和接受治疗）并对活动的基本流程有所了解。长期而深入的观察能使我们从习以为常的事物中发现问题。</p>
+<p>这一类调研的关键是<strong>尽量让参与者觉得自己身处自然放松的环境中，否则你就无法进行观察而将所谓的观察置于自然状态之外。</strong></p>
+<p>有两个观察方法：</p>
+<ol>
+<li>“旁观者”是一种假装不在现场的观察方法</li>
+<li>更主动的交流方法，询问用户所做的事情来与他们交流。人们在工作中或者使用某种产品时，会发生各种各样的问题或趣事，也常常有自己的办法来应对系统、服务或界面中的问题。请用“小白”的角度 让他们自己告诉你他们在做什么？为什么要这样做？</li>
+</ol>
+<p>准备工作：</p>
+<ul>
+<li>招募</li>
+<li>设定期望：确保已经理解客户并知道他们对洞见发现活动的期望，这是了解观察注意事项的前提。在清单中列出要回答的问题，将其作为观察内容纲要。<strong>无论观察到什么情况，都要保持开放的态度</strong>。</li>
+<li>设计工具：要记录活动，可以考虑为自己和参与者设计一些书面活动。</li>
+<li>准备：每次观察都有其唯一性，因此，充分准备很重要。考虑下场合和穿着以及适当的记录手段并对观察所需要的时间进行统筹规划。</li>
+</ul>
+<h3 id="_9">参与：化身用户<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>参与能够为调研者提供独特的关于用户感受与体验的一手资料，也能引起调研者共鸣并发现客户从来没有想到过的那些问题，调研者可以亲身经历受访者没有描述清楚的一些事情。</p>
+<p>准备工作：</p>
+<ul>
+<li>保持开放的心态：你可能得做以前从未做过的事情，无条件地接纳和信任很重要，请他们关照以免他们分心</li>
+<li>有计划、有条理：精心计划是关键。像对待真正的工作那样认真对待你正在做的事，事情就会自然而然地发生。所以，记录你所需要的身边每一种情况。</li>
+<li>做好记录：选择最适当的方法记录你所执行的任务。不要总是用摄像机对着人脸，随手做笔记有时候更有用。</li>
+</ul>
+<h3 id="_10">服务猎奇<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>服务猎奇（Service Safari)是一种参与式设计方法。参与者用几个小时甚至一天的时间使用和体验这些服务，更客观地对这些服务的体验进行评价，产生的想法同时还可以举一反三，应用于自己行业的服务中。</p>
+<p>服务猎奇可以激发用户的潜能，放大、转换或者重新建构自身的服务，<u>因为参与者已经将自己视为用户而不只局限于服务提供者。</u></p>
+<p>准备工作：</p>
+<ul>
+<li>预算</li>
+<li>研究：选择客户委托方要求体验的服务</li>
+<li>计划：拟定活动计划，制定一个清晰的时间表说明每个客户委托方在服务过程中应该做什么。给参与者提供活动费用，让参与者自行活动。</li>
+<li>工具：为活动小组提供工具记录各项服务，或许可以事先准备好观察指南</li>
+<li>纲要：活动结束后，参与者汇报发现，列出清单，评价服务的优势与不足</li>
+</ul>
+<h3 id="_11">用户工作坊（？）<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>最好采用用户协同设计工作访的方式，鼓励朋友成双结对前来参与，这样更利于得到轻松而真实的回答。</p>
+<p>在工作坊中，可以利用探查类任务来活跃气氛，激发参与者展开有价值的讨论。这些任务可以使相对弱势的参与者通过其他方式表达自己的观点和意见。</p>
+<p>注意事项：</p>
+<ul>
+<li>参与者招募：准备工作坊可能需要两三周时间，需要提前招募参与者。尽量招募成对的朋友或夫妻而不是个人。4到16人是用户工作坊的理想人数。</li>
+<li>场地准备：准备一个宽敞、舒适的场地，安排一些食物和饮料，如果场地中间有一小块墙区，可以用来作为泡沫夹芯板或展板临时张贴空间</li>
+<li>列出时间表：列一个切合实际的时间表，清楚列出工作坊进程中什么时候做什么事。</li>
+<li>道具的设计：花一些时间设计一些必要的道具来保证和增强活动的可参与性。确保每一个工作任务单都够用，尽量准备多的笔、铅笔、马克笔、胶棒、剪刀、便利贴、封口胶带或其他必要的工具</li>
+<li>文档处理：委托方可能想要工作坊的文档资料、视频或照片等成果材料，需要提前准备记录工具。</li>
+</ul>
+<h3 id="_12">探查工具<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>探查是基于特定任务的洞见获得活动，能够使被观察者在干扰最少的情况下获得洞见。这个方法的正式名称为“文化探查(cultural probe)”。</p>
+<p>准备工作：</p>
+<ul>
+<li>
+<p>事件的时间轴和服务历程图</p>
+</li>
+<li>
+<p>时间轴用来记录个人或集体随时间所经历的事件或历程。这个方法可以针对个人，也可以针对一组人，让他们使用便利贴在墙上完成。这样可以以历史的视角对组织和人群的洞见及其未来目标进行归纳</p>
+<p><img alt="时间轴" src="../assets/%E6%97%B6%E9%97%B4%E8%BD%B4.png" /></p>
+</li>
+<li>
+<p>日志</p>
+</li>
+<li>
+<p>日志用于记录一件事或一段时间内发生的事。可以用书面形式来记录，也可以录音或视频，或照片。</p>
+</li>
+<li>
+<p>如果有足够的时间和预算，最好集中整理参与者提供的日志。</p>
+</li>
+<li>
+<p>维恩图</p>
+</li>
+<li>
+<p>可以提前准备好模板或在白纸上临时画一个。</p>
+</li>
+<li>
+<p>品牌标识板</p>
+</li>
+<li>
+<p>列出不同产品和服务的商标logo，方便人们指出使用的产品或服务的品牌及选择方式与动机。</p>
+</li>
+<li>
+<p>直观的视觉材料如商标logo或某些关键的品牌媒体（列出他们经常阅读的杂志，经常登录的网站和常逛的商店等）在讨论中能发挥提示和激发重要洞见的作用。</p>
+</li>
+<li>
+<p>探查相机</p>
+</li>
+<li>
+<p>给参与者提供一个一次性相机并附上一个清单，列出需要拍摄的内容和说明，必要时还可以附上格式要求。</p>
+</li>
+<li>
+<p>说明往往要求参与者拍摄书桌、拍摄家里的情况、拍摄垃圾箱、拍摄所羡慕的人、拍摄最近的一顿饭或最近购买的一件物品等。</p>
+</li>
+<li>
+<p>照片清单</p>
+</li>
+<li>
+<p>对受访者和家居环境进行拍照，对编辑和介绍实地访谈的真实情况非常有用。</p>
+</li>
+<li>
+<p>物品标签</p>
+</li>
+<li>
+<p>给参与者一些附有使用说明的标牌或标签，标出他们家中某些具有特别属性的物品，要求他们按照自己的评价标准按等级排列家里的物品。<u>这些标签的意义在于打开话题，揭示为什么对这些物品进行如此评价。</u></p>
+</li>
+</ul>
+<h2 id="_13">实施观点研究的可操作性<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">做足准备<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>明白自己想要的东西，即使目标朝着有趣的方向发展也不要担心。准备好问题但不要太多，弄清范围和主题并以此来引导对话。</p>
+<h3 id="_15">准时到达目的地<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<h3 id="_16">确认自己的身份<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>介绍自己，自己的组织、访谈的主旨和目的，说一说你将如何使用自己搜集到的信息</p>
+<h3 id="_17">照相<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<h3 id="_18">材料<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>带上需要用户填写或讨论的材料，确保这些材料看起来低调</p>
+<h3 id="_19">穿着得体<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<h3 id="_20">披露协议<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<h3 id="_21">小奖励<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<h3 id="_22">表示感谢<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<h2 id="_23">洞见的整理与呈现<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<h3 id="_24">洞见博客<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>可用来收集对客户需要的快速反馈，为访谈或其他用户研究方法提供完整的记录，对整个公司的员工分享项目情况，以取得长期效果，做为归档的存放点。</p>
+<h3 id="_25">洞见海报（用户画像）<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<h3 id="_26">用户工作坊<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<p>理想的用户工作坊人数是6到12人。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

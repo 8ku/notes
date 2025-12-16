@@ -1,0 +1,1087 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter5/">
+      
+      
+        <link rel="next" href="../chapter7/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>服务体验的原型化 - Service Design</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Service Design" class="md-header__button md-logo" aria-label="Service Design" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Service Design
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              服务体验的原型化
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Service Design" class="md-nav__button md-logo" aria-label="Service Design" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Service Design
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计与创新实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计的本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    理解人与人际关系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从研究到洞见和行动
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    描述服务生态
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    构建服务主张
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务体验的原型化
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务体验的原型化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验的定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验的类型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="体验的类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        消费体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        感性体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        期望与实际体验
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        以时间作为设计对象
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务设计原型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="服务设计原型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原型可验证的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验原型的四个层次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为体验原型做好准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验原型的可行性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务评价
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计面临的挑战
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验的定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验的类型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="体验的类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        消费体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        感性体验
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        期望与实际体验
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        以时间作为设计对象
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务设计原型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="服务设计原型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原型可验证的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验原型的四个层次
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为体验原型做好准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        体验原型的可行性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">服务体验的原型化<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">体验的定义<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>体验的重要在于，通过讲述使用服务或是受服务影响的人的故事，就有可能为创新和进步发现机会，也可能使未来体验成为一种设计交流方法。</p>
+<p>服务设计不局限于软件要素，还有为服务表现贡献硬件要素的能力，例如积极的经济成果、成功的流程或是有益的服务条款输出。</p>
+<h2 id="_3">体验的类型<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>使用体验：技术交互体验</strong></li>
+<li><strong>消费体验：零售品牌体验</strong></li>
+<li><strong>服务体验：对服务的体验</strong></li>
+<li><strong>感性体验：影响生活质量和福祉的服务（如医保）的情感体验</strong></li>
+</ol>
+<h3 id="_4">使用体验<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>个体在服务中完成任务的能力对于服务的成功与否至关重要。任务设计的方式对服务的整体效果影响重大，服务内的任务经常需要重新设计以提高服务的表现和收益。</p>
+<p><em>在很多情况下，模糊的用词、规划或者有歧义的用户界面设计都会导致用户放弃使用，转向尝试其他的联系方式，或者干脆重新更换服务。</em></p>
+<h3 id="_5">消费体验<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>消费体验就是使用服务时任务体验的总和</strong>。但消费体验不只限于在愉快到不愉快这两点之间变动。</p>
+<p><strong>当其他很多企业都会拼价格时，服务质量就是一个至关重要的因素。</strong>服务质量一般由公司文化决定，而<u><em>公司文化一旦确立，就很难改变</em></u>。</p>
+<p>消费体验比用户体验更具有长期性，但一般来说也是有限制的。但是，消费体验囊括一系列基于任务的微小互动。消费体验就是顾客与服务互动体验的总和。</p>
+<h3 id="_6">服务体验<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>服务体验是由顾客及其与触点形成的交互共同形成的。服务设计区别于使用体验设计或消费体验设计的原因之一在于服务设计并不只限于关注一个方向。</p>
+<blockquote>
+<p>如何看待人在服务中的角色呢？一个行之有效的方法是把每一个“台下”的出口都看作是其他地方的入口，尤其是当提供服务的工作人员既是服务提供者也是服务使用者的情况下。</p>
+</blockquote>
+<h3 id="_7">感性体验<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>当服务设计师开始将他们的技术运用到个人、公共和社交项目中时，必须考虑服务对人及其自我认知所产生的影响。**一旦体验层面出现事故，结果就不只是失败或简单的经济牵连(损害品牌形象或影响销售)，还会波及人们的生活。</p>
+<h2 id="_8">期望与实际体验<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p><u>在进行服务设计时，最基本的概念是顾客所感知到的质量取决于期望和实际体验之间的落差</u>。</p>
+<p>作为服务设计师，<strong>首要任务是确保每次服务交互体验都能为下一次交互树立准确的预期</strong>，即，不管时间多久，触点数量有多少，质量的高低和体验的性质都必须始终保持不变。</p>
+<p>当某个触点的体验超出预期时，如果下次交互不能保持这种水平，就会为此埋下失望的伏笔。<u>有时可能还需要考虑降低某一触点的质量来增强服务的整体体验质量。</u>*当每次交互的期望都一致并在下次交互时符合期望，人们就会从中感受到服务的核心品质。</p>
+<p>当所有的触点谐调一致之后，当人们日复一日地达成期望后，良好的服务体验就水到渠成了。<strong>这就是底线。</strong>即使想要达到设计和实现服务“勉强可以”的底线层次，也是很有挑战性的。</p>
+<p><strong>不同触点之间最细微的期望-体验不匹配都可能导致所有致力于提升体验的努力前功尽弃。</strong></p>
+<h2 id="_9">以时间作为设计对象<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>想要设计更好的体验，需要从两种角度看待时间：</p>
+<ol>
+<li>关联时间：体现在顾客历程中，指人们在整个服务中不同阶段的关联时间</li>
+<li>交互频率：因服务而异，因触点而异。设计合适的频率离不开敏锐的处理、试验和长期观察。</li>
+</ol>
+<p><strong>顾客历程和服务蓝图是服务中集成长期体验的两种重要工具。</strong></p>
+<h2 id="_10">服务设计原型<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="_11">原型可验证的问题<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ol>
+<li>人们是否能够理解服务？新的服务到底是什么？或者能做什么？</li>
+<li>人们能够意识到这项服务在生活中的价值吗？</li>
+<li>人们会使用它吗？</li>
+<li>提供服务时最主要的触点有哪些？</li>
+<li>此服务的可见因素都正常吗？</li>
+<li>语言和术语可行吗？</li>
+<li>体验原型的测试人员提出了哪些改进想法？</li>
+</ol>
+<h3 id="_12">体验原型的四个层次<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p><img alt="体验原型" src="../assets/%E4%BD%93%E9%AA%8C%E5%8E%9F%E5%9E%8B.png" /></p>
+<ul>
+<li><strong>讨论原型</strong></li>
+<li>带上一连串触点模型，按计划好的用户历程进行介绍就1个小时的访谈。接受采访的人只需要自然地与触点发生交互，并给出反馈意见。</li>
+<li>这种讨论可消除服务主张中最明显的问题，即<u>规避陷阱</u>。典型的讨论原型涉及5~10个用户。</li>
+<li>观察人们对不同提案的真实反映。</li>
+<li><strong>参与原型</strong></li>
+<li>在实际地点给用户提供真实的服务，由服务商的员工来提供，观察他们的反应。</li>
+<li>参与原型的目的是在制衡中加入经过长期实地考验的各项服务元素后增强不同触点之间的协同能力。你可以借此了解哪些交互对服务才是最重要的，以及人们的真实做法，而不是他们说自己要怎么做。</li>
+<li>典型的原型包含2~6个用户，可以依此界定详细深入的观察并改善设计</li>
+<li><strong>模拟</strong></li>
+<li>模拟原型是以上两种原型的结合，但细节更丰富。</li>
+<li>这需要更充分的准备，而且依赖于服务，可能还需要在可调控的环境中试验这种原型。</li>
+<li>这意味着你可以实地准备有确实需求的触点。</li>
+<li>在模拟原型中，需要用更长的时间来调和。可以在用户身上花几天或几周的功夫，观察其在进行一系列的交互时体验的变化过程。还可以观察从一个触点到另一个触点逐步熟悉服务之后的服务体验的形成过程。</li>
+<li>模拟原型旨在提高不同触点的功能和长期作用。</li>
+<li>典型的模拟原型包含2~6个用户。</li>
+<li><strong>试点原型</strong></li>
+<li>如果服务有可用的基础设施和人力资源，就可以启动试点原型。</li>
+<li>这种原型不是模拟体验，而是<strong>直接为终端服务对象提供服务</strong>。持续提供即将完成的服务，可以从中了解到哪些服务能够满足服务对象的需求，哪些不能。</li>
+<li>试点原型作为测试版服务，必须始终支持反复改进，才能够尝试出用于解决问题的新方法。</li>
+<li>试点原型旨在发现服务中能够长期对大规模用户有效的东西，发现需要为服务分配哪些资源。</li>
+<li>试点原型可以生成新服务系统证据，证明解决方案中的确存在好的商业案例，使服务对象从服务中获得的价值可以持续，并有望得到提升。</li>
+</ul>
+<h3 id="_13">为体验原型做好准备<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>在任何层级中，都必须有3个关键步骤：</p>
+<ol>
+<li>
+<p><strong>第一步：用户历程</strong></p>
+</li>
+<li>
+<p>开发一个或几个用户历程(The Customer Journey)，用以描述希望与顾客交互的情境。要使其发挥价值，需要考虑到从“了解”到“离开”的所有步骤。</p>
+<p><img alt="基本文本蓝图" src="../assets/%E5%9F%BA%E6%9C%AC%E6%96%87%E6%9C%AC%E8%93%9D%E5%9B%BE.png" /></p>
+</li>
+<li>
+<p>用户历程可以视为原型手稿，用以描述不同的角色和必要的实体。</p>
+</li>
+<li>
+<p><strong>第二步：人</strong></p>
+</li>
+<li>
+<p><strong>参与者</strong>：为某一服务原型招募参与者时，首先要考虑你是否需要客户委托方(即服务商)的帮助。你是需要掌握特定技术的员工，还是熟悉公司、产品和服务相关知识的员工？拉下来，需要筛选潜在的用户。要召集有相关特征的人或在服务历程中处于不同阶段的人，使他们在用户历程的不同阶段发挥作用。</p>
+</li>
+<li><strong>角色</strong>：要明确规定他们的角色。他们可以表现出真实的自己，但要为他们提供角色的背景知识。</li>
+<li>
+<p><strong>目标</strong>：要告诉参与者他们目标或者服务交互的目标——给一个剧本。你应该确保给参与者设定的目标能够揭示出服务中潜在的问题。</p>
+</li>
+<li>
+<p><strong>第三步：道具</strong></p>
+</li>
+<li>
+<p>为想要呈现的核心交互创建“道具”，并规定理想中的质量水平和真实程度。</p>
+</li>
+<li>在现实环境中的实验原型之前，在项目团队内部需要设计实体并把它们作为用户历程的一部分进行测试。</li>
+<li>将原型的目的牢记于心。原型测试对设计你已知肯定有效的东西毫无意义。</li>
+<li><strong>应该关注那些对服务体验至关重要的原型要素，或者哪些不尝试很难进行体验的原型元素</strong>。这些元素比在原型设计中服务的其他部分要求更高的保真度。</li>
+</ol>
+<h3 id="_14">体验原型的可行性<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>体验原型可行性的方法</p>
+<ul>
+<li><strong>设计脚本，并为之准备素材。</strong>在用户端和客服商各安排一个研究员，观察两方的对话过程，能够帮助你发现用户真正想要的东西，同时也能让员工知道怎样服务才能让用户满意。</li>
+<li><strong>建立网站原型</strong></li>
+<li><strong>搭建真实布景</strong></li>
+</ul>
+<p>在整个过程中，每隔一段时间就要与用户进行交流，以鼓励他们参与，鼓励他们提供必要的支持。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

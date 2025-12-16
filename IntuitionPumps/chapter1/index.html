@@ -1,0 +1,982 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../chapter2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>通用思考工具 - Intuition Pumps</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Intuition Pumps" class="md-header__button md-logo" aria-label="Intuition Pumps" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Intuition Pumps
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              通用思考工具
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Intuition Pumps" class="md-nav__button md-logo" aria-label="Intuition Pumps" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Intuition Pumps
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    直觉泵
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    通用思考工具
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    通用思考工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        犯错：犯“好”错才有价值
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归谬法：发现错误命题的妙招
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="归谬法：发现错误命题的妙招">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归谬法，或者叫“以蠢类推”
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拉波波特法则：批评他人的正确方式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拉波波特法则：批评他人的正确方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拉波波特法则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        史特金定律：不要把时间浪费在无意义的事情上
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        奥卡姆剃刀：如无必要，勿增实体
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        奥卡姆扫把：有意隐瞒对自己不利的证据
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外行做媒：既不"过少解释"，又不"惹恼行家"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        跳出系统：打破惯性思维
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        古尔德的3种思考工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="古尔德的3种思考工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "不如说"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "故意堆积"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "古尔德两步"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小心"当然"这个词——一种让你无需思考就认同的花招
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反问——让你不好意思说"不"
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于意义和内容的思考工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    关于计算机的思考工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    更多关于意义的思考工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        犯错：犯“好”错才有价值
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归谬法：发现错误命题的妙招
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="归谬法：发现错误命题的妙招">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        归谬法，或者叫“以蠢类推”
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拉波波特法则：批评他人的正确方式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拉波波特法则：批评他人的正确方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        拉波波特法则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        史特金定律：不要把时间浪费在无意义的事情上
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        奥卡姆剃刀：如无必要，勿增实体
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        奥卡姆扫把：有意隐瞒对自己不利的证据
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        外行做媒：既不"过少解释"，又不"惹恼行家"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        跳出系统：打破惯性思维
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        古尔德的3种思考工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="古尔德的3种思考工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "不如说"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "故意堆积"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "古尔德两步"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        小心"当然"这个词——一种让你无需思考就认同的花招
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        反问——让你不好意思说"不"
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">通用思考工具<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">犯错：犯“好”错才有价值<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>哲学史实际上是记录了一大堆非常有智慧的人犯下的一大堆非常有诱惑力的错误的历史，如果你不了解它，就注定会再次犯下那些倒霉的错误。</p>
+</blockquote>
+<p><strong>必须先做一个学习的人，然后才能学到东西。</strong></p>
+<p><strong>除非出现奇迹，否则人们只能通过两种方式真正学到东西：要么自己进步，要么接受进步者的安排和改造。</strong></p>
+<p><strong>不仅对于生命而言，对于知识、学习和理解而言，进化问题也是根本且核心的。如果没有合理而完备的进化论知识，想要理解意义与观念的世界、理解自由意志与道德、理解艺术与科学甚至哲学本身，我们都会感到力不从心。</strong></p>
+<p>进化无法预测无目的的突变通往何方，因为是随机发生的DNA复制错误。</p>
+<p>对于那些被读取出来并在生物体的生长过程中发挥作用的DNA序列来说，大多数突变都是有害的，事实上很多突变是可以立即致死的。因为大多数突变基因的“性状表达”是有害的，自然选择实际上将突变率始终保持在一个很低的水平上。</p>
+<p>犯错的要诀在于<strong>不去隐藏它们</strong>，尤其不能自我欺骗。</p>
+<p>当你犯错时，应该学会尽可能地冷静、毫不留情地检查你记住的错误。</p>
+<p>冒险的时候先准备一张安全网。自然选择会自动地把那些“到现在为止”管用的东西都保留下来，同时无所畏惧地开展或大或小的创新。只是那些巨大创新几乎总会立即导致死亡。这是一种巨大的浪费，不过没人能去计算。</p>
+<p>与其说我们胜在脑容量更大、大脑功能更强，或者具有反思自己过往错误的能力，不如说我们胜在可以相互分享个人在试错的历史中所获得的经验。</p>
+<h2 id="_3">归谬法：发现错误命题的妙招<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">归谬法，或者叫“以蠢类推”<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><strong>归（推理）于荒谬。</strong></p>
+<p>把一个推论中的一些命题/假设拿过来，看看有没有前后矛盾，或者是否隐含荒谬之处。要是有，必须丢掉出问题的命题，或者重新推论。</p>
+<h2 id="_5">拉波波特法则：批评他人的正确方式<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">拉波波特法则<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>你应该非常清楚、生动、不偏不倚地重述对手的想法，使得你的对手说："谢谢你，我刚才要是像你这么表述就好了。"</p>
+</li>
+<li>
+<p>你应该把对方观点中你所同意的部分都列出来，尤其是那种并非被人们广泛接受了的观点</p>
+</li>
+<li>
+<p>你应该提到那些从你对手那里学到的东西</p>
+</li>
+<li>
+<p>只有完成成了以上三点，你才能说一句反驳或批评的话</p>
+</li>
+</ul>
+<h2 id="_7">史特金定律：不要把时间浪费在无意义的事情上<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>当你准备批评某一领域、某一流派、某一学科或者某一艺术形式的时候，请别在嘲笑垃圾上，要么追着优秀的东西批，要么就别批评。</p>
+<h2 id="_8">奥卡姆剃刀：如无必要，勿增实体<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>如果你能找到一个更简单的理论，包含更少的因素、更少的实体，而它也一样可以很好地解释现象，就不要再构造一个大而无当的复杂理论了。</p>
+<h2 id="_9">奥卡姆扫把：有意隐瞒对自己不利的证据<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>某些理论的辩护者们本着智性上最大的不诚实把对自己不利的事实往地毯下扫。</p>
+<h2 id="_10">外行做媒：既不"过少解释"，又不"惹恼行家"<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p>当专家与专家对话时，不论他们的研究领域是否相同，总会错误地"过少解释"。</p>
+<p>假装听众对你所说的内容已经非常了角这种习惯有一个副作用：<strong>专家们常常自说自话</strong>。</p>
+<p>让专家们对一群充满好奇心的业余听众表达他们的观点，同时让另一些专家旁听，就会改变专家们"过少解释"的机率。</p>
+<h2 id="_11">跳出系统：打破惯性思维<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>有创造性不只意味着追求新奇的东西——因为新奇的东西谁都能得到，只要把材料随机排列就行——<strong>难的是跳出一个既定的体系，并且跳得有道理。</strong></p>
+<p>当处在一个没有可以反抗的固有规则、没有可以打破的预期的环境中，我们还能颠覆什么呢？<strong>如果你想颠覆传统，最好先去了解它。所以外行或新手很少能够想出真正有创造性的东西。</strong></p>
+<p>当你面对一个科学或哲学问题时，需要跳出的系统常常根深蒂固，以至于它像你所呼吸的空气一样令人不易察觉。</p>
+<p><strong>一般来说，如果一个长期存在的争论似乎无法取得进展，双方都顽固地坚持自己的正确性，往往是因为他们都同意的某个东西其实是错误的。</strong>所以你最好睁大眼睛去找出被双方共同默认的错误假设。</p>
+<h2 id="3">古尔德的3种思考工具<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="_12">"不如说"<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>"情况与其说是如何如何(你所相信的主流观点)，不如说是如此如此(彻底不同的观点)"。</p>
+<p>遇到这种的论点，把前半段和后半段分开思考，不要被语句中的关联性影响。</p>
+<h3 id="_13">"故意堆积"<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>故意堆积很多词汇，让一个概念变成复杂到不好理解。</p>
+<h3 id="_14">"古尔德两步"<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ol>
+<li>制造一个靶子，然后驳倒它</li>
+<li>主动把注意力转移到第一步驳论所用的证据上，并把证据转移到对手身上，诠释为这是你对手提出的驳论</li>
+</ol>
+<h2 id="_15">小心"当然"这个词——一种让你无需思考就认同的花招<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>当阅读或浏览一篇论证性较强的文章，尤其是哲学类文章时，有一个小窍门可以帮你节省自己的时间和精力：<strong>在文档中搜索"当然"一词，然后仔细检查所有出现这个词的地方。"当然"一词通常像盏信号灯一样可以定位出论证当中的弱点所在。</strong></p>
+<p>它恰好标示出那种<strong>作者确实相信并且期待读者也会相信的东西。</strong></p>
+<h2 id="_16">反问——让你不好意思说"不"<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p>就像应当警惕"当然"一样，你也应当对一个论证、一场争论中出现的反问句提高警惕。</p>
+<p>因为使用反问句是<strong>作者想要走捷径的表现。</strong>大部分的反问句都是压缩版的归谬法，明显到不用再说了。</p>
+<p>我们应该培养起一种好习惯：每当看到一个反问句，先试着自己悄悄地找一个不那么显而易见的回答。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

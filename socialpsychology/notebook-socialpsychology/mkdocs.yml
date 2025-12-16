@@ -6,6 +6,7 @@ theme:
   features:
     - content.footnote.tooltips
     - navigation.indexes
+    - navigation.top
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"

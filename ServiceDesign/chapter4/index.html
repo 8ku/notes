@@ -1,0 +1,969 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter3/">
+      
+      
+        <link rel="next" href="../chapter5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>描述服务生态 - Service Design</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Service Design" class="md-header__button md-logo" aria-label="Service Design" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Service Design
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              描述服务生态
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Service Design" class="md-nav__button md-logo" aria-label="Service Design" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Service Design
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计与创新实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    前言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计的本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    理解人与人际关系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从研究到洞见和行动
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    描述服务生态
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    描述服务生态
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么要绘制服务生态图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络化社会
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        线框与箭头的对决：寻找隐形联系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务蓝图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蓝图的不同用法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="蓝图的不同用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分析现有服务的蓝图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务蓝图带来服务创新
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从各个阶段和活动开始
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    构建服务主张
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务体验的原型化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务评价
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务设计面临的挑战
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么要绘制服务生态图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络化社会
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        线框与箭头的对决：寻找隐形联系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务蓝图
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蓝图的不同用法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="蓝图的不同用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分析现有服务的蓝图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        服务蓝图带来服务创新
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从各个阶段和活动开始
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">描述服务生态<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>企业自身并不向人们交付体验和使用经历，是由代理商来提供。代理商通过不同渠道和触点直接接触用户，渠道包含所有的联系方式，如邮件、电话和面对面交流等，而触点是个体与这些渠道的互动，如一次通话或一次邮件来往。因此，用户与渠道所产生的多触点交互，既可能是单一渠道，也可能是多渠道的。企业的作用就是给代理商提供方法和工具设备，为用户打造良好的服务体验。</p>
+<p><strong>把服务系统视为一种生态系统，其目的也是强调所有参与者都要在其中相互交换价值。</strong></p>
+<p><u>一个健康的生态应该是大家都能从中受益，而不是所有价值都流向一个方向。</u></p>
+<p>企业<strong>最容易忽视的资源就是用户的价值反馈</strong>。用户往往为了获得更好的回报而积极贡献体力、脑力和资料信息，只有他们愿意为某个品牌投资时，才能与之建立更紧密的关系。</p>
+<p>如果企业无法有效利用各种形式的沟通渠道向用户提供资源，也很难获得相应的价值回报。</p>
+<p>越详细的服务关系模型包含的交换关系越多。<strong>正如自然生态系统一样，服务系统中的参与者是不断改变和进化的。服务设计要有足够的弹性来应对企业不断发生的变化，协同设计和客户参与在此过程中尤为重要。</strong></p>
+<h2 id="_2">为什么要绘制服务生态图<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>构建服务生态图有3个目的：</p>
+<ol>
+<li>描述服务参与者和利益相关人</li>
+<li>研究组成服务或影响到服务的各部分之间的关系</li>
+<li>通过重新组织参与者之间的合作方式来产生新的服务概念</li>
+</ol>
+<p>描绘服务生态图对客户拓展项目空间是非常有效的，它能帮助人们突破固有的商业和组织观念，帮助人们在思考问题时超越自身经营或组织的关注，让人们看到他们所做的事情如何融入生活和社会大环境。</p>
+<p>同进，还要避免过于沉浸于描绘生态图，<strong>明确生态图边界很重要，范围是由项目战略目标，预算和影响范围等因素决定的。</strong></p>
+<h2 id="_3">网络化社会<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>系统的复杂性与产品的复杂性截然不同，服务需要设计师设计出<strong>能够充分适应不断变化的系统。</strong></p>
+<h2 id="_4">线框与箭头的对决：寻找隐形联系<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>为什么这么多的服务都被设计得很糟糕？答案是设计师对时间和情境这两种不可见因素缺乏重视，这恰恰是服务体验的关键因素。</p>
+</blockquote>
+<p>人们把设计重点更多放在线框上，<strong>往往会忽略连接触点与触点间的引导线——箭头及其相关的体验设计</strong>。这些引导线包含良好用户体验的一些至关重要的原则，因为它们预示着时间和究竟中的下一步活动。</p>
+<p><strong>服务通常是一种基于时间的体验过程。</strong></p>
+<p>所有的服务体验都是交互的产物。显而易见的交互指的是各种各样的触点，比如搜狗拼音物体、触碰界面及人与人之间的相互交流。不太明显的交互指既往经历与信心之间的交互。</p>
+<p>服务体验也受服务场景下时间和地点的影响，<u>如果时间不合适，即使提供优质的服务，后果也比在正确时间提供一般的服务严重得多。</u></p>
+<p><strong>最好的服务体验就应该像理想的服务员一样，你需要时，他随叫随到，不需要时，他就退隐不见。</strong></p>
+<p><strong>理解环境是服务设计的一个重要方面。</strong></p>
+<ul>
+<li>从服务方的角度看，各职能部门之间的裂痕看似微不足道，但累积起来就会形成用户体验的裂缝。服务设计能够站在用户的角度将各部门有机地连接起来，带来 巨大的转变。</li>
+<li>工作人员通常都是尽心尽职的，但现有的内部组织系统经常阻碍他们履行其本职工作</li>
+<li>遇到问题时拿弱者举例往往会改变别人对你的态度，但不应该这样做</li>
+</ul>
+<p><strong>无缝服务体验的关键在于理解用户与触点和服务互动的情境。</strong></p>
+<h2 id="_5">服务蓝图<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>将服务体验中所有不同的触点连在一起，同时又兼顾组织中所有利益相关者的需要和希望，会使事情立刻变得复杂化，这时需要服务蓝图（1984年花旗银行副行长提出，女性，Lynn Shostack）介入。</p>
+<p>服务蓝图包括3方面：</p>
+<ul>
+<li>用户历程：从一个阶段到另一个阶段，从一个步骤到另一个步骤</li>
+<li>触点：从一个渠道到另一个渠道，从一个触点到另一个触点</li>
+<li>后台进程：从一个利益相关者到另一个，从一处行为到另一个</li>
+</ul>
+<p>好的服务蓝图有助于获取总体概貌及其相互关系，是一种规划项目的方法，可以将服务设计决策与最初研究和洞见相结合（至今没有一套公认的术语和视觉语言标准）。</p>
+<p><strong>我们在试着通过追踪使用服务和交付服务的人以及服务涉及的交流互动渠道来绘制服务生态图。所有的细节被一点一点绘制出来，并与洞见研究建立关联。</strong></p>
+<p>服务蓝图需要包含：</p>
+<ol>
+<li>
+<p>界面</p>
+</li>
+<li>
+<p>用户行为</p>
+</li>
+<li>
+<p>前台</p>
+</li>
+<li>
+<p>后台</p>
+</li>
+<li>
+<p>支持动作</p>
+</li>
+<li>
+<p>时间戳</p>
+</li>
+<li>
+<p>质量KPI</p>
+</li>
+<li>
+<p>顾客的情绪状态</p>
+</li>
+<li>
+<p>草图</p>
+</li>
+</ol>
+<p><img alt="img" src="../assets/Service_Design_Blueprint.png" /></p>
+<p>项目组必须将后台员工的洞见与用户需求相匹配，确定在用户历程中什么时候体验失败，什么时候是良机？渠道与技术在哪里有效结合才能产生价值，它们何时又背道而驰？最后设计或写出所有触点的设计说明。</p>
+<h2 id="_6">蓝图的不同用法<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">分析现有服务的蓝图<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>服务蓝图展示了服务构建方式，将全部渠道、触点、用户历程和后台流程连接在一起。它为服务设计师提供了一个能够对人们的不同历程进行系统化测试的平台，从而通过时间和触点追踪人们的路径，清晰展示哪里能够真正创造价值，哪里又被浪费。它既能说明错在哪儿，又能说明如何修复。</p>
+<h3 id="_8">服务蓝图带来服务创新<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>在蓝图在把所有阶段都绘制出来，有助于形成高度一致化的构想。因为你可以从中看到所有元素是如何随着时间推移而相互联系和工作的。</p>
+<h3 id="_9">从各个阶段和活动开始<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="../assets/experiencemap.png" /></p>
+<p>创建蓝图的第一步都是根据时间来确立服务体验的各个阶段，即服务生命周期，然后加入服务所涉及的人的角色（通常以客户或服务对象开始）与各个触点渠道。可以先将这些包含不同角色与渠道的网格置于一边，把时相置于顶部。</p>
+<ol>
+<li>
+<p><strong>用户历程</strong>（不要陷入细节）</p>
+</li>
+<li>
+<p>进入：用户最初了解服务的点</p>
+</li>
+<li>加入：登录或注册阶段</li>
+<li>使用：服务的常用阶段</li>
+<li>发展：用户对服务的扩展使用</li>
+<li>
+<p>离开：用户在此时结束使用服务，无论是阶段性的还是永久性的</p>
+</li>
+<li>
+<p><strong>添加触点渠道</strong>（<em>可以考虑从添加客户意见调查结果开始</em>）</p>
+</li>
+<li>
+<p>联系方式：印刷品、电子邮件、网站、口口相传</p>
+</li>
+<li>
+<p>服务：与产品、第三方服务、消费者和使用者之间的交互</p>
+</li>
+<li>
+<p><strong>低保真原型与高保真原型</strong></p>
+</li>
+</ol>
+<p>首先需要根据蓝图画出一个快速、低保真原型，要便于破坏和修改</p>
+<ol>
+<li>
+<p><strong>从全局到细节的思考</strong></p>
+</li>
+<li>
+<p>在绘制蓝图时，除了考虑整体服务定位，还要深入更多细节，这就需要在讨论过程中从细节到全局反复思考。</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
