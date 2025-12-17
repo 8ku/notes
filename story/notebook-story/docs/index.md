@@ -1,0 +1,24 @@
+# 故事
+
+*Robert Mckee*
+
+* [故事问题](chapter1.md)
+* [结构图谱](chapter2.md)
+* [结构与背景](chapter3.md)
+* [结构与类型](chapter4.md)
+* [结构与人物](chapter5.md)
+* [结构与意义](chapter6.md)
+* [故事材质](chapter7.md)
+* [激励事件](chapter8.md)
+* [幕设计](chapter9.md)
+* [场景设计](chapter10.md)
+* [场景分析](chapter11.md)
+* [布局谋篇](chapter12.md)
+* [危机、高潮和结局](chapter13.md)
+* [反面人物塑造原理](chapter14.md)
+* [解说](chapter15.md)
+* [问题和解决方法](chapter16.md)
+* [人物](chapter17.md)
+* [文本](chapter18.md)
+* [作家的创造方法](chapter19.md)
+* [淡出](chapter20.md)

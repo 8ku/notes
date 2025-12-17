@@ -1,0 +1,1256 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../chapter3/">
+      
+      
+        <link rel="next" href="../chapter4.1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>如何减少竞争的无谓损失 - Economics Lecture Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Economics Lecture Notes" class="md-header__button md-logo" aria-label="Economics Lecture Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Economics Lecture Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              如何减少竞争的无谓损失
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Economics Lecture Notes" class="md-nav__button md-logo" aria-label="Economics Lecture Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Economics Lecture Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    薛兆丰经济学讲义
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稀缺 为何商业是最大的慈善
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    成本 不要只盯着钱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    需求 好东西运到远方去
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    价格 如何减少竞争的无谓损失
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    价格 如何减少竞争的无谓损失
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    如何减少竞争的无谓损失
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    如何减少竞争的无谓损失
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        计划经济三个不可逾越的根本障碍
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        知识在社会中的运用
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何分饼决定饼做多大
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何分饼决定饼做多大">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格只能在具体的交易中形成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        换个角度看乘人之危发财行为
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格永远起调节作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        社会成本决定规则的优劣
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        各种竞争规则孰优孰劣
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        短缺和过剩
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格管制————人会追求损失最小化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="价格管制————人会追求损失最小化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解除价格管制————果断与沉稳的拿捏
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实物补贴和货币补贴的权衡
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        竞争的维度————没有人可以控制市场因素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        没有使用需求就没有投资需求
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    哈耶克：知识在社会中的运用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    权利 自由不等于免费
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    耐心 想象力决定生产力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    供应 好钢用在刀刃上
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信息不对称 谁的话语权更大
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    合作 为何同工不同酬
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    协调 众人如何彼此影响
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    何为地道的经济学思维
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        计划经济三个不可逾越的根本障碍
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        知识在社会中的运用
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何分饼决定饼做多大
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何分饼决定饼做多大">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格只能在具体的交易中形成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        换个角度看乘人之危发财行为
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格永远起调节作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        社会成本决定规则的优劣
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        各种竞争规则孰优孰劣
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        短缺和过剩
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格管制————人会追求损失最小化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="价格管制————人会追求损失最小化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        解除价格管制————果断与沉稳的拿捏
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实物补贴和货币补贴的权衡
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        竞争的维度————没有人可以控制市场因素
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        没有使用需求就没有投资需求
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">如何减少竞争的无谓损失<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">计划经济三个不可逾越的根本障碍<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>人际效用不可比较</strong></p>
+<p>每个人对不同的/同一物品有不同的偏好、不同的个人估值。</p>
+</li>
+<li>
+<p><strong>数据不可得</strong></p>
+<ol>
+<li>很多人根本不知道自己真正的兴趣排序</li>
+<li>即使他们知道，也不一定愿意告诉别人</li>
+<li>人们会误导，因为人有能动性</li>
+<li>人会对预测本身做出新的反应</li>
+<li>数据永远保存在不同的人那里，永远无法集中在一起</li>
+</ol>
+</li>
+<li>
+<p>奖惩很难恰如其分</p>
+</li>
+</ol>
+<h2 id="_3">知识在社会中的运用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>人类社会要解决的问题，不是怎么让边际平衡的问题，而是发生了新的变化以后，我们应该如何应对的问题。————哈耶克</p>
+</blockquote>
+<p>对于经济体系而言，更多重要的知识，是关于谁在什么地方、愿意以什么样的代价、购买什么商品的局部信息。解决问题的答案是<strong>价格体系</strong>。</p>
+<ol>
+<li>
+<p><strong>传递稀缺信息</strong>：通过价格，人们能够知道这个人愿意用什么样的代价获得商品，这时，价格是一个可观察、可统计、可加总的数据。</p>
+</li>
+<li>
+<p><strong>指导生产</strong>：价格传递了关于稀缺的信息和数据，什么东西缺了，那件产品的价格就上升了；并且，这个传递的方式是最经济的（成本最低，因为不需要了解价格变化的原因）；价格所传递的关于稀缺的信息，只会传到相关的人那里；价格能把人们的真实需求公之于众，而不受个人欲望控制；价格能指导生产，指导人们在不同的生产方式中选择适当的那一种。</p>
+</li>
+<li>
+<p><strong>指导分配</strong>：价格体系本身能妥善解决奖惩问题。当人们做错了决定，价格会惩罚他，反之亦然。</p>
+</li>
+</ol>
+<h2 id="_4">如何分饼决定饼做多大<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5"><strong>价格只能在具体的交易中形成</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>在现实生活中，永远是具体的情况、具体的案例发生在先。<strong>价格是每一个人发自他们内心，根据他们的实际情况，最后达成的一个结果。</strong></p>
+<p>在现实生活中，人们很容易忘记价格背后的真正驱动力，很容易以为价格只是个摆设，可以随意操控。他们喜欢这个价格就支持市场经济；不喜欢就要政府管一管。他们忘记了，<strong>价格只是一个信使，只是在如实地反映商品稀缺的信息。</strong></p>
+<h3 id="_6">换个角度看乘人之危发财行为<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>阻止别人发国难财，只会让遭受灾害的人处境更糟。阻止他们，就是剥夺了遭受灾害的人的选择。</p>
+<h3 id="_7"><strong>价格永远起调节作用</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>一个人想买最便宜的商品，当他进入市场寻找最便宜的商品时，寻找行为本身就使得商品的价格上升了；一个人想卖最贵的商品，他的行为本身已经使得商品的价格下跌了。</p>
+<p>乘人之危发财的人，他们自己本身的行为就增加了供给，使商品的价格下降，缓解了供需之间的矛盾。</p>
+<h3 id="_8">社会成本决定规则的优劣<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p><strong>暴力依然是非常重要和常见的竞争规则</strong></p>
+<p><strong>暴力只有当它失败的时候，人们都会谴责它；当它成功时，人们往往会膜拜它。</strong></p>
+<p><strong>暴力之外，，比较常见的办法是比拼智力。谁的智力高，谁就能得到那块面包。</strong></p>
+<p><strong>用年龄大小来分配财产</strong></p>
+<p><strong>按社会身份分配财产</strong></p>
+<p><strong>按劳动时间、随机分配与先到先得原则分配财产</strong></p>
+<p><strong>按需分配与价高者得</strong></p>
+<h2 id="_9">各种竞争规则孰优孰劣<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p><strong>没有任何一个规则比别的规则更公平</strong></p>
+<p><strong>每种竞争规则本身都会带来成本</strong></p>
+<p><strong>竞争带来的成本，对于没有获得资源的人来说都是一种浪费</strong></p>
+<p><strong>从效率上和社会财富积累的角度上说，出价高低比别的竞争方式更有效率，它直接带来了社会财富的高速增长。</strong></p>
+<p>物物交换的交易费用极高，因为匹配的交易者相遇（称为双重偶然性）的概率很低。而交易当中只要有一方是认钱不认人的，就能极大增加交易的机会。这恰恰是货币的妙处所在。</p>
+<h2 id="_10">短缺和过剩<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<p><strong>短缺</strong>：是指因为价格受到了抵制，人们仅仅用出价的办法买不到这种商品，只有采取其他的竞争方式才能得到这种商品的情形。</p>
+<p><strong>过剩</strong>：指商品的价格被人为地抬高，以至卖家必须搭配其他的竞争手段或服务，才能把商品卖出去的现象。<strong>过剩是价格被人为拔高的结果。</strong></p>
+<p><strong>稀缺是永恒的，短缺和过剩都是价格受到人为干预的结果。</strong></p>
+<h2 id="_11">价格管制————人会追求损失最小化<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p><strong>价格管制</strong>：政府用行政手段限制价格。</p>
+<ul>
+<li>
+<p><strong>价格管制必然导致价值耗散</strong></p>
+<p>价格管制导致卖家不会把商品乃至价值最高的用途上，每当资源不能用到刀刃上时，它就不那么值钱。</p>
+</li>
+<li>
+<p><strong>人是追求损失最小化的动物</strong></p>
+<p>只要存在价格管制，就会产生资源价值的耗散。在人们被迫展开价格以外的竞争时，他们就会选择那些能够最大限度挽回损失的竞争方式（在供不应求的情况下，卖家可以提出更多限制条件或者改变商品的性质）。</p>
+<p>这些方式，要么让资产重新落到估值较高者的手里，要么能改变契约的结构从而减少不必要的交易费用和竞争损耗。</p>
+</li>
+</ul>
+<p>价格管制越严重，价值耗散就越大，人们高潮绕过政府管制的积极性也就越大；政府围堵的力度越大，人们采用的对策就越迂回，其中白白浪费掉的竞争成本也越大。</p>
+<p>之所以会出现黄牛党，原因在于火车票价不够高，人们不得不展开价格以外的竞争，也就是排队。排队的过程，会带来无谓的损失。人们为了节省自己宝贵的时间，会请一些时间成本比较低的人去排队。</p>
+<p>火车票的解决方案应该参考飞机票，进行价格波动，运用市场经济的方式去解决票价问题。</p>
+<blockquote>
+<p><strong>一个社会如果把个人的权利置于公平之上的话，那么这个社会运行的结果，当然不会是公平的，但它却离公平很近。</strong></p>
+<p><strong>如果把追求公平放在追求个人权利之上，这个社会就既不能保证个人的权利，也不能达到所谓的公平。</strong></p>
+</blockquote>
+<h3 id="_12">解除价格管制————果断与沉稳的拿捏<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>只要过时的观念和既得利益缠住了相当多的人群，任何激进和彻底的改革在实际中都寸步难行。</p>
+<h2 id="_13">实物补贴和货币补贴的权衡<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>真正达到帮助穷人的目的，货币补贴是更好的选择，不仅浪费更小，效率更高，而且还给穷人更多的选择。</p>
+<p><strong>人们总会偏向于资金提供方的利益。</strong></p>
+<h2 id="_14">竞争的维度————没有人可以控制市场因素<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>房价上涨的正面因素：</p>
+<ul>
+<li>
+<p>人口高度集聚的地方，能够提供比别的地方多得多的机会</p>
+</li>
+<li>
+<p>人口集聚提高大城市的经济效率</p>
+</li>
+</ul>
+<p>房价上涨的负面因素：</p>
+<ul>
+<li>
+<p>房屋交易不够灵活，不够频繁</p>
+</li>
+<li>
+<p>小产权房未能进入正常的流通渠道</p>
+</li>
+<li>
+<p>城市规划部门对房屋容积率的限制太大</p>
+</li>
+<li>
+<p>房子不能建太高，限制土地的使用效率</p>
+</li>
+</ul>
+<p><strong>房屋不是一种标准品，它是一种综合服务；私人开发商是这种综合服务更好、更适合的提供者；如果让私人业主自由转让房屋的话，这些房屋的流动性会更高，也会鼓励人们积极上进，不同家庭上升的渠道也会得以拓宽。</strong></p>
+<h2 id="_15">没有使用需求就没有投资需求<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>所有的投资需求，都是以实际使用需求为基础的。没有实际使用的需求，就不会有投资需求。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,5 @@
+nav:
+    - index.md
+    - ...
+collapse: true
+sort_type: natural
