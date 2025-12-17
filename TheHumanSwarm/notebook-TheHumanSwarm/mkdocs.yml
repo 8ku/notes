@@ -1,0 +1,52 @@
+site_name: The Human Swarm
+extra_css:
+  - stylesheets/extra.css
+theme:
+  name: material
+  features:
+    - content.footnote.tooltips
+    - navigation.indexes
+    - navigation.top
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+plugins:
+  - awesome-pages:
+      filename: .pages
+      collapse_single_pages: true
+      strict: false
+  - search:
+      lang:
+        - en
+        - ja
+      separator: '[\s\-\.]+'

@@ -1,256 +1,745 @@
 
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Priceless</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
         
         
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-    
-    
-    <link rel="stylesheet" href="gitbook/style.css">
-
-    
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-intopic-toc/style.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-mermaid-gb3-fox/mermaid/mermaid.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-        
-
-    
-
-    
-        
-        <link rel="stylesheet" href="websiteStyle.css">
-        
-    
-        
-    
-        
-    
-        
-    
-
-
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="chapter1.html" />
-    
-    
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter active" data-level="1.1" data-path="./">
-            
-                <a href="./">
-            
-                    
-                    Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="chapter1.html">
-            
-                <a href="chapter1.html">
-            
-                    
-                    Keywords
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="#priceless" class="md-skip">
+          Skip to content
         </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
+      
     </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
 
-    <div class="book-body">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Priceless" class="md-header__button md-logo" aria-label="Priceless" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Priceless
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Priceless
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
         
-            <div class="body-inner">
-                
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
                     
 
-<div class="book-header" role="navigation">
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Priceless" class="md-nav__button md-logo" aria-label="Priceless" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Priceless
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
     
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
+      
+      
+  
+  
     
-                                <section class="normal markdown-section">
-                                
-                                <h1 id="priceless">Priceless</h1>
-<p><strong>[&#x7F8E;]&#x5A01;&#x5EC9; &#xB7; &#x5E9E;&#x5FB7;&#x65AF;&#x901A; William Poundstone</strong></p>
-<p>&#x4E2A;&#x4EBA;&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;</p>
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priceless
+  
 
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
+    
+  </span>
+  
+  
 
-                        </div>
-                    </div>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priceless
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格术语
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="价格术语">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coherent-arbitrariness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        任意连贯性 Coherent Arbitrariness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reservation-price" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保留价格（最低价格、底价）Reservation Price
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        效用 Utility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        兼容性原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anchoring-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        锚定效应 Anchoring Effect
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="锚定效应 Anchoring Effect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对照锚点和同化锚点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prospect-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前景理论 Prospect Theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="前景理论 Prospect Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理论内涵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        价格术语
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="价格术语">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coherent-arbitrariness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        任意连贯性 Coherent Arbitrariness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reservation-price" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保留价格（最低价格、底价）Reservation Price
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        效用 Utility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        兼容性原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anchoring-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        锚定效应 Anchoring Effect
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="锚定效应 Anchoring Effect">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对照锚点和同化锚点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prospect-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前景理论 Prospect Theory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="前景理论 Prospect Theory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理论内涵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
                 
+                  
+
+
+
+<h1 id="priceless">Priceless<a class="headerlink" href="#priceless" title="Permanent link">&para;</a></h1>
+<p><strong>[美]威廉 · 庞德斯通 William Poundstone</strong></p>
+<h2 id="_1">价格术语<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="coherent-arbitrariness">任意连贯性 Coherent Arbitrariness<a class="headerlink" href="#coherent-arbitrariness" title="Permanent link">&para;</a></h3>
+<ul>
+<li>消费者不知道什么东西该值多少钱。<strong>买家的主要敏感点是相对差异，而非绝对价格。</strong></li>
+<li>
+<p>Tips: 可以通过更新包装来降低分量而价格不变或者更新包装来提价，消费者不会注意到分量的差异。</p>
+</li>
+<li>
+<p>要在内心“构建”价格，人得从<strong>周围的环境</strong>中获得“线索”。</p>
+</li>
+<li>Tips：给定一个<strong>锚定</strong>值，人们就会不自觉往上面靠</li>
+</ul>
+<h3 id="reservation-price">保留价格（最低价格、底价）Reservation Price<a class="headerlink" href="#reservation-price" title="Permanent link">&para;</a></h3>
+<p>对经济学家来说，指的是<strong>买家</strong>愿意支付的最高数额，或<strong>卖家</strong>愿意接受的<strong>最低</strong>数额。交易价格便位于这两个极值之间。</p>
+<h3 id="utility">效用 Utility<a class="headerlink" href="#utility" title="Permanent link">&para;</a></h3>
+<p>瑞士数学家Daniel Bernoulli在1738年提出。</p>
+<p>可以把效用想象成一种<strong>个人“价签”，人们会把它贴在各种事情和结果上。</strong> 重要的是，人们会<strong>尝试积聚最大效用</strong>，<u>但这不意味着最多的金钱。</u>谁<strong>死的时候获得的效用最多</strong>，谁就是大赢家。</p>
+<p>了解效用的唯一途径，就是看人们做了怎样的<strong>选择</strong>。效用<u>决定</u>了消费者愿意支付的价格。</p>
+<p>其中包括两条原理：</p>
+<ol>
+<li><strong>边际效用递减</strong> Law of diminishing returns</li>
+<li>最大效用原理 the utility-maxmizing rule：在风险不确定条件下，个人的决策行为准则是为了获得最大<strong><em>*</em>*期望效用值</strong><strong><em>*，而非最大期望</em>*金额值</strong>。</li>
+</ol>
+<blockquote>
+<p>许多经济选择<strong>就是赌博</strong>。</p>
+</blockquote>
+<p>大多数选择可以按一条简单的规则加以解释——<strong>永远选择获胜回报最高的赌</strong>。</p>
+<p>我们是在选择的<strong>描述</strong>之间进行选择，而不是单纯在选项之间做选择。</p>
+<h3 id="_2">兼容性原则<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>决策者最注意的是<strong>跟所需答案最为兼容</strong>的信息。</p>
+<blockquote>
+<p>人们想要什么，愿意付多少，<strong>取决于问题<u>如何措辞</u>的微小细节</strong>。</p>
+</blockquote>
+<h3 id="anchoring-effect">锚定效应 Anchoring Effect<a class="headerlink" href="#anchoring-effect" title="Permanent link">&para;</a></h3>
+<p>人类在进行决策时，会过度偏重<strong>先前</strong>取得的资讯（称为锚点），即使这个资讯和这项决定无关。<strong>在进行决策时，人类倾向于利用此片段资讯（锚点），快速做出决定。</strong>在接下来的决定中，再以第一个决定为基准，逐步修正。但是人类<strong>容易过度利用锚点</strong>，来对其他资讯与决定做出诠释，当锚点与实际上的事实之间有很大出入时，就会出现当局者迷的情况。</p>
+<blockquote>
+<p><strong>价格不是数学问题，而是欲望的表达</strong>，或是对其他人怎么做的<strong>猜测</strong>（如接受或拒绝你的出价）。你给出一个<strong>“感觉”对</strong>的价格。</p>
+</blockquote>
+<h4 id="_3">对照锚点和同化锚点<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p>对照锚点：比较两种刺激；人的主观感受会偏离锚点</p>
+<p>同化锚点：在一种或多种可能的反应中选择一种答案；人的主观感受会受锚点吸引</p>
+<p><strong>成为锚点的可能性：</strong></p>
+<ul>
+<li>近因</li>
+<li>频率</li>
+<li>强度</li>
+<li>范围</li>
+<li>时限</li>
+<li>意义</li>
+<li>熟悉程度</li>
+<li>自我参与</li>
+</ul>
+<blockquote>
+<p>不确定性越强，疑似区间的范围越大，锚点效应越明显。</p>
+</blockquote>
+<p><strong>成功的锚点必须足够难忘，以便每次重新斟酌决定时都能想得起。</strong></p>
+<p>Tips: <strong>要的越多，你得到的越多。</strong></p>
+<h3 id="prospect-theory">前景理论 Prospect Theory<a class="headerlink" href="#prospect-theory" title="Permanent link">&para;</a></h3>
+<p>提出人：丹尼尔·卡尼曼 &amp; 阿莫斯·特沃斯基</p>
+<h4 id="_4">理论内涵<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>人在不确定条件下的决策选择，取决于结果于展望（预期、设想）的差距而非单单结果本身。即人在决策时会在心里预设一个参考标准，然后衡量每个决定的结果，于这个参考标准的差别是多大。</p>
+<h4 id="_5">基本结论<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>确定效应</strong>：处于收益状态时，多数人是风险厌恶者</li>
+<li><strong>反射效应</strong>：处于损失状态时，多数人是风险爱好者</li>
+<li><strong>损失规避</strong>：多数人对损失比对收益敏感</li>
+<li><strong>参照依赖</strong>：多数人对得失的判断往往由参照点决定</li>
+</ol>
+<p>损失和获利是相对于参照点而言的，<strong>改变评价事物时的参照点，就会改变对风险的态度。</strong></p>
+<blockquote>
+<p>人们最害怕的许多损失并没有生命危险，但对过度适应传输恐惧信号的情绪系统来说，它不具说服力。把损失厌恶想成恐惧，也意味着存在这样的可能性：<strong>诱发情绪可以摆布买卖价格</strong>。 ---- <em>Colin Camerer</em></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-
-            
-                
-                
-                <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Keywords">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
         
-    </div>
-
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Keywords","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-fontsettings","-lunr","-search","search-pro","intopic-toc","mermaid-gb3-fox","livereload"],"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h2,.markdown-section h3","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":{"en":"In this article"}},"search-pro":{},"mermaid-gb3-fox":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./websiteStyle.css","pdf":"./websiteStyle.css","epub":"./websiteStyle.css","mobi":"./websiteStyle.css"}},"file":{"path":"README.md","mtime":"2022-10-01T04:48:17.903Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-06T14:56:30.129Z"},"basePath":".","book":{"language":""}});
-        });
-    </script>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
     
-    <script src="gitbook/gitbook.js"></script>
-    <script src="gitbook/theme.js"></script>
     
-        
-        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
-        
     
-        
-        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
-        
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
-        
-        <script src="gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
-        
     
-        
-        <script src="gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
-        
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
     
-        
-        <script src="gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-mermaid-gb3-fox/book/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-
-    <script src="gitbook/gitbook-plugin-mermaid-gb3-fox/mermaid/mermaid.min.js"></script>
-
-    </body>
+  </body>
 </html>
-
