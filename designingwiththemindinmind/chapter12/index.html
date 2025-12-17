@@ -1,0 +1,1263 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter11/">
+      
+      
+        <link rel="next" href="../chapter13/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>我们有时间要求 - Desiging With The Mind in Mind</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Desiging With The Mind in Mind" class="md-header__button md-logo" aria-label="Desiging With The Mind in Mind" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Desiging With The Mind in Mind
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              我们有时间要求
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Desiging With The Mind in Mind" class="md-nav__button md-logo" aria-label="Desiging With The Mind in Mind" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Desiging With The Mind in Mind
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    认知与设计
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我们感知自己的期望
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    为观察结构优化我们的视觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我们寻找和使用视觉结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阅读不是自然的
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    色觉是有限的
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我们的边界视力很糟糕
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我们的注意力有限，记忆力也不完美
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    对注意力、形状、思考以及行动的限制
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    识别容易，回忆很难
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    从经验中学习与学后付诸实践容易，解决问题和计算很难
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    许多因素影响学习
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我们有时间要求
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我们有时间要求
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应度的定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人类大脑的许多时间常量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为满足实时交互的设计
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        达到高响应交互系统的另一些原则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="达到高响应交互系统的另一些原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用忙碌标识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用用户进度指示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单位任务内的延迟比单位任务之间的延迟麻烦
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先显示重要的信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        在手眼协调的任务中伪装重量级计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提前处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        根据用户输入的优先级而不是输入的顺序来处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        监控时间承诺，降低工作质量来保证不落后
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提供及时反馈，即使网页也应如此
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实现高响应度是重要的
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    结语
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应度的定义
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人类大脑的许多时间常量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为满足实时交互的设计
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        达到高响应交互系统的另一些原则
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="达到高响应交互系统的另一些原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用忙碌标识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用用户进度指示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单位任务内的延迟比单位任务之间的延迟麻烦
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先显示重要的信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        在手眼协调的任务中伪装重量级计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提前处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        根据用户输入的优先级而不是输入的顺序来处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        监控时间承诺，降低工作质量来保证不落后
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提供及时反馈，即使网页也应如此
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实现高响应度是重要的
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">我们有时间要求<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">响应度的定义<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>响应度是以服从用户在时间上的要求及用户满意度来衡量的（用户在一个站点中取得的成就越多，就会认为站点的速度越快，和实际速度不直接相关）。</p>
+<p><strong>一个交互系统的响应度，能否跟上用户，及时告知他们当前状态，而不让他们无故等待，是决定用户满意度的最重要因素，没有之一。</strong></p>
+<p>高响应度的交互系统不一定是高性能的。高响应度系统对用户的操作和执行情况提供反馈，并根据人类感觉、运动和认知的时长来安排反馈的优先顺序，具体来说：</p>
+<ul>
+<li>立刻告知已经接收到你的输入</li>
+<li>对操作需要多长时间完成提供一定的指示</li>
+<li>在等待时间允许你去做其他事情</li>
+<li>能够智能地管理事件队列</li>
+<li>将系统内部管理和低优先级的任务放在后台运行</li>
+<li>对最常见的用户请求做出预期</li>
+</ul>
+<h2 id="_3">人类大脑的许多时间常量<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>感觉与认知功能</th>
+<th>时长</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>声音中我们所能察觉到的最短沉默间隔</td>
+<td>1 ms（0.001s）</td>
+</tr>
+<tr>
+<td>听觉神经细胞（大脑里最快的神经元）的峰电位之间最短的时间间隔</td>
+<td>毫秒级（0.002s）</td>
+</tr>
+<tr>
+<td>可见且能对我们产生影响（或许是无意识的）的视觉刺激的最短时长</td>
+<td>5ms(0.005s)</td>
+</tr>
+<tr>
+<td>用墨水笔书写时可发现墨水延迟的最小时间间隔</td>
+<td>10ms(0.01s)</td>
+</tr>
+<tr>
+<td>连续声波之间通过听觉整合形成一个音调允许的最长间隔</td>
+<td>20ms(0.02s)</td>
+</tr>
+<tr>
+<td>连续图像之间可形成视觉整合的最长间隔</td>
+<td>50ms(0.05s)</td>
+</tr>
+<tr>
+<td>挠反射的速度（对危险的非自主的运动反应）</td>
+<td>80ms(0.08s)</td>
+</tr>
+<tr>
+<td>一个视觉事件与我们对它完整感知之间的时间差</td>
+<td>100ms(0.1s)</td>
+</tr>
+<tr>
+<td>眼跳（非自主的眼球运动）的时长，此期间视觉受到抑制</td>
+<td>100ms(0.1s)</td>
+</tr>
+<tr>
+<td>可使我们感觉一个事件产生另一个事件的连续事件之间最长的时间间隔（感知因果的最长时限：如果系统延迟超过0.14s才对你的操作作出反应，你不会觉得这个反应是你的操作造成的）</td>
+<td>140ms(0.14s)</td>
+</tr>
+<tr>
+<td>一位熟练的阅读者的大脑领会一个显示的单词需要的时间</td>
+<td>150ms(0.15s)</td>
+</tr>
+<tr>
+<td>从感觉上判断视野中4~5个物体的时间</td>
+<td>200ms(0.2s,每个物体50ms)</td>
+</tr>
+<tr>
+<td>事件进入意识的编辑“窗口”</td>
+<td>200ms(0.2s)</td>
+</tr>
+<tr>
+<td>辨认出（说出）被展示的物品</td>
+<td>250ms(0.25s)</td>
+</tr>
+<tr>
+<td>在有超过4件物品的场景里默数出这些物品所需的时间</td>
+<td>300ms(0.3s)</td>
+</tr>
+<tr>
+<td>识别了一个事物之后的注意力暂失（对其他事物失去注意）</td>
+<td>500ms(0.5s)</td>
+</tr>
+<tr>
+<td>视觉-运动反应时间（对非预期事件的有目的的反应）</td>
+<td>700ms(0.7s)</td>
+</tr>
+<tr>
+<td>人们对话中交换发言时的最长沉默间隔</td>
+<td>大约1s</td>
+</tr>
+<tr>
+<td>不受干扰地执行单一（单位）操作的时长</td>
+<td>6~30s</td>
+</tr>
+<tr>
+<td>在紧急情况下做一个关键性决定（比如医疗应急分配）所需时间</td>
+<td>1~5min</td>
+</tr>
+<tr>
+<td>做一个重要的购买决定（比如买一辆车）的时间间隔</td>
+<td>1~10天</td>
+</tr>
+<tr>
+<td>选择一个一辈子的职业所需的时间</td>
+<td>20年</td>
+</tr>
+</tbody>
+</table>
+<p>交互系统设计中需要注意的几个时限：</p>
+<ul>
+<li><strong>0.001s(1ms)</strong>:能够被察觉的最短沉默间隔</li>
+<li><strong>0.01s(10ms)</strong>:前意识（潜意识）的视觉感知，最短可察觉到的笔墨延迟，音频融合</li>
+<li><strong>0.1s(100ms)</strong>：感知1~4个物体，非自发眼动（眼跳），因果关系的感知，感知-运动反馈，视觉融合，挠反射，辨别物体，自主意识的编辑“窗口”，自主意识到的“那一刻”</li>
+<li><strong>1.0s</strong>：谈话中的平均间隔，有准备的视觉-运动反应时间，注意力暂失</li>
+<li><strong>10s</strong>：单位任务、在任务上不可打断的注意力，一个复杂任务的一步</li>
+<li><strong>100s(1.6min)</strong>：紧急情况下做关键决定的时间</li>
+</ul>
+<h2 id="_4">为满足实时交互的设计<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>要让用户觉得响应度高，交互系统应遵循的准则：</p>
+<ul>
+<li>立刻（0.1s）告知收到用户的动作，及时回应用户需要时间，保持用户对因果关系的感知</li>
+<li>让用户知道软件是否在忙</li>
+<li>在等待一个功能完成的同时允许用户做别的事情</li>
+<li>动画要做到平滑和清晰</li>
+<li>让用户能够终止（取消）他们不想要的长时间的操作</li>
+<li>让用户知道长时间的操作需要多长时间</li>
+<li>尽可能让用户来掌控自己的工作节奏</li>
+</ul>
+<p><img alt="" src="../assets/Snipaste_2017-11-09_12-45-46.png" /></p>
+<h2 id="_5">达到高响应交互系统的另一些原则<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6"><strong>使用忙碌标识</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>软件应为任何在运行时会阻止用户继续下一步的操作显示一个忙碌标识，即使这个操作通常能够很快执行完。</p>
+<h3 id="_7"><strong>使用用户进度指示</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>处理时间超过1s的操作都应显示进度指示</p>
+<ul>
+<li>显示还剩下多少工作，不是完成了多少</li>
+<li>显示总进度，而不是当前步骤的进度</li>
+<li>显示一个操作已经完成了的百分比，从1%开始，而不是0%。</li>
+<li>类似的，在操作结束时，只要非常短暂地显示100%</li>
+<li>进度的显示应是平缓的、线性的而不是不稳定爆发式的</li>
+<li>用人们平时使用的，而不是电脑用的精度</li>
+</ul>
+<h3 id="_8">单位任务内的延迟比单位任务之间的延迟麻烦<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>在完成一项单位任务后，移向下一个任务前，人们会放松一下，再把下一个任务所需的信息放进记忆或者视野里</p>
+<p><strong>一个在主要单位工作结束后的延迟并不会困扰用户或者对性能有负责影响，然而，在较大单位任务中的小步骤之间的延迟可能会让用户忘记计划中的下一个步骤。</strong> 底线是————如果一个系统有延迟，应把延迟放在单位任务之间，而不是之内。</p>
+<h3 id="_9">先显示重要的信息<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>分段加载，用户更喜欢看到逐步深入的结果，逐步显示的结果可以让用户提前计划下一个单元任务。</p>
+<h3 id="_10">在手眼协调的任务中伪装重量级计算<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>如果你的系统无法足够快地更新显示来达到手眼协调的时限（0.1s），可以先提供一个轻量级的模拟反馈，直到目标达到再执行真实的操作。</p>
+<h3 id="_11">提前处理<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>利用等待用户输入的时间提前处理用户想要做的事情</p>
+<h3 id="_12">根据用户输入的优先级而不是输入的顺序来处理<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>盲目地按照请求的顺序去执行任务可能会浪费时间和资源</p>
+<h3 id="_13">监控时间承诺，降低工作质量来保证不落后<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>交互系统应能够衡量它是否达到实时的时限标准，如果没有达到或者确定发现存在错过期限的风险，可以采用更简单、更快的方法，通常是以临时降低输出质量为解决方法。例如C4D里为了响应速度而降低了预览画质。</p>
+<h3 id="_14">提供及时反馈，即使网页也应如此<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>尽可能减小图片的尺寸和数量</li>
+<li>提供快速显示的缩略图或者概略图，想办法只在需要的时候才显示细节</li>
+<li>当数据量太大或者一次显示太消耗时间时，让系统提供一个所有数据的概览，并允许用户深入到他们南非要的数据的具体部分和细节层面</li>
+<li>使用层叠样式表（CSS）来对页面渲染和布局，不要使用展示性的HTML、框架或者表格</li>
+<li>使用浏览器内置组件，比如错误提示框，而不是用HTML来创建自己的提示框（这一点有待讨论）</li>
+<li>下载小应用程序和脚本到浏览器，使用Ajax方法（用JavaScript执行异步网络请求）</li>
+</ul>
+<h3 id="_15">实现高响应度是重要的<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>与性能不同，响应度的问题不是仅仅靠优化性能或者使用更快的硬件就能够解决的</strong></li>
+<li><strong>响应度是设计问题，不仅仅是实现问题</strong></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

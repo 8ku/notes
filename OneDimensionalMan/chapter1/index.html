@@ -1,0 +1,519 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../chapter2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>控制的新形式 - One Dimensional Man</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="One Dimensional Man" class="md-header__button md-logo" aria-label="One Dimensional Man" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            One Dimensional Man
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              控制的新形式
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="One Dimensional Man" class="md-nav__button md-logo" aria-label="One Dimensional Man" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    One Dimensional Man
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    单向度的人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    控制的新形式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    政治领域的封闭
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    不幸意识的征服：压抑性的俗化趋势
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    话语领域的封闭
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">控制的新形式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>个性在社会必需的但却令人厌烦的机械化劳动过程中受到压制；个体企业集中为更有效、生产效率更高的大公司；对设备不平衡的经济单位间的自由竞争加以调节；削减对组织国际资源起阻碍作用的各种特权和国家主权。这种技术秩序还包含着政治上和知识上的协调，这是一种可悲而又有前途的发展。</p>
+<p><strong>当一个社会按照它自己的组织方式，似乎越来越能满足个人的需要时，独立思考、意志自由和政治反对权的基本的批判功能就逐渐被剥夺。</strong></p>
+<p>这样一个社会可以正当地要求接受它的原则和制度，并把政治上的反对降低为在维持现状的范围内商讨和促进替代性政策的选择。</p>
+<p>在生活水准不断提高的条件下，<em>对制度本身采取不顺从态度，看来对社会是毫无助益的</em>；当它给社会带来明显的经济和政治的不利并威胁到整个社会的顺利运转时，就更是如此。</p>
+<p>今天，政治权力的运用突出地表现为它对机器生产程序和国家机构技术组织的操纵。<strong>发达工业社会和发展中工业社会的政府，只有当它们能够成功地动员、组织和利用工业文明现有的技术、科学和机械生产率时，才能维持并巩固自己。</strong>这种生产率动员起整个社会，超越和凌驾于任何特定的个人和集团利益之上。机器在物质上的（仅仅是物质上的？）威力超过个人的以及任何特定群体的体力这一无情的事实，使得机器成为任何以机器生产程序为基本结构的社会的最有效的政治工具。</p>
+<p>但是，政治趋势是可以逆转的；机器的能力实质上是人的能力的积累和表现。工作世界在什么程度上被理解为一架机器并依此而被加以机械化，它就在什么程度上成为人的新的自由的潜在基础。</p>
+<p>当代工业文明表明，它已经达到了这样一个阶段：“自由社会”已经不再能够用经济自由、政治自由和思想自由这样一些传统概念来说明。这不是因为这些自由已微不足道，而是因为它们过分重要以致超越了传统模式。因此，需要有符合新的社会能力的新的表述方式。</p>
+<p><strong>这些新的方式只能用否定的字眼来加以表达</strong>，因为它们实际上是对现行方式的否定。经济自由因而意味着摆脱经济的自由——摆脱经济力量和经济关系的控制；意味着免于日常的生存斗争、免于谋生的自由。政治自由意味着个人从他们无法有效控制的政治中解放出来。同样，思想自由意味着恢复被宣传工具和思想灌输所同化了的个人思想，意味着把“社会舆论”连同其制造者一起取消。这些主张之所以听起来不现实，并不表示它们具有乌托邦的性质，而是说明阻碍它们实现的力量相当强大。反对解放的最有效、最持久的斗争形式，是灌输那些使生存斗争的过时形式永恒化的物质需要和精神需要。</p>
+<p>人类的需求，除生物性的需求外，其强度、满足程度乃至特征，总是受先决条件制约的。<strong>对某种事情是做还是不做，是赞赏还是破坏，是拥有还是拒斥，其可能性是否会成为一种需要，都取决于这样做对现行的社会制度和利益是否可取和必要。</strong>在这个意义上，人类的需要是历史性的需要。社会要求个人在多大程度上作抑制性的发展，个人的需要本身及满足这种需要的权利就在多大程度上服从于<strong>凌驾其上的批判标准</strong>。</p>
+<p><strong>为了特定的社会利益而从外部强加在个人身上的那些需要，使艰辛、侵略、痛苦和非正义永恒化的需要，是“虚假的”需要。</strong>满足这种需要或许会使个人感到十分高兴，但如果这样的幸福会妨碍（他自己和旁人）认识整个社会的病态并把握医治弊病的时机这一才能的发展的话，它就不是必须维护和保障的。这样的需要具有社会的内容和功能，它们取决于个人所无法控制的外力；这些需要的发展和满足是受外界支配的。</p>
+<p><strong>抑制性的社会管理愈是合理、愈是有效、愈是技术性强、愈是全面，受管理的个人用以打破奴隶状态并获得自由的手段与方法就愈是不可想像。</strong></p>
+<p>一切解放都有赖于对奴役状态的觉悟，而这种觉悟的出现却往往被占主导地位的需要和满足所阻碍，这些需要和满足在很大程度上已成为个人自己的需要和满足。发展的过程往往是用另一种制度取代预定的制度；而最可取的目标则是用真实的需要代替虚假的需要，<em>抛弃抑制性的满足</em>。</p>
+<p><strong>发达工业社会的显著特征是它有效地窒息那些要求自由的需要，即要求从尚可忍受的、有好处的和舒适的情况中摆脱出来的需要，同时它容忍和宽恕富裕社会的破坏力量和抑制功能。</strong></p>
+<p><strong>在抑制性总体的统治之下，自由可以成为一个强有力的统治工具。</strong>决定人类自由程度的决定性因素，不是可供个人选择的范围，<strong>而是个人能够选择的是什么和实际选择的是什么</strong>。自由选择的准绳绝不可能是绝对的，但也不完全是相对的。<u>自由选择主人并没有使主人和奴隶归于消失</u>。如果商品和服务设施维护对艰辛和恐惧的生活所进行的社会控制的话，就是说，如果它们维护异化的话，那么，<u>在大量的商品和服务设施中所进行的自由选择就并不意味着自由</u>。何况个人自发地重复所强加的需要并不说明他的意志自由，<u>而只能证明控制的有效性</u>。</p>
+<p><strong>“内心自由”的观念在这里有它的现实性，它指的是人们可以借以变成和保存“他自己”的私人空间。</strong></p>
+<p><strong>制度的效率使个人的认识迟钝，使他对不表达整体之压制力量的事实视而不见。</strong>如果人们发现自己身处构成其生活的那些事物之中，那是他们接受而不是创造了事物的规律的结果，<u>不过这一规律并非物理规律，而是社会规律。</u></p>
+<p>当个人认为自己同强加于他们身上的存在相一致并从中得到自己的发展和满足时，异化的观念好像就成问题了。这种一致化的过程并非虚构而确是现实。然而这种现实又构成了异化的更高阶段。后者已经完全变成客观的事实；异化了的主体被其异化了的存在所吞没。<strong>这里存在的只是一种向度，而且它无处不在、形式多样。</strong>进步的成就蔑视思想意识的控诉和判决，在它们的法庭面前，它们的合理性的“虚假意识”变成了真实的意识。</p>
+<p>生产机构及其所生产的商品和服务设施“出售”或强加给人们的是整个社会制度。公共运输和通讯工具，衣、食、住的各种商品，令人着迷的新闻娱乐产品，这一切带来的都是<u>固定的态度和习惯</u>，以及使消费者比较愉快地与生产者、进而与社会整体相联结的思想和情绪上的反应。在这一过程中，<strong>产品起着思想灌输和操纵的作用；它们引起一种虚假的难以看出其为谬误的意识。</strong></p>
+<p>这是一种好的生活方式，一种比以前好得多的生活方式；<strong>但作为一种好的生活方式，它阻碍着质的变化。</strong><u>由此便出现了一种单向度的思想和行为模式</u>。在这一模式中，<strong>凡是其内容超越了已确立的话语和行为领域的观念、愿望和目标，不是受到排斥就是沦入已确立的话语和行为领域。它们是由既定制度的合理性及其量的延伸的合理性来重新定义的。</strong></p>
+<blockquote>
+<p>我们所说的任何概念其意思就是一整套操作；概念等同于一套相应的操作。</p>
+<p>采用操作主义观点的意义远不止于对“概念”意义的理解，而是意味着我们整个思想习惯的深刻变化，意味着我们不再容许在思想概念里把我们不能用操作来充分说明的东西当作工具来使用。</p>
+<p>——P·W·布里奇曼</p>
+</blockquote>
+<p><strong>单向度思想是由政策的制订者及其新闻信息的提供者系统地推进的。</strong>它们的论域充满着自我生效的假设，这些被垄断的假设不断重复，最后变成令人昏昏欲睡的定义和命令。譬如，在自由世界里运转或被运转的制度是“自由的”；其他那些超越这一模式的自由方式不是被定义为无政府主义、共产主义，就是被定义为宣传。</p>
+<p><strong>不管现状所强加的政治束缚如何，技术愈是能够为和平创造条件，人的身心就愈是组织起来反对历史的替代性选择。</strong></p>
+<p>工业社会最发达的地区始终如一地表现出两个特点：</p>
+<ol>
+<li>
+<p>是使技术合理性完善化的趋势</p>
+</li>
+<li>
+<p>是在已确立的制度内加紧遏制这一趋势的种种努力。</p>
+</li>
+</ol>
+<p>发达工业文明的内在矛盾正在于此：<strong>其不合理成分存在于其合理性中</strong>。这就是它的各种成就的标志。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,752 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter2/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>40个发明原理 - Triz</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#40" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Triz" class="md-header__button md-logo" aria-label="Triz" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Triz
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              40个发明原理
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Triz" class="md-nav__button md-logo" aria-label="Triz" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Triz
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    创新算法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📙 创新算法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    需要注意的点
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    40个发明原理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="40">40个发明原理<a class="headerlink" href="#40" title="Permanent link">&para;</a></h1>
+<ol>
+<li>
+<p><strong>分割原理</strong></p>
+<ul>
+<li>将物体分割成独立的部分</li>
+<li>使物体成为可组合的部件（易于拆卸和组装）</li>
+<li>增加物体被分割的程度</li>
+</ul>
+</li>
+<li>
+<p><strong>抽取（提取、找回、移走）原理</strong></p>
+<ul>
+<li>将物体中“干扰”的部分或特性抽取出来</li>
+<li>只抽取物体中需要的部分或特性</li>
+</ul>
+</li>
+<li>
+<p><strong>局部质量原理</strong></p>
+<ul>
+<li>将物体或外部环境（动作）的同类结构转变成异类结构</li>
+<li>物体的不同部分实现不同的功能</li>
+<li>物体的每个部分应放在最利于其运行的条件下</li>
+</ul>
+</li>
+<li>
+<p><strong>非对称原理</strong></p>
+<ul>
+<li>用非对称的形式代替对称形式</li>
+<li>如果物体已经是非对称的，那么增加其非对称的程度</li>
+</ul>
+</li>
+<li>
+<p><strong>合并原理</strong></p>
+<ul>
+<li>合并空间上同类的物体，或预定要相邻操作的物体</li>
+<li>合并时间上的同类或相邻的操作</li>
+</ul>
+</li>
+<li>
+<p><strong>普遍性原理</strong></p>
+<ul>
+<li>一个物体能实现多种功能，因此可以去掉其他部件</li>
+</ul>
+</li>
+<li>
+<p><strong>嵌套（俄罗斯套娃）原理</strong></p>
+<ul>
+<li>将一个物体放到另一个物体中，这个物体再放到第三个物体中，以此类推；</li>
+<li>一个物体穿过另一个物体的空腔</li>
+</ul>
+</li>
+<li>
+<p><strong>配重原理</strong></p>
+<ul>
+<li>通过与其他物体结合产生升力，来补偿物体的重量</li>
+<li>由受外部环境影响的气动力，或者水动力来补偿物体的重量</li>
+</ul>
+</li>
+<li>
+<p><strong>预先反作用原理</strong></p>
+<ul>
+<li>预先给物体施加反作用，以补偿过量的或者不想要的压力</li>
+</ul>
+</li>
+<li>
+<p><strong>预处理原理</strong></p>
+<ul>
+<li>事先对物体完全或部分实施必要的改变</li>
+<li>事先把物体放在最方便的位置，以便能立即投入使用</li>
+</ul>
+</li>
+<li>
+<p><strong>预先应急措施原理</strong></p>
+<ul>
+<li>预先准备好相应的应急措施，以提高物体的可靠性</li>
+</ul>
+</li>
+<li>
+<p><strong>等势原理</strong></p>
+<ul>
+<li>改变工作条件，而不需要升降物体</li>
+</ul>
+</li>
+<li>
+<p><strong>反过来做原理</strong></p>
+<ul>
+<li>不直接实施问题指出的动作，而是实施一个相反的动作</li>
+<li>使物体或外部环境移动的部分静止，或使静止的部分移动</li>
+<li>把物体上下颠倒</li>
+</ul>
+</li>
+<li>
+<p><strong>曲面化原理</strong></p>
+<ul>
+<li>用曲线部件代替直线部件，用球面代替平面，用球体代替立方体</li>
+<li>采用滚筒、球体、螺旋体</li>
+<li>利用离心力、用旋转运动代替直线运动</li>
+</ul>
+</li>
+<li>
+<p><strong>动态性原理</strong></p>
+<ul>
+<li>改变物体或外部环境的特性，以便在操作的每个阶段，都能提供最佳性能</li>
+<li>如果物体不能移动，让它移动，让物体各部分都可以相互移动</li>
+<li>把物体分成几个部分，它们能够改变彼此的相对位置</li>
+</ul>
+</li>
+<li>
+<p><strong>部分或超额行动原理</strong></p>
+<ul>
+<li>如果得到规定效果的100%很难，那么就完成得多一些或少一些</li>
+</ul>
+</li>
+<li>
+<p><strong>转变到新维度原理</strong></p>
+<ul>
+<li>把物体的动作、布局从一维变成二维，二维变成三维，以此类推</li>
+<li>利用物体不同级别的组合</li>
+<li>将物体倾斜或侧放</li>
+<li>使用给定表面的“另一面”</li>
+<li>把光线投射到邻近的区域，或者到物体的反面</li>
+</ul>
+</li>
+<li>
+<p><strong>机械振动原理</strong></p>
+<ul>
+<li>使用振动</li>
+<li>如果振动已经存在，那么增加其频率直至超音频</li>
+<li>使用共振频率</li>
+<li>借用压电振动代替机械振动</li>
+<li>使用超声波振动和电磁场的结合</li>
+</ul>
+</li>
+<li>
+<p><strong>周期性动作原理</strong></p>
+<ul>
+<li>用周期性的动作（脉动）代替连续的动作</li>
+<li>如果动作已经是周期性的，则改变其频率</li>
+<li>利用脉动之间的停顿来执行额外的动作</li>
+</ul>
+</li>
+<li>
+<p><strong>有效动作的连续性原理</strong></p>
+<ul>
+<li>连续实施动作不要中断，物体的所有部分应该一直处于满负荷工作状态</li>
+<li>去除所有空闲的、中间的动作</li>
+<li>用循环的动作代替“来来回回”的动作</li>
+</ul>
+</li>
+<li>
+<p><strong>快速通过原理</strong></p>
+<ul>
+<li>非常快速地实施有害的或危险的操作</li>
+</ul>
+</li>
+<li>
+<p><strong>变害为利原理</strong></p>
+<ul>
+<li>利用有害的因素（特别是环境中的）获得积极的效果</li>
+<li>通过与另一个有害因素结合，来消除一个有害因素</li>
+<li>增加有害因素到一定程度，使之不再有害</li>
+</ul>
+</li>
+<li>
+<p><strong>反馈原理</strong></p>
+<ul>
+<li>引入反馈</li>
+<li>如果已经有反馈，那么改变它</li>
+</ul>
+</li>
+<li>
+<p><strong>中介物原理</strong></p>
+<ul>
+<li>使用中间物体来传递或者执行一个动作</li>
+<li>临时把初始物体和另一个容易移走的物体结合</li>
+</ul>
+</li>
+<li>
+<p><strong>自服务原理</strong></p>
+<ul>
+<li>物体在实施辅助和维修操作时，必须能自我服务</li>
+<li>利用废弃的材料和能量</li>
+</ul>
+</li>
+<li>
+<p><strong>复制原理</strong></p>
+<ul>
+<li>用简化的、便宜的复制品来替代易碎的或不方便操作的物体</li>
+<li>如果已经使用了可见光的复制品，那么使用红外光或紫外光的复制品</li>
+<li>用光学图像替代物体（或物体系统），然后缩小或放大它</li>
+</ul>
+</li>
+<li>
+<p><strong>一次性用品原理</strong></p>
+<ul>
+<li>用廉价物品替代昂贵物品，在某些属性上作出妥协（例如寿命）</li>
+</ul>
+</li>
+<li>
+<p><strong>替代机械系统原理</strong></p>
+<ul>
+<li>用光、声、热、嗅觉系统替代机械系统</li>
+<li>用电、磁或电磁场来与物体交互作用</li>
+<li>用移动场替代静止场，用随时间而变化的场替代固定场，用结构化的场替代随机场</li>
+<li>使用场，并结合铁磁性颗粒</li>
+</ul>
+</li>
+<li>
+<p><strong>气动或液压结构原理</strong></p>
+<ul>
+<li>用气态或液态部件来代替固体部件。可以用空气或水、也可以用气垫或水垫，使这些部件膨胀。</li>
+</ul>
+</li>
+<li>
+<p><strong>柔性膜或薄膜原理</strong></p>
+<ul>
+<li>用柔性膜或薄膜代替常用的结构</li>
+<li>用柔性膜或薄膜将物体与它的外部环境分隔开</li>
+</ul>
+</li>
+<li>
+<p><strong>多孔材料原理</strong></p>
+<ul>
+<li>让物体变成多孔的，或使用辅助的多孔部件（如插入、覆盖等）</li>
+<li>如果一个物体已经是多孔的，那么事先往孔里填充某种物质</li>
+</ul>
+</li>
+<li>
+<p><strong>改变颜色原理</strong></p>
+<ul>
+<li>改变物体或其环境的颜色</li>
+<li>改变物体或其环境的透明度</li>
+<li>对于难以看到的物体或过程，使用颜色添加剂来观测</li>
+<li>如果已经使用了这样的添加剂，那么使用发光追踪或原子追踪</li>
+</ul>
+</li>
+<li>
+<p><strong>同质性原理</strong></p>
+<ul>
+<li>与主物体交互的物体，应该由主物体的同种材料（或具有相似属性的材料）制成</li>
+</ul>
+</li>
+<li>
+<p><strong>抛弃和再生部件原理</strong></p>
+<ul>
+<li>物体的部件在完成其功能，或者变得没用之后，就被扔掉（丢弃、溶解、挥发等），或者在工作过程中已经改变</li>
+<li>物体已经用掉的部件，应该在工作期间恢复</li>
+</ul>
+</li>
+<li>
+<p><strong>改变特性原理</strong></p>
+<ul>
+<li>改变系统的物理状态</li>
+<li>改变浓度或密度</li>
+<li>改变柔韧程度</li>
+<li>改变温度或体积</li>
+</ul>
+</li>
+<li>
+<p><strong>状态转变原理</strong></p>
+<ul>
+<li>利用状态转变时的现象（例如体积变化、热量的吸收或释放等）</li>
+</ul>
+</li>
+<li>
+<p><strong>热膨胀原理</strong></p>
+<ul>
+<li>改变材料的温度，利用其膨胀或收缩效应</li>
+<li>利用具有不同热膨胀系数的多种材料</li>
+</ul>
+</li>
+<li>
+<p><strong>加速氧化原理</strong></p>
+<p>从氧化的一个级别，转变到下一个更高的级别：</p>
+<ul>
+<li>从环境的空气到氧化的空气</li>
+<li>从氧化的空气到纯氧</li>
+<li>从纯氧到电离的氧气</li>
+<li>从电离的氧气到臭氧化的氧气</li>
+<li>从臭氧化的氧气到臭氧</li>
+<li>从臭氧到单氧</li>
+</ul>
+</li>
+<li>
+<p><strong>惰性环境原理</strong></p>
+<ul>
+<li>用惰性环境代替通常环境</li>
+<li>往物体中增加中性物体或添加剂</li>
+<li>在真空中实施过程</li>
+</ul>
+</li>
+<li>
+<p><strong>复合材料原理</strong></p>
+<ul>
+<li>用复合材料代替同性质的材料</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

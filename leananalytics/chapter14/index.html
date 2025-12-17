@@ -1,0 +1,1951 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter13/">
+      
+      
+        <link rel="next" href="../chapter15/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>阶段1：移情 - Lean Analytics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Lean Analytics" class="md-header__button md-logo" aria-label="Lean Analytics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lean Analytics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              阶段1：移情
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Lean Analytics" class="md-nav__button md-logo" aria-label="Lean Analytics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lean Analytics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    精益数据分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    创业记分牌
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    你把生命献给谁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    以数据为导向与通过数据获取信息
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据分析框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一关键指标的约束力
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    你所在的商业领域
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    商业模式一：电子商务
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    商业模式二：SaaS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    商业模式三：免费移动应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    商业模式四：媒体网站
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    商业模式五：用户生成内容
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    商业模式六：双边市场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    创业阶段的划分
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阶段1：移情
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阶段1：移情
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        移情阶段的指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何发现值得解决的问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何验证问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何验证问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果判断一个问题需要解决（如何判断一个问题是问题）：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表明问题值得解决的征兆（模式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表明受众不是很有兴趣的消极征兆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        客户访谈的技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何避免引导受访者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        聚合性和发散性问题访谈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何知道问题真的足够让人痛苦
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人们目前在如何解决问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        有足够多的人在乎这一问题吗（理解市场）？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么才能让人们意识到这一问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大规模地收集答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="大规模地收集答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开展一项能得到大量回答的问卷活动
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何验证解决方案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-viable-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        设定最小可行化产品（minimum viable product）的内容
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="设定最小可行化产品（minimum viable product）的内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smoke-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冒烟测试（Smoke Testing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regression-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回归测试（Regression Testing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        衡量最小可行化产品
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="衡量最小可行化产品">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不要忽视定性分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为删除功能做准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题清单：
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阶段2：黏性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阶段3：病毒性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阶段4：营收
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    阶段5：规模化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模式+阶段决定你跟踪的指标
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    我是否足够优秀
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    电子商务：底线在哪里
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SaaS：底线在哪里
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    免费移动应用：底线在哪里
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    媒体网站：底线在哪里
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用户生成内容：底线在哪里
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    进入企业市场
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    企业内部的精益之道：内部创业者
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    在企业中注入数据文化
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        移情阶段的指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何发现值得解决的问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何验证问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="如何验证问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果判断一个问题需要解决（如何判断一个问题是问题）：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表明问题值得解决的征兆（模式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        表明受众不是很有兴趣的消极征兆
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        客户访谈的技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何避免引导受访者
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        聚合性和发散性问题访谈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何知道问题真的足够让人痛苦
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        人们目前在如何解决问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        有足够多的人在乎这一问题吗（理解市场）？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎么才能让人们意识到这一问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大规模地收集答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="大规模地收集答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        开展一项能得到大量回答的问卷活动
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如何验证解决方案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-viable-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        设定最小可行化产品（minimum viable product）的内容
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="设定最小可行化产品（minimum viable product）的内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#smoke-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冒烟测试（Smoke Testing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regression-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回归测试（Regression Testing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        衡量最小可行化产品
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="衡量最小可行化产品">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不要忽视定性分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为删除功能做准备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题清单：
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1">阶段1：移情<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>你要做的是尝试了解他人所想，学会换位思考。</p>
+</blockquote>
+<p>你需要发现并验证问题，然后查看所提出的解决方案是否奏效。</p>
+<p><strong>将解决方案与问题分离开，只关注问题本身，这样才能找到一个值得解决的问题。</strong>大多数时候，提出解决方案的人并不了解客户真正的问题。</p>
+<h2 id="_1">移情阶段的指标<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>重点在于<strong>定性反馈的收集</strong>上，目标在于找到一个值得解决的问题，以及足以获取早期用户的解决方案。</p>
+<p>要想获得这些信息，必须走出办公楼。如果你不常走出办公楼，并且没能在各个阶段对至少<strong>15</strong>名用户进行过访谈，应警惕自己是否有些操之过急。</p>
+<p>早期要做大量的访谈笔记。然后根据访谈内容，了解用户需求以及最受关注的解决方案，这样能知道最小可行化产品（MVP）需要包含哪些功能。</p>
+<h2 id="_2">如何发现值得解决的问题<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>有一个想法并<strong>可以走出去验证如何基于它构建些什么，非常非常难</strong>。</p>
+<p><strong>问题（或想法）的发现往往源于聆听</strong>。请对抱怨内容持保留态度。你需要积极主动去聆听，找寻隐藏在各种抱怨背后的真相或规律。</p>
+<p><strong>企业级解决方案和公司内部创业环境下</strong>：你可能已经从客户支持结果中得知了人们对新产品的需求。若打算说服企业，你可能是一个意识到缺少某样东西的终端用户，或者是看到机遇的前供应商。</p>
+<p>通过和朋友聊一聊你的想法，可以从反馈中得到一些必要信息，<u>如果想法通过了取样测试，说明是时候启动精益创业流程了。</u></p>
+<h2 id="_3">如何验证问题<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">如果判断一个问题需要解决（如何判断一个问题是问题）：<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>问题足以让人感到困扰</strong></li>
+</ul>
+<p>你想要人们采取行动，并能够以一种有助于你的企业发展的方式来完成这件事，这就要求人们的处境足够窘迫，从而不得不按照你的希望去做事。</p>
+<ul>
+<li><strong>有足够多的人感到困扰</strong></li>
+</ul>
+<p>只为一个人解决问题的行为叫作咨询。你需要一个潜在市场。营销者希望受众能够达到群内同质化（即群内成员的喜好存在一定的共性）以及群际异质化（即可按照某种特定方式，利用定制信息区分和瞄准务细分市场）</p>
+<ul>
+<li><strong>他们已在试图解决这一问题</strong></li>
+</ul>
+<p>如果问题真实存在并已得到充分认识，则人们一定会想办法解决。无论当前的解决方案是什么，它起初<strong>都将是你最大的对手，因为对于人们来说，它才是最容易的解决方法</strong>。</p>
+<blockquote>
+<p>在某些情况下，市场并不知道自身存在着问题。</p>
+</blockquote>
+<p><strong>一位客户无法形成买方市场。你不能在与寥寥数人进行谈话后，便根据他们一致的积极反馈来决定该产品具有开发价值。</strong></p>
+<h3 id="_5">表明问题值得解决的征兆（模式）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>他们想立刻掏钱购买</li>
+<li>他们正主动尝试（或曾经尝试）解决当前问题</li>
+<li>他们很健谈，并且提出了很多相关问题，表现出了对问题的兴趣</li>
+<li>他们身体表现了积极的态度</li>
+</ul>
+<h3 id="_6">表明受众不是很有兴趣的消极征兆<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>听众走神了</li>
+<li>话题被转移了</li>
+<li>身体表现了消极态度</li>
+</ul>
+<p>扪心自问：<strong>我是否准备好在接下来的五年时间里，全身心地投入到当前问题的解决当中？</strong></p>
+<h3 id="_7">客户访谈的技巧<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>面对面访谈，观察客户姿态和反应</li>
+<li>选择中立场所</li>
+<li>避免录音</li>
+<li>确保有一个目标和场景</li>
+<li>简要为访谈流程做准备</li>
+<li>了解客户的基本信息和背景</li>
+<li>通过讲故事来设置问题情境</li>
+<li>让受访者对问题排序来检测问题的重要程度</li>
+<li>检验解决方案</li>
+<li>在访谈结束前提一些要求</li>
+</ul>
+<h3 id="_8">如何避免引导受访者<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>不表明自己的意图</strong></li>
+<li>不使用带有倾向性的措辞，因为这样会导致默许偏差的形成</li>
+<li>使用开放性问题</li>
+<li>少说话，多听</li>
+<li>注意肢体语言的暗示</li>
+<li><strong>保证问题的真实性</strong></li>
+<li>问题越具体，得到的答案越真实</li>
+<li>可以要求访问者模拟自己朋友的想法，以减少表演成分，也可反映出此人的世界观</li>
+<li><strong>刨根问底</strong></li>
+<li>反复询问为什么</li>
+<li>使用停顿来让受访者思考，以得出更多答案</li>
+<li><strong>寻找其他蛛丝马迹</strong></li>
+<li><strong>找另一个人帮忙记笔记并辅助观察用户姿态</strong></li>
+<li><strong>利用出乎意料，在人的防备意识降低时抛出问题</strong></li>
+</ul>
+<h3 id="_9">聚合性和发散性问题访谈<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>聚合性问题</strong></li>
+<li>目的：为将来的行动设定明确的方向</li>
+<li>提供有关问题的背景内容，提出更多具体问题，并要求受访者将问题按重要程度排序</li>
+<li>重点关注细节信息</li>
+<li>风险：过分关注某些自认为重要的问题，无法让受访者说出对他们而言可能更加重要的问题</li>
+<li><strong>发散性问题</strong></li>
+<li>目的：扩大可用于解决方案的搜索范围</li>
+<li>不设固定问题，问题空间很大</li>
+<li>风险：关注的问题数量太多、范围太广，没有让受访者重点关注其中的某个问题，可能会得到更多的问题，但不能提供足够多的类似问题以及清晰的行动路线</li>
+<li><strong>平衡两种类型的问题访谈</strong></li>
+<li>给受访者机会，让他们告诉你自己想要的是什么，但当你自认为找到有价值的问题时，要做好准备，让受访者重点关注你希望他们关注的问题。</li>
+<li>如果受访者无法和你产生共鸣，不应反复强调这些问题</li>
+</ul>
+<h3 id="_10">如何知道问题真的足够让人痛苦<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>此处的第一关键指标是<strong>痛苦程度</strong>，具体指受访者在听闻问题后的痛苦程度。</p>
+<p>衡量方式：</p>
+<ul>
+<li>为问题访谈打分：尽可能保证打分的客观性，并从中获得价值（有/差不多/没有）</li>
+<li>
+<ol>
+<li>受访者有没有成功为问题排序：受访者如果一直在顾左右而言他，说明你提出的问题对其造成的痛苦还不够深。</li>
+<li>受访者是否（曾经）积极尝试着解决问题</li>
+<li>受访者在整个访谈过程中是否足够专注</li>
+<li>受访者是否同意后续面谈/访谈（你将在那时提出自己的解决方案）</li>
+<li>受访者是否愿意引荐他人供你访谈</li>
+<li>受访者是否愿意立即付钱购买你的解决方案</li>
+</ol>
+</li>
+</ul>
+<h3 id="_11">人们目前在如何解决问题<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p><strong>值得解决的问题有一个特点，有很多人正在试图或曾经试图解决过它。</strong>人们会花大力气去解决那些于自身十分痛苦的问题。</p>
+<ul>
+<li>有多少人从未尝试着解决问题？</li>
+<li>有多少人主动提供了“足够好”的解决方案？</li>
+</ul>
+<p>过于理想化的创业公司往往低估了市场的惰性。<u>他们试图利用对客户而言并不那么重要的产品特点、功能和策略逆袭市场中的领导者。</u></p>
+<p>要想从市场领导者手里把客户抢过来，就要比他们更努力。不要只盯着对方“明显的”缺陷不放（比如过时的设计风格），认为那才是需要改进的地方。为了找到客户真正感到痛苦的元素，并保证能够迅速将其解决掉，你必须进行更加深入的挖掘。</p>
+<h2 id="_12">有足够多的人在乎这一问题吗（理解市场）？<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<p>如果你找到了一个让人们感到足够痛苦的问题，接下来就应该去了解市场的规模和潜力。</p>
+<p><strong>单一客户无法代表市场</strong>。</p>
+<p>利用自上而下和自下而上的分析方法估算市场规模。</p>
+<ul>
+<li><strong>自上而下分析法</strong></li>
+<li>从很大的数字（分类/人群/大的场景/大的需求）开始，不断拆分。</li>
+<li><strong>自下而上分析法</strong></li>
+<li>从最小粒度开始观察，往大估算</li>
+</ul>
+<p>多问些<strong>背景</strong>方面的问题，以了解受访者的个人信息。</p>
+<p>访谈问题很大程度上取决于你要交谈的对象和你的公司类型：</p>
+<ul>
+<li>企业市场：受访者在公司内的地位、购买力、预算、季节性影响力和所处行业</li>
+<li>消费者市场：受访者的生活方式、兴趣和社交圈</li>
+</ul>
+<h2 id="_13">怎么才能让人们意识到这一问题<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>如果受访者不知道问题的存在（但你有充分的证据证明它的确存在），你就需要了解一下使大家意识到问题存在的难度，以及应如何让其意识到这一点。</p>
+<p>方法：</p>
+<ul>
+<li>尽早给出原型</li>
+<li>尽早演示</li>
+<li>看他们是否愿意马上付钱</li>
+<li>观察他们向朋友解释的过程，并判断其是否懂得如何传递信息</li>
+<li>请他们推荐其他可能在乎该问题的人选</li>
+</ul>
+<p><strong>使用故事板（场景），描绘（还原）客户的一天。</strong></p>
+<h2 id="_14">大规模地收集答案<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>当进行过10~20次客户访谈后，你应该扩大自己的行动范围，做一些定量分析。</p>
+<p>好处：</p>
+<ul>
+<li>迫使你将访谈过程规范化，从主观转为客观</li>
+<li>检验你是否能够大规模地吸引客户的注意力，以获取最终的蓬勃发展</li>
+<li>给予你可供分析和分类的量化信息，并揭示出必须要有一定受访群体才能成功发现的趋势和迹象</li>
+<li>受访者可能会成为你的公测用户以及社区的用户基础</li>
+</ul>
+<h3 id="_15">开展一项能得到大量回答的问卷活动<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>明确自己提出问题的理由</strong>，希望验证什么问题？量化哪种不确定性？<u>不要只想着问问题，应明确问题的答案会对你的行为产生怎样的影响。</u><strong>在发出问卷前应先明确立场</strong>。为每个量化问题赋予一个“恰当”的分数。</li>
+<li><strong>问卷设计</strong></li>
+<li>利用年龄、性别或互联网使用情况等人口统计学和心理学数据，对问卷回答进行分类</li>
+<li>可做统计分析的量化问题，如打分、对言论的支持或反对、选择列表信息等</li>
+<li>开放性问题可促使问卷回答者提供定性数据</li>
+<li><strong>测试</strong></li>
+<li>发放问卷前，先在一些没见过问卷的人身上试试。观察他们对问卷的理解和态度</li>
+<li>至少找三个目标市场内的人，等他们能顺利完成问卷，并解释出每道题的含义后，再准备发放问卷</li>
+<li><strong>发放问卷</strong></li>
+<li>指明目标群体</li>
+<li>指出试图解决的问题</li>
+<li>指出解决方案或自己独特的价值定位，不要用销售说辞</li>
+<li><strong>收集信息</strong></li>
+<li>衡量每份完整回答所需的成本，如果完成率不高，查看流失率集中的题目，优化问卷</li>
+<li>收集回答者的联系方式，其中一些回答者可能会成为你的测试用户</li>
+<li><strong>分析数据</strong></li>
+<li>你能否引起市场的注意？人们会点击你的广告和链接吗？哪个点击率最高？</li>
+<li>你之前的假设正确吗？成功收集数据后，你又会做出怎样的决策？</li>
+<li>人们会试用你的解决方案或产品吗？回答者中有多少人愿意被直接联系？有多少人同意加入论坛或测试组？有多少人在开放式答题中索要了产品的使用权限？</li>
+<li>哪个广告语效果最好？哪个竞争者市场占有率最高？是否存在占据了绝对优势的一方？</li>
+<li>按不同市场细分分析每道量化问题，观察是否有特定群体给出了与众不同的回答。</li>
+</ul>
+<h2 id="_16">如何验证解决方案<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p>意义在于消除商业模式中的风险</p>
+<ul>
+<li>定性反馈——客户访谈</li>
+<li>定量反馈——问卷调查</li>
+</ul>
+<h2 id="minimum-viable-product">设定最小可行化产品（minimum viable product）的内容<a class="headerlink" href="#minimum-viable-product" title="Permanent link">&para;</a></h2>
+<p><strong>最小可行化产品必须能够兑现你对用户和客户所承诺的价值。</strong></p>
+<p>在设计最小可行化产品时，重新关注受访者。向他们出示线框图、原型和模型。在产品开发前，<strong>确保从受访者身上找到强烈积极的反应。</strong>从已验证问题、独特的价值定位、最小可行化产品以及验证成功的指标中，删掉所有未严格遵循标准的因素。</p>
+<p><strong>最小可行化商品是一个过程，而非一件商品。</strong></p>
+<p>需要区分冒烟测试和最小可行化产品的区别。</p>
+<h3 id="smoke-testing"><strong>冒烟测试</strong>（Smoke Testing）<a class="headerlink" href="#smoke-testing" title="Permanent link">&para;</a></h3>
+<p>最早源于制造业，用于测试管道。往管道里灌烟，看管壁是否有烟冒出，检验管道是否有缝隙。</p>
+<p>在软件中，代表在交付测试之前的自测，即预测试。</p>
+<p>具体执行：在每日构建版本后，对系统的基本功能进行简单测试。</p>
+<h3 id="regression-testing">回归测试（Regression Testing）<a class="headerlink" href="#regression-testing" title="Permanent link">&para;</a></h3>
+<p>验证缺陷得到了正确的修复，同时对系统的变更没有影响以前的功能。</p>
+<ol>
+<li>完全重复测试</li>
+<li>选择性重复测试</li>
+</ol>
+<h2 id="_17">衡量最小可行化产品<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<p>客户与最小可行化产品的每一次交互均会生成可供分析的数据。</p>
+<p>如果不明确指标内容，也未定义“成功”的样子，就<strong>不应着手开发产品</strong>。初期最小可行化产品中的每个元素，都应与第一关键指标有关并对其产生影响。</p>
+<p>本阶段，<strong>任何用户获取方面的数据指标都是没有意义的。</strong></p>
+<p><strong>关键在于找出创业风险最大的部分，然后通过反复的测试与学习化解风险。</strong></p>
+<p><strong>最重要的数据指标与用户参与度有关：</strong></p>
+<ul>
+<li>人们真的在用这款产品吗？</li>
+<li>他们是如何使用产品的？</li>
+<li>他们使用了产品的全部功能还是部分功能？</li>
+<li>产品的使用情况和用户行为是否符合我们的预期？</li>
+</ul>
+<p><strong>在找到有关使用情况和用户参与度的对应指标以前，不要开发任何功能。</strong></p>
+<p>如果你尚不能实现某个功能或产品模块，需慎重对待功能或模块的添加，因为这会带来越来越难控制的变数。</p>
+<p>流失的判断：30天未使用产品</p>
+<h3 id="_18">不要忽视定性分析<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>应该在整个最小可行化产品的迭代过程中与用户和客户保持不间断的交流。</p>
+<h3 id="_19">为删除功能做准备<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>如果一项功能无人使用，或是不具备使用价值，则应删除功能，看看会发生什么。删除后观察现有用户的参与度和使用情况。</p>
+<h2 id="_20">问题清单：<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<ol>
+<li>进行的客户访谈是否足以使自己确信已找到值得解决的问题</li>
+<li>是否足够了解我的客户</li>
+<li>是否相信自己的解决方案能够满足客户的需求</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
