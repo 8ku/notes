@@ -1,6 +1,10 @@
+:root{
+  --font-family: "Source Han Serif", "Noto Serif", "Noto Serif SC", 'Circular',-apple-system,'BlinkMacSystemFont','Roboto','Helvetica Neue',sans-serif;
+  letter-spacing: 0.6;
+}
+
 .confirm-btn, body {
   background: rgb(240, 240, 240);
-  font-family: "Noto Serif", "Noto Serif SC", 'Circular',-apple-system,'BlinkMacSystemFont','Roboto','Helvetica Neue',sans-serif;
   font-weight: 400;
   margin-top: 40px; 
 }
@@ -108,7 +112,7 @@ input:checked + .slider:before {
   position: fixed; /* Fixed position */
   top: 56px;
   right: 40px; /* Distance from the right of the page */
-  width: 260px;
+  max-width: 360px;
   display: flex; /* Use Flexbox */
   flex-direction: column;
   gap: 10px; /* Space between filters */
@@ -121,9 +125,10 @@ input:checked + .slider:before {
 }
 
 .filter-options {
-  padding: 10px; /* Some padding */
+  padding: 10px 0; 
   box-sizing: border-box; 
   position: relative; 
+  width: 100%;
 }
 
 .dropdown-button {
@@ -136,18 +141,36 @@ input:checked + .slider:before {
   border: 1px solid #ccc;
   border-radius: 5px;
   user-select: none;
+  font-size: 14px;
+}
+
+.selected-areas-display {
+  padding: 8px 10px;
+  font-size: 13px;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-top: 5px;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.selected-areas-display.all-selected {
+  color: #888;
+  font-style: italic;
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
-  right: 10px;
+  right: 1px;
   background-color: #fff;
   border-radius: 4px;
-  min-width: 160px;
+  min-width: 260px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px !important;
   z-index: 1;
+  font-size: 14px;
 }
 
 .dropdown-menu label {
@@ -176,6 +199,7 @@ input:checked + .slider:before {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+  width: 100%;
 }
 /* dropdown selection */
 
@@ -188,12 +212,14 @@ input:checked + .slider:before {
 
 #dateSliderContainer {
   padding: 10px;
+  margin: 20px;
 }
 
 #dateSliderInfo {
-  margin-top: 22px;
+  margin: 22px 16px 0 16px;
   font-size: 12px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -470,3 +496,46 @@ input:checked + .slider:before {
   font-size: 1px;
 }
 /*===== // Resonsive Vertical Timeline =====*/
+
+/* Date Inputs */
+.date-inputs-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.date-input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+}
+
+.date-input-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.date-input-group input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 260px;
+}
+
+.date-input-group input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.date-display {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* Date Inputs */

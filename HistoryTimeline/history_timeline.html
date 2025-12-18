@@ -41,29 +41,42 @@
     <div class="filter-options">
       <div id="dateSliderContainer"></div>
       <div id="dateSliderInfo">
-        <span id="dateRangeStart">3000 BC</span> - <span id="dateRangeEnd">2000 AD</span>
+        <div class="date-display">
+          <span id="dateRangeStart">3000 BC</span> - <span id="dateRangeEnd">2000 AD</span>
+        </div>
+        <div class="date-inputs-container">
+          <div class="date-input-group">
+            <label>Start:</label>
+            <input type="text" id="startDateInput" placeholder="e.g., -3000 or 3000 BC" />
+          </div>
+          <div class="date-input-group">
+            <label>End:</label>
+            <input type="text" id="endDateInput" placeholder="e.g., 2000 or 2000 AD" />
+          </div>
+        </div>
+        <!-- Area Filter -->
+        <div class="filter-options">
+          <div id="dropdownAreaButton" class="dropdown-button">
+            Select Areas <i class="fa fa-caret-down"></i>
+          </div>
+          <div id="selectedAreasDisplay" class="selected-areas-display"></div>
+          <div id="dropdownAreaMenu" class="dropdown-menu">
+            <label><input type="checkbox" class="area-option" value="all" checked> All Areas</label>
+            <label><input type="checkbox" class="area-option" value="China"> China</label>
+            <label><input type="checkbox" class="area-option" value="Asia"> Asia</label>
+            <label><input type="checkbox" class="area-option" value="Europe"> Europe</label>
+            <label><input type="checkbox" class="area-option" value="North America"> North America</label>
+            <label><input type="checkbox" class="area-option" value="Africa"> Africa</label>
+            <!-- Add other areas as needed -->
+            <div class="areaSelectionBtn">
+              <button id="confirmAreaSelection" class="confirm-btn">Confirm</button>
+            </div>
+          </div>
+        </div>
         <button id="confirmDateSelection" class="confirm-btn">Confirm</button>
       </div>
     </div>
 
-    <!-- Area Filter -->
-    <div class="filter-options">
-      <div id="dropdownAreaButton" class="dropdown-button">
-        Select Areas <i class="fa fa-caret-down"></i>
-      </div>
-      <div id="dropdownAreaMenu" class="dropdown-menu">
-        <label><input type="checkbox" class="area-option" value="all" checked> All Areas</label>
-        <label><input type="checkbox" class="area-option" value="China"> China</label>
-        <label><input type="checkbox" class="area-option" value="Asia"> Asia</label>
-        <label><input type="checkbox" class="area-option" value="Europe"> Europe</label>
-        <label><input type="checkbox" class="area-option" value="North America"> North America</label>
-        <label><input type="checkbox" class="area-option" value="Africa"> Africa</label>
-        <!-- Add other areas as needed -->
-        <div class="areaSelectionBtn">
-          <button id="confirmAreaSelection" class="confirm-btn">Confirm</button>
-        </div>
-      </div>
-    </div>
 
   </div>
 
@@ -886,198 +899,860 @@
             more</a></span>
 
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">960 AD</div>
-          <div class="content-left">
-            <h4 class="area">China</h4>
-            <h3>A.D. 960 - 1279 宋</h3>
-            <p>960 - 1127 北宋</p>
-            <p>1127 - 1279 南宋</p>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">960 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 960 - 1279 宋</h3>
+          <p>960 - 1127 北宋</p>
+          <p>1127 - 1279 南宋</p>
         </div>
-
-        <div class="content-right-container">
-          <div class="century">987 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 987 - 1792 法兰西王国诞生</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a
-              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B3%95%E5%85%B0%E8%A5%BF%E7%8E%8B%E5%9B%BD%20Kingdom%20of%20France%20987-1792">Read
-              more</a></span>
-        </div>
-
+        <!-- <span class="timeline-author">John Doe</span> -->
       </div>
-      <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1038 AD</div>
-          <div class="content-left">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1038 - 1227 西夏</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+      <div class="content-right-container">
+        <div class="century">987 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 987 - 1792 法兰西王国诞生</h3>
         </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E6%B3%95%E5%85%B0%E8%A5%BF%E7%8E%8B%E5%9B%BD%20Kingdom%20of%20France%20987-1792">Read
+            more</a></span>
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1038 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1038 - 1227 西夏</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+      <div class="meta-date">
+        <span class="date">1000</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1068 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1068 - 1185 日本院政时代</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1100 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1100 发明火药</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1040 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1040 指南针用于军事导航</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1045 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1045 毕升发明活字印刷术</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1054 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1054 天主教和东正教分裂</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism:%5B%5B%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1066 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1066 诺曼征服英格兰</h3>
+          <p>彻底改变了英格兰的文化走向，从此英格兰受到<b>法国</b>的语言、文学、礼仪和美食的等方面的深远影响</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066:%5B%5B%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1096 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1096 - 1291 十字军东征</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%8D%81%E5%AD%97%E5%86%9B%E4%B8%9C%E5%BE%81%20Crusades%201096-1291">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1111 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1111 指南针用于海上导航</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+      <div class="meta-date">
+        <span class="date">1100</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1115 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1115 - 1234 金</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1185 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1185 - 1333 日本镰仓时代</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1206 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1206 - 1368 蒙古帝国</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
         <div class="meta-date">
-          <span class="date">1000</span>
+          <span class="date">1200</span>
           <span class="month">AD</span>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1266 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1266 马可·波罗到达元大都，见到元世祖忽必烈。</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1271 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1271 - 1368 元</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+
+      <div class="content-right-container">
+        <div class="century">1299 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1299 - 1922 奥斯曼帝国诞生</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire:%5B%5B%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1315 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1315 - 1322 大饥荒</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%A4%A7%E9%A5%A5%E8%8D%92%20the%20Great%20Famine%201315-1322">Read
+            more</a></span>
+      </div>
+
+      <div class="meta-date">
+        <span class="date">1300</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1336 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1336 - 1392 日本南北朝时代</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1336 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1336 - 1573 日本室町时代</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1346 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1346 - 1353 黑死病</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E9%BB%91%E6%AD%BB%E7%97%85%20Black%20Death%201346~1353">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1368 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1368 - 1644 明</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1378 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1378～1417年天主教会大分裂</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+
+      <div class="content-left-container">
+        <div class="century">1405 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1405 - 1433 郑和下西洋</h3>
+        </div>
+      </div>
 
       <!-- Article -->
       <div class="timeline-article">
         <div class="content-right-container">
-          <div class="century">1068 AD</div>
+          <div class="century">1467 AD</div>
           <div class="content-right">
             <h4 class="area">Asia</h4>
-            <h3>A.D. 1068 - 1185 日本院政时代</h3>
+            <h3>A.D. 1467 - 1590 日本战国时代</h3>
           </div>
           <!-- <span class="timeline-author">John Doe</span> -->
         </div>
       </div>
       <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1100 AD</div>
-          <div class="content-left">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1100 发明火药</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+      <div class="content-right-container">
+        <div class="century">1400 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>14C - 17C 文艺复兴</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4:%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4">Read
+            more</a></span>
+      </div>
+      <div class="meta-date">
+        <span class="date">1400</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1455 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1455 古登堡印刷版《圣经》出版</h3>
+          <p>加快了知识流通和欧洲人的识字率，推动了文艺复兴。</p>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1040 AD</div>
-          <div class="content-left">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1040 指南针用于军事导航</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1487 AD</div>
+        <div class="content-left">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1487 迪亚士发现好望角</h3>
+          <p>发现进入印度洋的航线</p>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1045 AD</div>
-          <div class="content-left">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1045 毕升发明活字印刷术</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1492 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1492 哥伦布发现美洲</h3>
+          <p><b>标志中世纪结束，近代开始。</b></p>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1054 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1054 天主教和东正教分裂</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a
-              href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism:%5B%5B%E5%9F%BA%E7%9D%A3%E6%95%99%E5%A4%A7%E5%88%86%E8%A3%82%20East-West%20Schism%5D%5D">Read
-              more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1066 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1066 诺曼征服英格兰</h3>
-            <p>彻底改变了英格兰的文化走向，从此英格兰受到<b>法国</b>的语言、文学、礼仪和美食的等方面的深远影响</p>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a
-              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066:%5B%5B%E8%AF%BA%E6%9B%BC%E5%BE%81%E6%9C%8D%E8%8B%B1%E6%A0%BC%E5%85%B0%201066%5D%5D">Read
-              more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-right-container">
-          <div class="century">1096 AD</div>
-          <div class="content-right">
-            <h4 class="area">Europe</h4>
-            <h3>A.D. 1096 - 1291 十字军东征</h3>
-          </div>
-          <span class="timeline-author">
-            <i class="material-symbols-outlined">travel_explore</i>
-            <a
-              href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%8D%81%E5%AD%97%E5%86%9B%E4%B8%9C%E5%BE%81%20Crusades%201096-1291">Read
-              more</a></span>
-        </div>
-      </div>
-      <!-- // Article -->
-
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1111 AD</div>
-          <div class="content-left">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1111 指南针用于海上导航</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1519 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1519 - 1521 麦哲伦环球航行</h3>
         </div>
         <div class="meta-date">
-          <span class="date">1100</span>
+          <span class="date">1500</span>
           <span class="month">AD</span>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article -->
 
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="century">1115 AD</div>
-          <div class="content-left">
-            <h4 class="area">China</h4>
-            <h3>A.D. 1115 - 1234 金</h3>
-          </div>
-          <!-- <span class="timeline-author">John Doe</span> -->
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1543 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1543 - 1687 科学革命</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution:%5B%5B%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1558 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1558 - 1603 伊丽莎白时代 Elizabethan era</h3>
+          <p>英国历史上的<b>黄金时代</b></p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era:%5B%5B%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era%5D%5D">Read
+            more</a></span>
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1573 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1573 - 1603 日本织丰政权</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1603 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1603 - 1868 日本江户时代</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+
+      <div class="meta-date">
+        <span class="date">1600</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1618 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1618 - 1648 三十年战争</h3>
+          <p>欧洲大陆最后一次重大战争</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War:%5B%5B%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1644 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1644 - 1911 清</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1688 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1688 - 1689 光荣革命</h3>
+          <p>这场政变以不流血著名, 诞生了 1689年权利法案, 是英国君主立宪制形成的重要事件。</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution:%5B%5B%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1721 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1721 - 1917 俄罗斯帝国</h3>
         </div>
       </div>
-      <!-- // Article -->
+    </div>
+    <!-- // Article-->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1760 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1760 - 1840 第一次工业革命</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution:%5B%5B%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution%5D%5D">Read
+            more</a></span>
+      </div>
+      <div class="meta-date">
+        <span class="date">1700</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1765 AD</div>
+        <div class="content-right">
+          <h4 class="area">North America</h4>
+          <h3>A.D. 1765 - 1783 美国独立战争</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD:%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1776 AD</div>
+        <div class="content-right">
+          <h4 class="area">North America</h4>
+          <h3>A.D. 1776 美国宣布独立</h3>
+        </div>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1789 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1789 法国大革命</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD:%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1789 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1789 - 1804 启蒙运动</h3>
+          <p>时间跨度: 确切开始时间没有共识, 但通常以1789年法国大革命或拿破仑战争开始(1804~1815)为结束.</p>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment:%5B%5B%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1804 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1804 拿破仑加冕称为法兰西皇帝</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%8B%BF%E7%A0%B4%E4%BB%91%20Napol%C3%A9on%20Bonaparte:%5B%5B%E6%8B%BF%E7%A0%B4%E4%BB%91%20Napol%C3%A9on%20Bonaparte%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1837 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1837 - 1901 维多利亚时期 Victorian era</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era:%5B%5B%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era%5D%5D">Read
+            more</a></span>
+      </div>
+      <div class="meta-date">
+        <span class="date">1800</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1840 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1840 - 1842 第一次鸦片战争</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War%5D%5D">Read
+            more</a></span>
+      </div>
+
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1856 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1856 - 1860 第二次鸦片战争</h3>
+        </div>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1853 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1853/1858 日本明治维新</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1868 AD</div>
+        <div class="content-right">
+          <h4 class="area">Asia</h4>
+          <h3>A.D. 1868 - 1912 日本明治时代</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-right-container">
+        <div class="century">1870 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1870 - 1914 第二次工业革命</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1911 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1911 - 1949 中华民国</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
 
       <!-- Article -->
       <div class="timeline-article">
         <div class="content-right-container">
-          <div class="century">1185 AD</div>
+          <div class="century">1912 AD</div>
           <div class="content-right">
             <h4 class="area">Asia</h4>
-            <h3>A.D. 1185 - 1333 日本镰仓时代</h3>
+            <h3>A.D. 1912 - 1926 日本大正时代</h3>
+          </div>
+          <!-- <span class="timeline-author">John Doe</span> -->
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <div class="content-right-container">
+        <div class="century">1914 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1914 - 1918 第一次世界大战 World War I</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I%5D%5D">Read
+            more</a></span>
+      </div>
+
+      <div class="meta-date">
+        <span class="date">1900</span>
+        <span class="month">AD</span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+
+      <div class="content-right-container">
+        <div class="century">1917 AD</div>
+        <div class="content-right">
+          <h4 class="area">Europe</h4>
+          <h3>A.D. 1917 1917年俄国革命 Russian Revolution</h3>
+        </div>
+        <span class="timeline-author">
+          <i class="material-symbols-outlined">travel_explore</i>
+          <a
+            href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution:%5B%5B1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution%5D%5D">Read
+            more</a></span>
+      </div>
+    </div>
+    <!-- // Article -->
+
+    <!-- Article -->
+    <div class="timeline-article">
+      <div class="content-left-container">
+        <div class="century">1921 AD</div>
+        <div class="content-left">
+          <h4 class="area">China</h4>
+          <h3>A.D. 1921.7.23 中国共产党成立</h3>
+        </div>
+        <!-- <span class="timeline-author">John Doe</span> -->
+      </div>
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1926 AD</div>
+          <div class="content-right">
+            <h4 class="area">Asia</h4>
+            <h3>A.D. 1926 - 1989 日本昭和时代</h3>
           </div>
           <!-- <span class="timeline-author">John Doe</span> -->
         </div>
@@ -1087,52 +1762,46 @@
       <!-- Article -->
       <div class="timeline-article">
         <div class="content-left-container">
-          <div class="century">1206 AD</div>
+          <div class="century">1927 AD</div>
           <div class="content-left">
             <h4 class="area">China</h4>
-            <h3>A.D. 1206 - 1368 蒙古帝国</h3>
+            <h3>A.D. 1927-1937 国共第一次内战</h3>
           </div>
           <!-- <span class="timeline-author">John Doe</span> -->
-          <div class="meta-date">
-            <span class="date">1200</span>
-            <span class="month">AD</span>
-          </div>
         </div>
 
         <!-- Article -->
         <div class="timeline-article">
-          <div class="content-left-container">
-            <div class="century">1266 AD</div>
-            <div class="content-left">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1266 马可·波罗到达元大都，见到元世祖忽必烈。</h3>
+          <div class="content-right-container">
+            <div class="century">1929 AD</div>
+            <div class="content-right">
+              <h4 class="area">North America</h4>
+              <h3>A.D. 1929 - 1933 大萧条 Great Depression</h3>
+              <p>20世纪时间最长, 最深刻, 影响范围最广的经济衰退。</p>
             </div>
-            <!-- <span class="timeline-author">John Doe</span> -->
+            <span class="timeline-author">
+              <i class="material-symbols-outlined">travel_explore</i>
+              <a
+                href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression:%5B%5B%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression%5D%5D">Read
+                more</a></span>
           </div>
         </div>
         <!-- // Article -->
 
         <!-- Article -->
         <div class="timeline-article">
-          <div class="content-left-container">
-            <div class="century">1271 AD</div>
-            <div class="content-left">
-              <h4 class="area">China</h4>
-              <h3>A.D. 1271 - 1368 元</h3>
-            </div>
-            <!-- <span class="timeline-author">John Doe</span> -->
-          </div>
 
           <div class="content-right-container">
-            <div class="century">1299 AD</div>
+            <div class="century">1939 AD</div>
             <div class="content-right">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1299 - 1922 奥斯曼帝国诞生</h3>
+              <h4 class="area">North America</h4>
+              <h3>A.D. 1939 - 1945 第二次世界大战 World War II</h3>
+              <p>人类史上规模最大的战争，人类死伤人数最多的战争。</p>
             </div>
             <span class="timeline-author">
               <i class="material-symbols-outlined">travel_explore</i>
               <a
-                href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire:%5B%5B%E5%A5%A5%E6%96%AF%E6%9B%BC%E5%B8%9D%E5%9B%BD%20Ottoman%20Empire%5D%5D">Read
+                href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II%5D%5D">Read
                 more</a></span>
           </div>
         </div>
@@ -1141,34 +1810,11 @@
         <!-- Article -->
         <div class="timeline-article">
           <div class="content-right-container">
-            <div class="century">1315 AD</div>
-            <div class="content-right">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1315 - 1322 大饥荒</h3>
-            </div>
-            <span class="timeline-author">
-              <i class="material-symbols-outlined">travel_explore</i>
-              <a
-                href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E5%A4%A7%E9%A5%A5%E8%8D%92%20the%20Great%20Famine%201315-1322">Read
-                more</a></span>
-          </div>
-
-          <div class="meta-date">
-            <span class="date">1300</span>
-            <span class="month">AD</span>
-          </div>
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-          <div class="content-right-container">
-            <div class="century">1336 AD</div>
+            <div class="century">1941 AD</div>
             <div class="content-right">
               <h4 class="area">Asia</h4>
-              <h3>A.D. 1336 - 1392 日本南北朝时代</h3>
+              <h3>A.D. 1941.12.7 日本偷袭珍珠港</h3>
             </div>
-            <!-- <span class="timeline-author">John Doe</span> -->
           </div>
         </div>
         <!-- // Article -->
@@ -1176,29 +1822,11 @@
         <!-- Article -->
         <div class="timeline-article">
           <div class="content-right-container">
-            <div class="century">1336 AD</div>
+            <div class="century">1945 AD</div>
             <div class="content-right">
               <h4 class="area">Asia</h4>
-              <h3>A.D. 1336 - 1573 日本室町时代</h3>
+              <h3>A.D. 1945.8.6, 1945.8.9 美国在广岛与长崎投下原子弹</h3>
             </div>
-            <!-- <span class="timeline-author">John Doe</span> -->
-          </div>
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-          <div class="content-right-container">
-            <div class="century">1346 AD</div>
-            <div class="content-right">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1346 - 1353 黑死病</h3>
-            </div>
-            <span class="timeline-author">
-              <i class="material-symbols-outlined">travel_explore</i>
-              <a
-                href="https://www.bakumatata.com/notes/MedievalEurope/8kuNoteBook_MedievalEurope.html#%E9%BB%91%E6%AD%BB%E7%97%85%20Black%20Death%201346~1353">Read
-                more</a></span>
           </div>
         </div>
         <!-- // Article -->
@@ -1206,452 +1834,27 @@
         <!-- Article -->
         <div class="timeline-article">
           <div class="content-left-container">
-            <div class="century">1368 AD</div>
+            <div class="century">1945 AD</div>
             <div class="content-left">
               <h4 class="area">China</h4>
-              <h3>A.D. 1368 - 1644 明</h3>
+              <h3>A.D. 1945-1950 国共第二次内战</h3>
             </div>
             <!-- <span class="timeline-author">John Doe</span> -->
           </div>
 
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-          <div class="content-right-container">
-            <div class="century">1378 AD</div>
-            <div class="content-right">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1378～1417年天主教会大分裂</h3>
-            </div>
-            <span class="timeline-author">
-              <i class="material-symbols-outlined">travel_explore</i>
-              <a
-                href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9:%E5%AE%97%E6%95%99%E6%94%B9%E9%9D%A9">Read
-                more</a></span>
-          </div>
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-
-          <div class="content-left-container">
-            <div class="century">1405 AD</div>
-            <div class="content-left">
-              <h4 class="area">China</h4>
-              <h3>A.D. 1405 - 1433 郑和下西洋</h3>
-            </div>
-          </div>
-
           <!-- Article -->
           <div class="timeline-article">
+
             <div class="content-right-container">
-              <div class="century">1467 AD</div>
-              <div class="content-right">
-                <h4 class="area">Asia</h4>
-                <h3>A.D. 1467 - 1590 日本战国时代</h3>
-              </div>
-              <!-- <span class="timeline-author">John Doe</span> -->
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <div class="content-right-container">
-            <div class="century">1400 AD</div>
-            <div class="content-right">
-              <h4 class="area">Europe</h4>
-              <h3>14C - 17C 文艺复兴</h3>
-            </div>
-            <span class="timeline-author">
-              <i class="material-symbols-outlined">travel_explore</i>
-              <a
-                href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4:%E6%96%87%E8%89%BA%E5%A4%8D%E5%85%B4">Read
-                more</a></span>
-          </div>
-          <div class="meta-date">
-            <span class="date">1400</span>
-            <span class="month">AD</span>
-          </div>
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-          <div class="content-right-container">
-            <div class="century">1455 AD</div>
-            <div class="content-left">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1455 古登堡印刷版《圣经》出版</h3>
-              <p>加快了知识流通和欧洲人的识字率，推动了文艺复兴。</p>
-            </div>
-          </div>
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-          <div class="content-right-container">
-            <div class="century">1487 AD</div>
-            <div class="content-left">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1487 迪亚士发现好望角</h3>
-              <p>发现进入印度洋的航线</p>
-            </div>
-          </div>
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-          <div class="content-right-container">
-            <div class="century">1492 AD</div>
-            <div class="content-right">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1492 哥伦布发现美洲</h3>
-              <p><b>标志中世纪结束，近代开始。</b></p>
-            </div>
-          </div>
-        </div>
-        <!-- // Article -->
-
-        <!-- Article -->
-        <div class="timeline-article">
-          <div class="content-right-container">
-            <div class="century">1519 AD</div>
-            <div class="content-right">
-              <h4 class="area">Europe</h4>
-              <h3>A.D. 1519 - 1521 麦哲伦环球航行</h3>
-            </div>
-            <div class="meta-date">
-              <span class="date">1500</span>
-              <span class="month">AD</span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1543 AD</div>
+              <div class="century">1947 AD</div>
               <div class="content-right">
                 <h4 class="area">Europe</h4>
-                <h3>A.D. 1543 - 1687 科学革命</h3>
+                <h3>A.D. 1947 - 1991 冷战 Cold War</h3>
               </div>
               <span class="timeline-author">
                 <i class="material-symbols-outlined">travel_explore</i>
                 <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution:%5B%5B%E7%A7%91%E5%AD%A6%E9%9D%A9%E5%91%BD%20Scientific%20revolution%5D%5D">Read
-                  more</a></span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1558 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1558 - 1603 伊丽莎白时代 Elizabethan era</h3>
-                <p>英国历史上的<b>黄金时代</b></p>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era:%5B%5B%E4%BC%8A%E4%B8%BD%E8%8E%8E%E7%99%BD%E6%97%B6%E4%BB%A3%20Elizabethan%20era%5D%5D">Read
-                  more</a></span>
-            </div>
-
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1573 AD</div>
-              <div class="content-right">
-                <h4 class="area">Asia</h4>
-                <h3>A.D. 1573 - 1603 日本织丰政权</h3>
-              </div>
-              <!-- <span class="timeline-author">John Doe</span> -->
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1603 AD</div>
-              <div class="content-right">
-                <h4 class="area">Asia</h4>
-                <h3>A.D. 1603 - 1868 日本江户时代</h3>
-              </div>
-              <!-- <span class="timeline-author">John Doe</span> -->
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1618 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1618 - 1648 三十年战争</h3>
-                <p>欧洲大陆最后一次重大战争</p>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War:%5B%5B%E4%B8%89%E5%8D%81%E5%B9%B4%E6%88%98%E4%BA%89%20Thirty%20Years'%20War%5D%5D">Read
-                  more</a></span>
-            </div>
-
-            <div class="meta-date">
-              <span class="date">1600</span>
-              <span class="month">AD</span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-left-container">
-              <div class="century">1644 AD</div>
-              <div class="content-left">
-                <h4 class="area">China</h4>
-                <h3>A.D. 1644 - 1911 清</h3>
-              </div>
-              <!-- <span class="timeline-author">John Doe</span> -->
-            </div>
-
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1688 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1688 - 1689 光荣革命</h3>
-                <p>这场政变以不流血著名, 诞生了 1689年权利法案, 是英国君主立宪制形成的重要事件。</p>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution:%5B%5B%E5%85%89%E8%8D%A3%E9%9D%A9%E5%91%BD%20Glorious%20Revolution%5D%5D">Read
-                  more</a></span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1721 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1721 - 1917 俄罗斯帝国</h3>
-              </div>
-            </div>
-          </div>
-          <!-- // Article-->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1760 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1760 - 1840 第一次工业革命</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution:%5B%5B%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%20Industrial%20Revolution%5D%5D">Read
-                  more</a></span>
-            </div>
-            <div class="meta-date">
-              <span class="date">1700</span>
-              <span class="month">AD</span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1765 AD</div>
-              <div class="content-right">
-                <h4 class="area">North America</h4>
-                <h3>A.D. 1765 - 1783 美国独立战争</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD:%E7%BE%8E%E5%9B%BD%E7%8B%AC%E7%AB%8B%E6%88%98%E4%BA%89%2F%E7%BE%8E%E5%9B%BD%E9%9D%A9%E5%91%BD">Read
-                  more</a></span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1776 AD</div>
-              <div class="content-right">
-                <h4 class="area">North America</h4>
-                <h3>A.D. 1776 美国宣布独立</h3>
-              </div>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1789 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1789 法国大革命</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD:%E6%B3%95%E5%9B%BD%E5%A4%A7%E9%9D%A9%E5%91%BD">Read
-                  more</a></span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1789 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1789 - 1804 启蒙运动</h3>
-                <p>时间跨度: 确切开始时间没有共识, 但通常以1789年法国大革命或拿破仑战争开始(1804~1815)为结束.</p>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment:%5B%5B%E5%90%AF%E8%92%99%E8%BF%90%E5%8A%A8%20Enlightenment%5D%5D">Read
-                  more</a></span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1804 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1804 拿破仑加冕称为法兰西皇帝</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E6%8B%BF%E7%A0%B4%E4%BB%91%20Napol%C3%A9on%20Bonaparte:%5B%5B%E6%8B%BF%E7%A0%B4%E4%BB%91%20Napol%C3%A9on%20Bonaparte%5D%5D">Read
-                  more</a></span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1837 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1837 - 1901 维多利亚时期 Victorian era</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era:%5B%5B%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%97%B6%E6%9C%9F%20Victorian%20era%5D%5D">Read
-                  more</a></span>
-            </div>
-            <div class="meta-date">
-              <span class="date">1800</span>
-              <span class="month">AD</span>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-left-container">
-              <div class="century">1840 AD</div>
-              <div class="content-left">
-                <h4 class="area">China</h4>
-                <h3>A.D. 1840 - 1842 第一次鸦片战争</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%B8%A6%E7%89%87%E6%88%98%E4%BA%89%20First%20Opium%20War%5D%5D">Read
-                  more</a></span>
-            </div>
-
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-left-container">
-              <div class="century">1856 AD</div>
-              <div class="content-left">
-                <h4 class="area">China</h4>
-                <h3>A.D. 1856 - 1860 第二次鸦片战争</h3>
-              </div>
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1853 AD</div>
-              <div class="content-right">
-                <h4 class="area">Asia</h4>
-                <h3>A.D. 1853/1858 日本明治维新</h3>
-              </div>
-              <!-- <span class="timeline-author">John Doe</span> -->
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1868 AD</div>
-              <div class="content-right">
-                <h4 class="area">Asia</h4>
-                <h3>A.D. 1868 - 1912 日本明治时代</h3>
-              </div>
-              <!-- <span class="timeline-author">John Doe</span> -->
-            </div>
-          </div>
-          <!-- // Article -->
-
-          <!-- Article -->
-          <div class="timeline-article">
-            <div class="content-right-container">
-              <div class="century">1870 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1870 - 1914 第二次工业革命</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%2F%E6%8A%80%E6%9C%AF%E9%9D%A9%E5%91%BD%20Second%20Industrial%20Revolution%5D%5D">Read
+                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%86%B7%E6%88%98%20Cold%20War:%5B%5B%E5%86%B7%E6%88%98%20Cold%20War%5D%5D">Read
                   more</a></span>
             </div>
           </div>
@@ -1660,43 +1863,12 @@
           <!-- Article -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="century">1911 AD</div>
+              <div class="century">1949 AD</div>
               <div class="content-left">
                 <h4 class="area">China</h4>
-                <h3>A.D. 1911 - 1949 中华民国</h3>
+                <h3>A.D. 1949 - recent 中华人民共和国</h3>
               </div>
               <!-- <span class="timeline-author">John Doe</span> -->
-            </div>
-
-            <!-- Article -->
-            <div class="timeline-article">
-              <div class="content-right-container">
-                <div class="century">1912 AD</div>
-                <div class="content-right">
-                  <h4 class="area">Asia</h4>
-                  <h3>A.D. 1912 - 1926 日本大正时代</h3>
-                </div>
-                <!-- <span class="timeline-author">John Doe</span> -->
-              </div>
-            </div>
-            <!-- // Article -->
-
-            <div class="content-right-container">
-              <div class="century">1914 AD</div>
-              <div class="content-right">
-                <h4 class="area">Europe</h4>
-                <h3>A.D. 1914 - 1918 第一次世界大战 World War I</h3>
-              </div>
-              <span class="timeline-author">
-                <i class="material-symbols-outlined">travel_explore</i>
-                <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I:%5B%5B%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20I%5D%5D">Read
-                  more</a></span>
-            </div>
-
-            <div class="meta-date">
-              <span class="date">1900</span>
-              <span class="month">AD</span>
             </div>
           </div>
           <!-- // Article -->
@@ -1705,15 +1877,15 @@
           <div class="timeline-article">
 
             <div class="content-right-container">
-              <div class="century">1917 AD</div>
+              <div class="century">1986 AD</div>
               <div class="content-right">
                 <h4 class="area">Europe</h4>
-                <h3>A.D. 1917 1917年俄国革命 Russian Revolution</h3>
+                <h3>A.D. 1986 切尔诺贝利事故</h3>
               </div>
               <span class="timeline-author">
                 <i class="material-symbols-outlined">travel_explore</i>
                 <a
-                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution:%5B%5B1917%E5%B9%B4%E4%BF%84%E5%9B%BD%E9%9D%A9%E5%91%BD%20Russian%20Revolution%5D%5D">Read
+                  href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster:%5B%5B%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster%5D%5D">Read
                   more</a></span>
             </div>
           </div>
@@ -1721,189 +1893,33 @@
 
           <!-- Article -->
           <div class="timeline-article">
-            <div class="content-left-container">
-              <div class="century">1921 AD</div>
-              <div class="content-left">
-                <h4 class="area">China</h4>
-                <h3>A.D. 1921.7.23 中国共产党成立</h3>
+            <div class="content-right-container">
+              <div class="century">1989 AD</div>
+              <div class="content-right">
+                <h4 class="area">Asia</h4>
+                <h3>A.D. 1989 - 2019 日本平成时代</h3>
               </div>
               <!-- <span class="timeline-author">John Doe</span> -->
             </div>
+          </div>
+          <!-- // Article -->
 
-            <!-- Article -->
-            <div class="timeline-article">
-              <div class="content-right-container">
-                <div class="century">1926 AD</div>
-                <div class="content-right">
-                  <h4 class="area">Asia</h4>
-                  <h3>A.D. 1926 - 1989 日本昭和时代</h3>
-                </div>
-                <!-- <span class="timeline-author">John Doe</span> -->
+          <!-- Article -->
+          <div class="timeline-article">
+            <div class="content-right-container">
+              <div class="century">2019 AD</div>
+              <div class="content-right">
+                <h4 class="area">Asia</h4>
+                <h3>A.D. 2019 - recent 日本令和时代</h3>
               </div>
+              <!-- <span class="timeline-author">John Doe</span> -->
             </div>
-            <!-- // Article -->
-
-            <!-- Article -->
-            <div class="timeline-article">
-              <div class="content-left-container">
-                <div class="century">1927 AD</div>
-                <div class="content-left">
-                  <h4 class="area">China</h4>
-                  <h3>A.D. 1927-1937 国共第一次内战</h3>
-                </div>
-                <!-- <span class="timeline-author">John Doe</span> -->
-              </div>
-
-              <!-- Article -->
-              <div class="timeline-article">
-                <div class="content-right-container">
-                  <div class="century">1929 AD</div>
-                  <div class="content-right">
-                    <h4 class="area">North America</h4>
-                    <h3>A.D. 1929 - 1933 大萧条 Great Depression</h3>
-                    <p>20世纪时间最长, 最深刻, 影响范围最广的经济衰退。</p>
-                  </div>
-                  <span class="timeline-author">
-                    <i class="material-symbols-outlined">travel_explore</i>
-                    <a
-                      href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression:%5B%5B%E5%A4%A7%E8%90%A7%E6%9D%A1%20Great%20Depression%5D%5D">Read
-                      more</a></span>
-                </div>
-              </div>
-              <!-- // Article -->
-
-              <!-- Article -->
-              <div class="timeline-article">
-
-                <div class="content-right-container">
-                  <div class="century">1939 AD</div>
-                  <div class="content-right">
-                    <h4 class="area">North America</h4>
-                    <h3>A.D. 1939 - 1945 第二次世界大战 World War II</h3>
-                    <p>人类史上规模最大的战争，人类死伤人数最多的战争。</p>
-                  </div>
-                  <span class="timeline-author">
-                    <i class="material-symbols-outlined">travel_explore</i>
-                    <a
-                      href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II:%5B%5B%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98%20World%20War%20II%5D%5D">Read
-                      more</a></span>
-                </div>
-              </div>
-              <!-- // Article -->
-
-              <!-- Article -->
-              <div class="timeline-article">
-                <div class="content-right-container">
-                  <div class="century">1941 AD</div>
-                  <div class="content-right">
-                    <h4 class="area">Asia</h4>
-                    <h3>A.D. 1941.12.7 日本偷袭珍珠港</h3>
-                  </div>
-                </div>
-              </div>
-              <!-- // Article -->
-
-              <!-- Article -->
-              <div class="timeline-article">
-                <div class="content-right-container">
-                  <div class="century">1945 AD</div>
-                  <div class="content-right">
-                    <h4 class="area">Asia</h4>
-                    <h3>A.D. 1945.8.6, 1945.8.9 美国在广岛与长崎投下原子弹</h3>
-                  </div>
-                </div>
-              </div>
-              <!-- // Article -->
-
-              <!-- Article -->
-              <div class="timeline-article">
-                <div class="content-left-container">
-                  <div class="century">1945 AD</div>
-                  <div class="content-left">
-                    <h4 class="area">China</h4>
-                    <h3>A.D. 1945-1950 国共第二次内战</h3>
-                  </div>
-                  <!-- <span class="timeline-author">John Doe</span> -->
-                </div>
-
-                <!-- Article -->
-                <div class="timeline-article">
-
-                  <div class="content-right-container">
-                    <div class="century">1947 AD</div>
-                    <div class="content-right">
-                      <h4 class="area">Europe</h4>
-                      <h3>A.D. 1947 - 1991 冷战 Cold War</h3>
-                    </div>
-                    <span class="timeline-author">
-                      <i class="material-symbols-outlined">travel_explore</i>
-                      <a
-                        href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%86%B7%E6%88%98%20Cold%20War:%5B%5B%E5%86%B7%E6%88%98%20Cold%20War%5D%5D">Read
-                        more</a></span>
-                  </div>
-                </div>
-                <!-- // Article -->
-
-                <!-- Article -->
-                <div class="timeline-article">
-                  <div class="content-left-container">
-                    <div class="century">1949 AD</div>
-                    <div class="content-left">
-                      <h4 class="area">China</h4>
-                      <h3>A.D. 1949 - recent 中华人民共和国</h3>
-                    </div>
-                    <!-- <span class="timeline-author">John Doe</span> -->
-                  </div>
-                </div>
-                <!-- // Article -->
-
-                <!-- Article -->
-                <div class="timeline-article">
-
-                  <div class="content-right-container">
-                    <div class="century">1986 AD</div>
-                    <div class="content-right">
-                      <h4 class="area">Europe</h4>
-                      <h3>A.D. 1986 切尔诺贝利事故</h3>
-                    </div>
-                    <span class="timeline-author">
-                      <i class="material-symbols-outlined">travel_explore</i>
-                      <a
-                        href="https://www.bakumatata.com/notes/aHistoryofmoderneurope/8kuNoteBook_aHistoryOfModernEurope.html#%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster:%5B%5B%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%E4%BA%8B%E6%95%85%20Chernobyl%20nuclear%20disaster%20%2F%20Chernobyl%20disaster%5D%5D">Read
-                        more</a></span>
-                  </div>
-                </div>
-                <!-- // Article -->
-
-                <!-- Article -->
-                <div class="timeline-article">
-                  <div class="content-right-container">
-                    <div class="century">1989 AD</div>
-                    <div class="content-right">
-                      <h4 class="area">Asia</h4>
-                      <h3>A.D. 1989 - 2019 日本平成时代</h3>
-                    </div>
-                    <!-- <span class="timeline-author">John Doe</span> -->
-                  </div>
-                </div>
-                <!-- // Article -->
-
-                <!-- Article -->
-                <div class="timeline-article">
-                  <div class="content-right-container">
-                    <div class="century">2019 AD</div>
-                    <div class="content-right">
-                      <h4 class="area">Asia</h4>
-                      <h3>A.D. 2019 - recent 日本令和时代</h3>
-                    </div>
-                    <!-- <span class="timeline-author">John Doe</span> -->
-                  </div>
-                </div>
-                <!-- // Article -->
+          </div>
+          <!-- // Article -->
 
 
-              </div>
-              <div class="timeline-end">End</div>
+        </div>
+        <div class="timeline-end">End</div>
   </section>
   <!-- // Vertical Timeline -->
 

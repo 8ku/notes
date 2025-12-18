@@ -40,13 +40,74 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var startSpan = document.getElementById('dateRangeStart');
   var endSpan = document.getElementById('dateRangeEnd');
-  var selectedStartDate, selectedEndDate
+  var startDateInput = document.getElementById('startDateInput');
+  var endDateInput = document.getElementById('endDateInput');
+  var selectedStartDate, selectedEndDate;
+  var isUpdatingFromInput = false;
+
+  // Function to parse user input to year number
+  function parseUserDateInput(input) {
+    if (!input || input.trim() === '') return null;
+    
+    const cleaned = input.replace(/,/g, '').trim();
+    const upper = cleaned.toUpperCase();
+    
+    // Extract the first numeric token (integer or decimal)
+    const numMatch = cleaned.match(/-?\d+(?:\.\d+)?/);
+    if (!numMatch) return null;
+    const num = parseFloat(numMatch[0]);
+    
+    // Handle tokens indicating years before present
+    if (upper.includes('BC') || upper.includes('BP')) {
+      return -Math.round(num);
+    }
+    
+    // Handle million-years-ago like "Mya" (convert to negative large number)
+    if (upper.includes('MYA')) {
+      return -Math.round(num * 1e6);
+    }
+    
+    // Default: AD / plain year
+    return Math.round(num);
+  }
 
   dateSlider.noUiSlider.on('update', function (values) {
     selectedStartDate = parseInt(values[0]);
     selectedEndDate = parseInt(values[1]);
     startSpan.innerHTML = formatYear(selectedStartDate);
     endSpan.innerHTML = formatYear(selectedEndDate);
+    
+    // Update input fields if not being updated from input
+    if (!isUpdatingFromInput) {
+      startDateInput.value = formatYear(selectedStartDate);
+      endDateInput.value = formatYear(selectedEndDate);
+    }
+  });
+
+  // Handle start date input
+  startDateInput.addEventListener('change', function() {
+    const newStartDate = parseUserDateInput(this.value);
+    if (newStartDate !== null && newStartDate <= selectedEndDate) {
+      isUpdatingFromInput = true;
+      dateSlider.noUiSlider.set([newStartDate, null]);
+      isUpdatingFromInput = false;
+    } else if (newStartDate !== null) {
+      alert('Start date must be before end date');
+      startDateInput.value = formatYear(selectedStartDate);
+    }
+  });
+
+  // Handle end date input
+  endDateInput.addEventListener('change', function() {
+    const newEndDate = parseUserDateInput(this.value);
+    if (newEndDate !== null && newEndDate >= selectedStartDate) {
+      isUpdatingFromInput = true;
+      dateSlider.noUiSlider.set([null, newEndDate]);
+      isUpdatingFromInput = false;
+    } else if (newEndDate !== null) {
+      alert('End date must be after start date');
+      endDateInput.value = formatYear(selectedEndDate);
+    }
   });
 
   // Function to format year for display
@@ -78,6 +139,26 @@ document.addEventListener('DOMContentLoaded', function() {
   dropdownAreaMenu.addEventListener('click', preventDropdownClose);
 
 
+  // Function to update selected areas display
+  function updateSelectedAreasDisplay() {
+    const selectedAreas = Array.from(document.querySelectorAll('.area-option:checked'))
+      .map(chk => chk.value)
+      .filter(val => val !== 'all');
+    
+    const displayElement = document.getElementById('selectedAreasDisplay');
+    
+    if (selectedAreas.length === 0 || selectedAreas.length === areaCheckboxes.length - 1) {
+      displayElement.textContent = 'All Areas';
+      displayElement.className = 'selected-areas-display all-selected';
+    } else if (selectedAreas.length === 1 && document.querySelector('.area-option[value="all"]').checked) {
+      displayElement.textContent = 'All Areas';
+      displayElement.className = 'selected-areas-display all-selected';
+    } else {
+      displayElement.textContent = selectedAreas.join(', ');
+      displayElement.className = 'selected-areas-display';
+    }
+  }
+
   // Handle checkbox logic
   areaCheckboxes.forEach(chk => {
     chk.addEventListener('change', function(event) {
@@ -89,8 +170,12 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         document.querySelector('.area-option[value="all"]').checked = false;
       }
+      updateSelectedAreasDisplay();
     });
   });
+
+  // Initialize display on page load
+  updateSelectedAreasDisplay();
 
 
   // Combined filter function
@@ -100,7 +185,9 @@ function filterContent() {
 
   containers.forEach(container => {
     const area = container.querySelector('.area')?.textContent.trim();
-    const areaMatch = selectedAreas.includes('all') || selectedAreas.includes(area);
+    // If 'all' is selected, show all areas. If no area class, show it (not filtered by area).
+    // Otherwise, area must match a selected option.
+    const areaMatch = selectedAreas.includes('all') || !area || selectedAreas.includes(area);
     const dateMatch = Array.from(container.querySelectorAll('.century')).some(centuryEl => {
       const year = convertTextToYear(centuryEl.textContent.trim());
       return year >= selectedStartDate && year <= selectedEndDate;
@@ -162,11 +249,29 @@ function adaptVerticalTimeline(startYear, endYear) {
   }
 }
 
-  // Convert a text like "2600 BC" or "300 AD" to a year number
+  // Convert a text like "2600 BC", "300 AD", "10,200 BP" or "3.3 Mya" to a year number
   function convertTextToYear(text) {
     if (!text) return NaN;
-    const parts = text.split(' ');
-    const year = parseInt(parts[0]);
-    return parts[1] === 'BC' ? -year : year;
+    // Normalize and remove commas
+    const cleaned = text.replace(/,/g, '').trim();
+    const upper = cleaned.toUpperCase();
+
+    // Extract the first numeric token (integer or decimal)
+    const numMatch = cleaned.match(/-?\d+(?:\.\d+)?/);
+    if (!numMatch) return NaN;
+    const num = parseFloat(numMatch[0]);
+
+    // Handle tokens indicating years before present
+    if (upper.includes('BC') || upper.includes('BP')) {
+      return -Math.round(num);
+    }
+
+    // Handle million-years-ago like "Mya" (convert to negative large number)
+    if (upper.includes('MYA')) {
+      return -Math.round(num * 1e6);
+    }
+
+    // Default: AD / plain year
+    return Math.round(num);
   }
 });
