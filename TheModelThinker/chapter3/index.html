@@ -1,0 +1,1083 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter2/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>模型思维5-8 - The Model Thinker</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5-8" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="The Model Thinker" class="md-header__button md-logo" aria-label="The Model Thinker" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The Model Thinker
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              模型思维5-8
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="The Model Thinker" class="md-nav__button md-logo" aria-label="The Model Thinker" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The Model Thinker
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模型思维
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    为什么需要模型思维
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模型思维 1-4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模型思维5-8
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    模型思维5-8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 与价值和权力有关的模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 与价值和权力有关的模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        合作博弈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-on-the-bus-value-lotb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最后上车者价值 last-on-the-bus value LOTB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shapley-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        夏普利值 Shapley value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 网络模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 网络模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络的结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见的网络结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络形成的逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 广播模型、扩散模型和传染模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 广播模型、扩散模型和传染模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        广播模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        扩散模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        巴斯模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SIR模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 熵：对不确定性建模
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 熵：对不确定性建模">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        信息熵
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 与价值和权力有关的模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 与价值和权力有关的模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        合作博弈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-on-the-bus-value-lotb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最后上车者价值 last-on-the-bus value LOTB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shapley-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        夏普利值 Shapley value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 网络模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 网络模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络的结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见的网络结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络形成的逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 广播模型、扩散模型和传染模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 广播模型、扩散模型和传染模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        广播模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        扩散模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        巴斯模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SIR模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 熵：对不确定性建模
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 熵：对不确定性建模">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        信息熵
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="5-8">模型思维5-8<a class="headerlink" href="#5-8" title="Permanent link">&para;</a></h1>
+<h2 id="5">5. 与价值和权力有关的模型<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>你的价值不在于你知道了什么，而在于你能够分享什么。  <em>Ginni Rometty</em></p>
+</blockquote>
+<h3 id="_1">合作博弈<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>合作博弈由一组博弈参与者和一个价值函数组成。这个价值函数为博弈参与者的每个可能的子集（通常称为联盟）分配一个值。</p>
+<p>合作博弈的目标是刻画集体工作和联合项目。在合作博弈模型中，<u>假设人们都会参与，没有博弈参与者组成的联盟价值等于零。</u></p>
+<h3 id="last-on-the-bus-value-lotb">最后上车者价值 last-on-the-bus value LOTB<a class="headerlink" href="#last-on-the-bus-value-lotb" title="Permanent link">&para;</a></h3>
+<p>一个博弈参与者的“最后上车者价值”等于他是最后一个加入团队的人时，他<strong>所能增加的价值</strong>。</p>
+<ul>
+<li>价值函数表现出规模收益递减性质时，最后上车者价值的总和小于博弈的总价值</li>
+<li>价值函数表现出规模收益递增的性质，最后上车者价值的总和将超过博弈的总价值</li>
+</ul>
+<h3 id="shapley-value">夏普利值 Shapley value<a class="headerlink" href="#shapley-value" title="Permanent link">&para;</a></h3>
+<p>在夏普利值模型中，加入的顺序很关键。</p>
+<p>一个博弈参与者的夏普利值，等于他在所有可能加入的联盟的次序下<strong>对联盟边际贡献的平均值</strong>。即，我们要假设每个博弈参与者<strong>按顺序加入</strong>，然后计算每个博弈参与者为每个序列增加的价值。</p>
+<ul>
+<li>在任何序列中都不能增加价值的博弈参与者的夏普利值为0</li>
+<li>对任何两个相同的博弈参与者，必须分配给他们相同的夏普利值</li>
+<li>夏普利值的总和必定等于博弈的总价值</li>
+</ul>
+<div style="border:1px solid black;padding:10px">
+    <b>替代用途测试 alternative uses test</b></br>
+    每个人必须为一种觉的物品想出一些新用途，例如砖块，根据人们想出来的用途或用途类别来衡量一个人的创造力。</br>
+    <ul>
+        <li>3个人参加测试，分别提出6，6，7个想法，排除相同想法，团队总计9个想法。</li>
+        <li>把团队拆成6种可能排序，只有某个人对团队提供了独特的想法时才能“得分",再对所有6种情况求平均值。</li>
+        <li>如果两个人提出了同一个想法，每个人有1/2的机会首先加入团队。也就是说，在想到同一个想法的人之间平等地分配得分。</li>        
+    </ul>
+    具体计算过程：</br>
+    <ul>
+        <li>成员A有6个想法，其中2个是独有的，1个是和B共有的，3个是和B C共有的。</li>
+        <li>成员B有7个想法，其中4个和C或A共有，3个是和A C共有的。</li>
+        <li>成员C有6个想法：其中3个和B共有，3个是和A B共有</li>
+        <li>成员A：创造力得分=6 夏普利值=2+1/2+3/3=3.5</li>
+        <li>成员B：创造力得分=7 夏普利值=4/2+3/3=3</li>
+        <li>成员C：创造力得分=6 夏普利值=3/2+3/3=2.5</li>
+    </ul>
+</div>
+
+<div style="border:1px solid black;padding:10px">
+    <b>投票博弈</b></br>
+    在投票博弈中，夏普利值通常被称为<b>夏普利-舒比克权力指数 Shapey-Shubik index of power</b>。</br>
+    <b>一个博弈参与者（政党）控制席位（投票权）的百分比和其权力之间不存在直接的转换。</b></br>
+    <ul>
+        <li>权力指数：如果某个政党加入了一个联盟并获得绝对多数(大于50%），这个政党所增加的价值等于1。这种情况下，我们称这个政党是”关键的“，否则，这个政党不会增加任何价值。</li>
+        <li>假设总席位是101，4个政党掌握：A=40 B=39 C=11 D=11</li>
+        <li>先入场的票数不可变化，要取得50%以上的选票，<b>必须结盟</b></li>
+        <li>共有4!=24种入场顺序</li>
+        <li>A在第2或第3位加入时，肯定会成为“关键”政党</li>
+        <li>如A在1位加入，B在2位加入可赢；如B在3位加入，A必须在4位加入，B才能赢</li>
+    </ul>
+</div>
+
+<h3 id="_2">结论<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>夏普利值是衡量增加价值的一种标准，但不一定总是最好的衡量标准。<strong>假设威胁是可信的，那在一个群体已经形成的情况下，个人的“最后上车者价值”可能是衡量权力的更好标准，因为它能够度量每个人通过威胁离开可以攫取多大利益。</strong></p>
+<p>在这些情况下，联盟会希望减少“最后上车者价值”。通过扩大联盟规模，可以创建出一个具有很高的总价值、同时”最后上车者价值“又足够低的联盟。<strong>不断加入新成员，会使现有成员变成”可以放弃的“，从而使”最后上车者价值“趋向于零。</strong> 例如，雇主会通过雇用多余的工人来削弱工人的权力，制造业会向多个相互竞争的供应商采购中间产品等。</p>
+<p>将视野放大到现代互联网世界，我们发现应用“最后上车者价值”和夏普利值的概念来思考权力问题非常有用。无论是个人、组织、企业，还是政府，抑或是恐怖组织的权力，都部分取决于偏离合作制度可以造成的损害的程度，也就是“最后上车者价值”。一个技术高超的计算机黑客，由于拥有摧毁大量财富的力量，因而拥有巨大的权力。即便黑客完全不能给社会创造价值，这个结论依然成立。</p>
+<p>在政界和商界，并不是所有联盟都是合理的，更丰富的模型需要考虑世界的连通性。要计算出这种环境下的权力，我们需要网络模型。</p>
+<h2 id="6">6. 网络模型<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p><strong>网络几乎总是很重要，我们构建的任何模型，无论是市场模型、传染病传播模型，还是信息传播模型，都可以通过将参与者嵌入网络中而变得更丰富。</strong></p>
+<h3 id="_3">网络的结构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>网络由节点和边组成，以一组网络统计数据为特征。</p>
+<p>度：连接到一个节点的边的数量</p>
+<p>路径长度：两个节点之间的最小距离</p>
+<p>介数：经过某个节点连接两个其他节点的最短路径数量</p>
+<p>聚类系数：节点的邻居节点对中，同时彼此也互为邻居节点对所占的比例</p>
+<h3 id="_4">常见的网络结构<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><img alt="img" src="../assets/00265.jpg" /></p>
+<p>少数数据无法确定具体的网络结构，可以构建一个大量具有N个节点和E条边的随机网络，再计算度、路径长度、聚类系统和介数的分布，看其统计指标是否与某个觉的网络结构有显著差异来表征网络。</p>
+<ul>
+<li><strong>随机网络</strong></li>
+<li><strong>地理网络</strong>：节点排列成圆形并且每个节点在每个方向上都连接到最近的节点</li>
+<li><strong>幂律网络</strong>：少数节点有很多连接，大多数节点的连接非常少</li>
+<li><strong>小世界网络</strong>：结合了地理网络和随机网络的特征，可以先从一个地理网络开始，然后”重新布线：，随机选择一条边，把这条边所连接的其中一个节点替换为一个随机的节点。如果“重新布线”的概率等于零，就是一个地理网络；如果“重新布线”的概率是1，就是一个随机网络；如果概率介于两者之间，就是一个小世界网络。<u>社交网络看起来类似小世界，每个人有一群朋友，以及若干随机的朋友。</u></li>
+</ul>
+<h3 id="_5">网络形成的逻辑<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>我们遇到的大多数网络结构都是从个体行为者做出的关于建立连接的选择中涌现出来的。</p>
+<blockquote>
+<p><strong>友谊悖论</strong></p>
+<p>如果网络中任何两个节点的度不同，那么平均而言，节点的度会低于其相邻节点。即，平均而言，人们的朋友比他们自己更受欢迎。</p>
+</blockquote>
+<p>友谊悖论适用于任何网络，但六度分隔只适用于某些类型的网络。</p>
+<h3 id="_6">结论<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>当我们尝试构建关于由人构成的网络模型时，目的通常是用它们来刻画社会影响，也就是<strong>在社会网络中，一个人的成功、行为、信息或信念，会影响他们的朋友的成功、行为、信息或信念。</strong></p>
+<p>成功主要取决于人才的信念，以及在一个组织中的位置和影响力、所能获取的信息。</p>
+<p>恰恰是在网络中占据了最核心位置（介数最高）的人做出了最大贡献，他们填补了“结构洞”（structural holes,  Ronald Burt），这些人拥有很大的权力和影响力，<u>要想去填补结构洞，你得有相当高的才华和能力。看到一个洞跳下去并不算填补结构洞，要填补结构洞，你必须让社区里每一个人信任和理解你，你必须熟悉每个社区的知识库。</u></p>
+<p>运用同样的原理，我们可以将企业的价值视为内在价值，着重从资产负债的角度分析，还可以考察该企业运营的情境，与此类似，一个国家的权力取决于它的资源和联盟。<strong>无论是对于企业还是对于国家，它们的内在性质都是与连通性相关的。那些在网络中占据很高位置的人也拥有某些举足轻重的特性。</strong></p>
+<h2 id="7">7. 广播模型、扩散模型和传染模型<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<p>这些模型用于分析信息、技术、行为、信念和传染病在人群中的传播，在通信科学、市场营销学和流行病学的研究中发挥核心作用。</p>
+<p><strong>所有这三类模型都将整个人口划分为两个群组，随着时间推移，个人会在这两个群组之间移动，有人会从易感者变为感染者，或者从不了解新产品新思想的人变成知情达意者：</strong></p>
+<ol>
+<li>知道或拥有某种东西的人</li>
+<li>不知道或不拥有某种东西的人</li>
+</ol>
+<h3 id="_7">广播模型<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>目标是描述一个信息源传播信息的过程，但不适用于在人与人之间传播的传染病或思想和信息的传播</p>
+<p><img alt="00061" src="../assets/00061.jpg" /></p>
+<ul>
+<li>相关人群 <span class="arithmatex">\(N_{pop}\)</span> : 相关人群是和研究相关的人，而不是所有人</li>
+<li>直接感染者/知情者 <span class="arithmatex">\(I_t\)</span></li>
+<li>易感者 <span class="arithmatex">\(S_t\)</span></li>
+<li>相关人群总人数 = <span class="arithmatex">\(N_{pop} = I_t + S_t\)</span></li>
+</ul>
+<p><strong>广播模型</strong> ：<span class="arithmatex">\(I_{t+1} = I_t + P_{broad} \times S_t\)</span></p>
+<ul>
+<li><span class="arithmatex">\(P_{broad}\)</span> 表示广播概率，使用假设值</li>
+<li>初始状态 <span class="arithmatex">\(I_0 = 0\)</span>，且 <span class="arithmatex">\(S_0 = N{pop}\)</span></li>
+</ul>
+<h3 id="_8">扩散模型<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>扩散模型是S形的。</p>
+<p>广播模型中估算相关人群规模是很简单的事，初始数量和相关人群规模密切相关，但<strong>利用扩散模型的数据估计相关群体的规模非常困难</strong>。</p>
+<p>在用扩散模型指导行动时，<strong>我们必须将扩散概率（<span class="arithmatex">\(P_{diffuse}\)</span>）分解为分享概率和接触概率的乘积</strong></p>
+<p>扩散模型假定 <strong>随机混合（相关群体中任何两个人接触的可能性都相同）</strong>，更适用于信息的传播，不适用于预测城市人口，因为城市人口不是随机混合的。</p>
+<p><strong>扩散模型 </strong>= <span class="arithmatex">\(I_{t+1} = P_{diffuse} \times {\frac{I_t}{N_{pop}} \times S_t}\)</span></p>
+<p>其中 <span class="arithmatex">\(P_{diffuse} = P_{spread} \times P_{contact}\)</span></p>
+<h3 id="_9">巴斯模型<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>大多数消费品和信息都是通过广播和扩散传播的，巴斯模型将这两个过程组合在一起。</p>
+<p><span class="arithmatex">\(I_{t+1} = P_{broad} \times S_t + P_{diffuse} \times {\frac{I_t}{N_{pop}}} \times {S_t}\)</span></p>
+<p><span class="arithmatex">\(P_{broad}\)</span> : 广播概率     <span class="arithmatex">\(P_{diffuse}\)</span>：扩散概率</p>
+<h3 id="sir">SIR模型<a class="headerlink" href="#sir" title="Permanent link">&para;</a></h3>
+<p>会有放弃者的模型被称为SIR模型，例如流行款式或潮流运动，传染病等。目前SIR模型在流行病学中占据中心位置。</p>
+<p>SIR模型会有一个临界点，即所谓的<strong>基本再生数</strong>  <span class="arithmatex">\(R_0 = \frac{P_{spread} \times P_{contact}}{P_{recover}}\)</span>，如果<span class="arithmatex">\(R_0\)</span> 大于1，传染病可以传遍整个人群，<span class="arithmatex">\(R_0\)</span> 小于1，传染病则趋于消失。因此，疾病控制中心必须依据对<span class="arithmatex">\(R_0\)</span>的估计来设计政策（<span class="arithmatex">\(R_0\)</span>假设人们不会为了应对传染病而改变行为）。</p>
+<p><span class="arithmatex">\(I_{t+1} = I_t + P_{contact} \times P_{spread} \times {\frac{I_t}{N_{pop}}} \times S_t - P_{recover}I_t\)</span></p>
+<p><span class="arithmatex">\(P_{contact}\)</span> 取决于传播效率，效率越高，概率越高。</p>
+<p>必须接种的疫苗的人在全部人群中的占比，可以通过公式求出：<span class="arithmatex">\(V\geq\frac{R_0-1}{R_0}\)</span>, 疫苗接种阈值随着<span class="arithmatex">\(R_0\)</span>增加而提高。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>白喉</th>
+<th>小儿麻痹症</th>
+<th>麻疹</th>
+<th>天花</th>
+<th>脊髓灰质炎</th>
+<th>艾滋病</th>
+<th>流感</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(R_0\)</span></td>
+<td>6-7</td>
+<td>5-7</td>
+<td>12-18</td>
+<td>6-7</td>
+<td>6</td>
+<td>4</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>流行病学家们将位置在度很高的中心节点上的人称为<strong>“超级传播者”</strong>，高度数节点不但能够更快传播传染病，而且会更快患上传染病。</p>
+<p>SIR模型原本是用来分析传染病传播，但可以将它应用于<strong>所有先通过扩散传播，然后趋于消失的社会现象</strong>，例如，书的销售，歌曲的流行，舞步的风行，“热词”的传播，食谱和健身方法的流传，想法的“黏性”等。这些情形下，我们可以估计接触概率、传播概率和“痊愈”概率，以及基本再生数<span class="arithmatex">\(R_0\)</span>。</p>
+<p>SIR模型中有两个关键阈值，<strong><span class="arithmatex">\(R_0\)</span>和疫苗接种阈值。</strong>这两个阈值都属于敏感依赖于环境的临界点，环境（情境）中的微小变化都会对结果产生很大影响。环境临界点和直接临界点不同，<strong>直接临界点中，特定时刻的微小行动会永久性改变系统的路径。</strong></p>
+<h2 id="8">8. 熵：对不确定性建模<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<p>熵是对不确定性的一个正式测度。</p>
+<h3 id="_10">信息熵<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.footnote.tooltips", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
