@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var endSpan = document.getElementById('dateRangeEnd');
   var startDateInput = document.getElementById('startDateInput');
   var endDateInput = document.getElementById('endDateInput');
-  var selectedStartDate, selectedEndDate;
+  // `filterStartDate`/`filterEndDate` hold the exact filter values (from inputs).
+  // The slider itself snaps to 100-year steps for visual control.
+  var filterStartDate = -3000, filterEndDate = 2000;
   var isUpdatingFromInput = false;
 
   // Function to parse user input to year number
@@ -72,41 +74,66 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   dateSlider.noUiSlider.on('update', function (values) {
-    selectedStartDate = parseInt(values[0]);
-    selectedEndDate = parseInt(values[1]);
-    startSpan.innerHTML = formatYear(selectedStartDate);
-    endSpan.innerHTML = formatYear(selectedEndDate);
-    
-    // Update input fields if not being updated from input
+    var sliderStart = parseInt(values[0]);
+    var sliderEnd = parseInt(values[1]);
+
+    // If the update comes from typing (we set `isUpdatingFromInput`),
+    // keep the exact typed filter values and only use the slider for visual position.
     if (!isUpdatingFromInput) {
-      startDateInput.value = formatYear(selectedStartDate);
-      endDateInput.value = formatYear(selectedEndDate);
+      filterStartDate = sliderStart;
+      filterEndDate = sliderEnd;
+      startDateInput.value = formatYear(filterStartDate);
+      endDateInput.value = formatYear(filterEndDate);
     }
+
+    // Always display the exact filter values (typed or slid)
+    startSpan.innerHTML = formatYear(filterStartDate);
+    endSpan.innerHTML = formatYear(filterEndDate);
   });
 
   // Handle start date input
   startDateInput.addEventListener('change', function() {
     const newStartDate = parseUserDateInput(this.value);
-    if (newStartDate !== null && newStartDate <= selectedEndDate) {
+    if (newStartDate !== null && newStartDate <= filterEndDate) {
+      filterStartDate = newStartDate;
+      startSpan.innerHTML = formatYear(filterStartDate);
+
+      // Snap the slider visually to the nearest 100-year step, keep exact filter value.
       isUpdatingFromInput = true;
-      dateSlider.noUiSlider.set([newStartDate, null]);
+      const step = 100;
+      const min = -3000;
+      const max = 2000;
+      const snapped = Math.max(min, Math.min(max, Math.round(newStartDate / step) * step));
+      dateSlider.noUiSlider.set([snapped, null]);
       isUpdatingFromInput = false;
+
+      filterContent();
     } else if (newStartDate !== null) {
       alert('Start date must be before end date');
-      startDateInput.value = formatYear(selectedStartDate);
+      startDateInput.value = formatYear(filterStartDate);
     }
   });
 
   // Handle end date input
   endDateInput.addEventListener('change', function() {
     const newEndDate = parseUserDateInput(this.value);
-    if (newEndDate !== null && newEndDate >= selectedStartDate) {
+    if (newEndDate !== null && newEndDate >= filterStartDate) {
+      filterEndDate = newEndDate;
+      endSpan.innerHTML = formatYear(filterEndDate);
+
+      // Snap the slider visually to the nearest 100-year step, keep exact filter value.
       isUpdatingFromInput = true;
-      dateSlider.noUiSlider.set([null, newEndDate]);
+      const step = 100;
+      const min = -3000;
+      const max = 2000;
+      const snapped = Math.max(min, Math.min(max, Math.round(newEndDate / step) * step));
+      dateSlider.noUiSlider.set([null, snapped]);
       isUpdatingFromInput = false;
+
+      filterContent();
     } else if (newEndDate !== null) {
       alert('End date must be after start date');
-      endDateInput.value = formatYear(selectedEndDate);
+      endDateInput.value = formatYear(filterEndDate);
     }
   });
 
@@ -190,14 +217,14 @@ function filterContent() {
     const areaMatch = selectedAreas.includes('all') || !area || selectedAreas.includes(area);
     const dateMatch = Array.from(container.querySelectorAll('.century')).some(centuryEl => {
       const year = convertTextToYear(centuryEl.textContent.trim());
-      return year >= selectedStartDate && year <= selectedEndDate;
+      return year >= filterStartDate && year <= filterEndDate;
     });
 
     container.style.display = (areaMatch && dateMatch) ? '' : 'none';
   });
 
   // Adapt vertical timeline and article positions
-  adaptVerticalTimeline(selectedStartDate, selectedEndDate);
+  adaptVerticalTimeline(filterStartDate, filterEndDate);
 }
 
 function adaptVerticalTimeline(startYear, endYear) {
