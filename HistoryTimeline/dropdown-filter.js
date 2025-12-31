@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize noUiSlider for date range
   var dateSlider = document.getElementById('dateSliderContainer');
   noUiSlider.create(dateSlider, {
-    start: [-3000, 2000],
+    start: [-3000, 2050],
     connect: true,
     step: 100,
     range: {
       'min': -3000,
-      'max': 2000
+      'max': 2050
     },
     format: {
       to: function(value) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var endDateInput = document.getElementById('endDateInput');
   // `filterStartDate`/`filterEndDate` hold the exact filter values (from inputs).
   // The slider itself snaps to 100-year steps for visual control.
-  var filterStartDate = -3000, filterEndDate = 2000;
+  var filterStartDate = -3000, filterEndDate = 2050;
   var isUpdatingFromInput = false;
 
   // Function to parse user input to year number
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
       isUpdatingFromInput = true;
       const step = 100;
       const min = -3000;
-      const max = 2000;
+      const max = 2050;
       const snapped = Math.max(min, Math.min(max, Math.round(newStartDate / step) * step));
       dateSlider.noUiSlider.set([snapped, null]);
       isUpdatingFromInput = false;
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
       isUpdatingFromInput = true;
       const step = 100;
       const min = -3000;
-      const max = 2000;
+      const max = 2050;
       const snapped = Math.max(min, Math.min(max, Math.round(newEndDate / step) * step));
       dateSlider.noUiSlider.set([null, snapped]);
       isUpdatingFromInput = false;

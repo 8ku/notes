@@ -1,20 +1,21 @@
-:root{
-  --font-family: "Source Han Serif", "Noto Serif", "Noto Serif SC", 'Circular',-apple-system,'BlinkMacSystemFont','Roboto','Helvetica Neue',sans-serif;
+:root {
+  --font-family: "Source Han Serif", "Noto Serif", "Noto Serif SC", 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
   letter-spacing: 0.6;
 }
 
-.confirm-btn, body {
+.confirm-btn,
+body {
   background: rgb(240, 240, 240);
   font-weight: 400;
-  margin-top: 40px; 
+  margin-top: 40px;
 }
 
 /* nav */
 .nav {
-  position: fixed; 
-  top: 20px; 
+  position: fixed;
+  top: 20px;
   right: 40px;
-  z-index: 1000; 
+  z-index: 1000;
   display: flex;
   gap: 14px;
   align-items: center;
@@ -23,16 +24,21 @@
 .nav .nav-btn {
   text-align: center;
   /* padding: 4px; */
-  border-radius: 100%;;
+  border-radius: 100%;
+  ;
 }
 
 /* .nav a:hover, a:active {
   background-color: #dddddd;
 } */
 
-.nav a i{
-  font-size: 1.75rem;
+.nav a i {
+  font-size: 1.7rem;
   color: #242424;
+}
+
+.nav a i:hover {
+  color: #cbc03d;
 }
 
 /* switch */
@@ -43,7 +49,7 @@
   height: 24px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -77,15 +83,15 @@
   border: 2px solid #ccc;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #242424;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #555555;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
@@ -109,25 +115,26 @@ input:checked + .slider:before {
 
 /* dropdown selection */
 .filter-wrapper {
-  position: fixed; /* Fixed position */
+  position: fixed;
   top: 56px;
-  right: 40px; /* Distance from the right of the page */
+  right: 40px;
   max-width: 360px;
-  display: flex; /* Use Flexbox */
+  display: flex;
   flex-direction: column;
-  gap: 10px; /* Space between filters */
-  z-index: 1000; /* Ensure it stays on top of other elements */
-  background-color: #fff; /* Background color */
-  border-radius: 10px;
+  gap: 10px;
+  z-index: 1000;
+  background-color: #fff;
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-  padding: 10px; /* Some padding */
-  box-sizing: border-box; 
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #696969c6;
 }
 
 .filter-options {
-  padding: 10px 0; 
-  box-sizing: border-box; 
-  position: relative; 
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
   width: 100%;
 }
 
@@ -180,14 +187,14 @@ input:checked + .slider:before {
   font-weight: normal;
 }
 
-.dropdown-menu .areaSelectionBtn{
+.dropdown-menu .areaSelectionBtn {
   margin: 0 10px 10px 10px;
   display: flex;
   justify-content: flex-end;
 }
 
 .confirm-btn {
-  background-color: #242424; 
+  background-color: #242424;
   border: none;
   border-radius: 50%;
   color: white;
@@ -201,6 +208,7 @@ input:checked + .slider:before {
   border-radius: 5px;
   width: 100%;
 }
+
 /* dropdown selection */
 
 /* slider */
@@ -212,11 +220,11 @@ input:checked + .slider:before {
 
 #dateSliderContainer {
   padding: 10px;
-  margin: 20px;
+  margin: 0 20px 20px;
 }
 
 #dateSliderInfo {
-  margin: 22px 16px 0 16px;
+  margin: 2px 16px 0 16px;
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -226,7 +234,8 @@ input:checked + .slider:before {
 
 
 .slider {
-  width: 100%; /* Adjust as needed */
+  width: 100%;
+  /* Adjust as needed */
 }
 
 .noUi-target {
@@ -241,7 +250,7 @@ input:checked + .slider:before {
 }
 
 .noUi-connect {
-  background: #242424;
+  background: #696969;
 }
 
 .noUi-connects {
@@ -255,10 +264,12 @@ input:checked + .slider:before {
 }
 
 .noUi-handle {
-  background-color: #ffffff; /* Change handle color */
-  border: 1px solid #dddddd; /* Change handle border */
+  background-color: #ffffff;
+  /* Change handle color */
+  border: 1px solid #ccc;
+  /* Change handle border */
   border-radius: 50%;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
 }
 
 .noUi-handle:before {
@@ -281,6 +292,7 @@ input:checked + .slider:before {
   width: 100%;
   margin: 0 auto;
 }
+
 #conference-timeline .timeline-start,
 #conference-timeline .timeline-end {
   display: table;
@@ -297,6 +309,7 @@ input:checked + .slider:before {
   text-align: center;
   margin: 0 auto;
 }
+
 #conference-timeline .conference-center-line {
   position: absolute;
   width: 3px;
@@ -307,11 +320,13 @@ input:checked + .slider:before {
   background: #696969;
   z-index: -1;
 }
+
 #conference-timeline .conference-timeline-content {
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .timeline-article {
   width: 100%;
   /* height: 100%; */
@@ -319,42 +334,59 @@ input:checked + .slider:before {
   overflow: hidden;
   margin: 0 0 20px 0;
 }
+
 .timeline-article .content-left-container,
 .timeline-article .content-right-container {
   max-width: 44%;
   width: 100%;
 }
+
 .timeline-article .timeline-author {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 4px;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
-  color: #717171;
+  color: #7e7e7e;
   text-align: right;
+  margin-top: 12px;
+  transform: translateY(0);
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
 
-.timeline-article .timeline-author a {
-  color: #717171;
+
+
+.timeline-author a {
+  color: #7e7e7e;
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+  font-weight: 700;
+  font-size: 11px;
   text-decoration: none;
+  font-family: "Cinzel Decorative", serif;
+  display: inline-block;
 }
 
-.timeline-article .timeline-author i {
+
+.timeline-author i {
   font-size: 20px;
+  color: #7e7e7e;
+  transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+  /* transform: translateY(0); */
+  cursor: pointer;
+  display: inline-block;
 }
 
-.timeline-article .content-left,
-.timeline-article .content-right {
-  position: relative;
-  width: auto;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,.03);
-  border-radius: 10px;
-  padding: 10px 18px;
+.timeline-author:hover a,
+.timeline-author:hover i {
+  color: #cbc03d;
+  transform: translateY(-2px);
 }
+
+
+
 .timeline-article p {
   margin: 0 0 0 0;
   padding: 0;
@@ -363,15 +395,16 @@ input:checked + .slider:before {
   font-size: 14px;
   line-height: 24px;
   position: relative;
+  margin-bottom: 8px;
 }
 
-.timeline-article h4{
+.timeline-article h4 {
   margin: 4 0;
   color: #797979;
   font-size: 0.75rem;
 }
 
-.timeline-article h3{
+.timeline-article h3 {
   margin: 0 0 8 0;
   font-size: 16px;
   color: #242424;
@@ -385,14 +418,28 @@ input:checked + .slider:before {
   left: -60px;
   color: #00b0bd;
 }
+
 .timeline-article .content-left-container {
   float: left;
 }
+
 .timeline-article .content-right-container {
   float: right;
 }
+
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #696969;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+  border-radius: 2px;
+  padding: 10px 18px;
+}
+
 .timeline-article .content-left:before,
-.timeline-article .content-right:before{
+.timeline-article .content-right:before {
   position: absolute;
   top: 10px;
   font-size: 23px;
@@ -400,14 +447,43 @@ input:checked + .slider:before {
   color: #fff;
   border-radius: 2px;
 }
+
 .timeline-article .content-left:before {
-  content: "\f0da";
-  right: -8px;
+  content: " ";
+  right: -12px;
+  top: 20%;
+  border: 6px solid transparent;
+  border-left-color: #696969;
+  position:absolute;
 }
+
+.timeline-article .content-left:after {
+  content: " ";
+  right: -11px;
+  top: 20%;
+  border: 6px solid transparent;
+  border-left-color: white;
+  position: absolute;
+}
+
 .timeline-article .content-right:before {
-  content: "\f0d9";
-  left: -8px;
+  content: " ";
+  left: -12px;
+  top: 20px;
+  border: 6px solid transparent;
+  border-right-color: #696969;
+  position:absolute;
 }
+
+.timeline-article .content-right:after {
+  content: " ";
+  left: -11px;
+  top: 20px;
+  border: 6px solid transparent;
+  border-right-color: white;
+  position: absolute;
+}
+
 .timeline-article .meta-date {
   position: absolute;
   top: 0;
@@ -415,37 +491,43 @@ input:checked + .slider:before {
   width: 80px;
   height: 62px;
   margin-left: -40px;
-  color: #fff;
-  border-radius: 10px;
-  border: 1px solid #696969;
-  background: #696969;
+  color: #696969;
+  border-top:2px solid #696969;
+  background: #F0F0F0;
 }
+
 .timeline-article .meta-date .date,
 .timeline-article .meta-date .month {
   display: block;
   text-align: center;
   font-weight: 600;
 }
+
 .timeline-article .meta-date .date {
   font-size: 1.2rem;
   line-height: 40px;
 }
+
 .timeline-article .meta-date .month {
   font-size: 14px;
   line-height: 10px;
 }
+
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 830px) {
+
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
     margin: 0;
   }
+
   #conference-timeline .conference-center-line {
     margin-left: 0;
     left: 50px;
   }
+
   .timeline-article .meta-date {
     margin-left: 0;
     left: 20px;
@@ -464,37 +546,44 @@ input:checked + .slider:before {
     margin-left: 110px;
     min-height: 53px;
   }
+
   .timeline-article .content-left-container {
     margin-bottom: 10px;
   }
+
   .timeline-article .content-left,
   .timeline-article .content-right {
     padding: 10px 25px;
     min-height: 65px;
   }
+
   .timeline-article .content-left:before {
     content: "\f0d9";
     right: auto;
     left: -8px;
   }
+
   .timeline-article .content-right:before {
     display: none;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .timeline-article p {
     margin: 0;
   }
+
   .timeline-article p span.article-number {
     display: none;
   }
-  
+
 }
 
 .century {
   color: rgba(255, 255, 255, 0);
   font-size: 1px;
 }
+
 /*===== // Resonsive Vertical Timeline =====*/
 
 /* Date Inputs */
@@ -537,5 +626,7 @@ input:checked + .slider:before {
 .date-display {
   margin-bottom: 10px;
   font-size: 14px;
+  color: #696969;
 }
+
 /* Date Inputs */
