@@ -3,20 +3,20 @@
 }
 
 body {
-      font-family:
-        "Source Han Serif",
-        "Noto Serif",
-        "Noto Serif SC",
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
+  font-family:
+    "Source Han Serif",
+    "Noto Serif",
+    "Noto Serif SC",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 .confirm-btn,
@@ -134,7 +134,7 @@ input:checked+.slider:before {
   position: fixed;
   top: 56px;
   right: 40px;
-  max-width: 360px;
+  max-width: 260px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -297,10 +297,6 @@ input:checked+.slider:before {
 }
 
 /* slider */
-
-
-
-/*===== Vertical Timeline =====*/
 
 #conference-timeline {
   position: relative;
@@ -470,7 +466,7 @@ input:checked+.slider:before {
   top: 20%;
   border: 6px solid transparent;
   border-left-color: #696969;
-  position:absolute;
+  position: absolute;
 }
 
 .timeline-article .content-left:after {
@@ -488,7 +484,7 @@ input:checked+.slider:before {
   top: 20px;
   border: 6px solid transparent;
   border-right-color: #696969;
-  position:absolute;
+  position: absolute;
 }
 
 .timeline-article .content-right:after {
@@ -508,7 +504,7 @@ input:checked+.slider:before {
   height: 62px;
   margin-left: -40px;
   color: #696969;
-  border-top:2px solid #696969;
+  border-top: 2px solid #696969;
   background: #F0F0F0;
 }
 
@@ -533,6 +529,10 @@ input:checked+.slider:before {
 
 /*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 830px) {
+
+  #conference-timeline {
+    margin: 0 -2%;
+  }
 
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
@@ -574,17 +574,48 @@ input:checked+.slider:before {
   }
 
   .timeline-article .content-left:before {
-    content: "\f0d9";
+    content: " ";
     right: auto;
-    left: -8px;
+    left: -12px;
+    top: 20%;
+    border: 6px solid transparent;
+    border-right-color: #696969;
+    position: absolute;
+  }
+
+  .timeline-article .content-left:after {
+    content: " ";
+    right: auto;
+    left: -11px;
+    top: 20%;
+    border: 6px solid transparent;
+    border-right-color: white;
+    position: absolute;
   }
 
   .timeline-article .content-right:before {
-    display: none;
+    content: " ";
+    right: auto;
+    left: -12px;
+    top: 20%;
+    border: 6px solid transparent;
+    border-right-color: #696969;
+    position: absolute;
+  }
+
+  .timeline-article .content-right:after {
+    content: " ";
+    right: auto;
+    left: -11px;
+    top: 20%;
+    border: 6px solid transparent;
+    border-right-color: white;
+    position: absolute;
   }
 }
 
 @media only screen and (max-width: 400px) {
+
   .timeline-article p {
     margin: 0;
   }
@@ -605,13 +636,14 @@ input:checked+.slider:before {
 /* Date Inputs */
 .date-inputs-container {
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 4px;
+  margin-bottom: 8px;
   flex-wrap: wrap;
+  width: -webkit-fill-available;
 }
 
 .date-input-group {
-  display: flex;
+  display: contents;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -620,7 +652,7 @@ input:checked+.slider:before {
 }
 
 .date-input-group label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -630,7 +662,7 @@ input:checked+.slider:before {
   border-radius: 4px;
   font-size: 14px;
   font-family: inherit;
-  width: 260px;
+  width: inherit;
 }
 
 .date-input-group input:focus {
