@@ -638,7 +638,8 @@ input:checked+.slider:before {
   display: flex;
   gap: 4px;
   margin-bottom: 8px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   width: -webkit-fill-available;
 }
 
