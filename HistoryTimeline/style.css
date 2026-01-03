@@ -533,7 +533,7 @@ input:checked+.slider:before {
 @media only screen and (max-width: 830px) {
 
   #conference-timeline {
-    margin: 0 -2%;
+    margin: 0 auto;
   }
 
   #conference-timeline .timeline-start,
@@ -618,6 +618,10 @@ input:checked+.slider:before {
 }
 
 @media only screen and (max-width: 400px) {
+  #conference-timeline {
+    max-width: 360px;
+  }
+
 
   .timeline-article p {
     margin: 0;
