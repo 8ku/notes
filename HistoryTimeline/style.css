@@ -300,7 +300,7 @@ input:checked+.slider:before {
 
 #conference-timeline {
   position: relative;
-  max-width: 920px;
+  max-width: 900px;
   width: 100%;
   margin: 0 24% 0 auto;
 }
@@ -468,47 +468,29 @@ input:checked+.slider:before {
 .timeline-article .content-left:before,
 .timeline-article .content-right:before {
   position: absolute;
-  top: 10px;
-  font-size: 23px;
-  font-family: "FontAwesome";
-  color: #fff;
-  border-radius: 2px;
+  content: " ";
+  top: 20px;
+  transform: translateY(-50%);
+  width: 66px;
+  height: 1px;
+  background-color: #696969;
+  border-radius: 1px;
 }
 
 .timeline-article .content-left:before {
-  content: " ";
-  right: -12px;
-  top: 20%;
-  border: 6px solid transparent;
-  border-left-color: #696969;
-  position: absolute;
+  right: -66px;
 }
 
 .timeline-article .content-left:after {
-  content: " ";
-  right: -11px;
-  top: 20%;
-  border: 6px solid transparent;
-  border-left-color: white;
-  position: absolute;
+  display: none;
 }
 
 .timeline-article .content-right:before {
-  content: " ";
-  left: -12px;
-  top: 20px;
-  border: 6px solid transparent;
-  border-right-color: #696969;
-  position: absolute;
+  left: -66px;
 }
 
 .timeline-article .content-right:after {
-  content: " ";
-  left: -11px;
-  top: 20px;
-  border: 6px solid transparent;
-  border-right-color: white;
-  position: absolute;
+  display: none;
 }
 
 .timeline-article .meta-date {
@@ -588,44 +570,45 @@ input:checked+.slider:before {
     min-height: 65px;
   }
 
+  .timeline-article .content-left {
+    text-align: left;
+  }
+
+  .timeline-article .content-left .timeAndArea {
+    flex-direction: row-reverse;
+  }
+
   .timeline-article .content-left:before {
     content: " ";
     right: auto;
-    left: -12px;
-    top: 20%;
-    border: 6px solid transparent;
-    border-right-color: #696969;
+    left: -60px;
+    top: 10px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: #696969;
+    border-radius: 1px;
     position: absolute;
   }
-
   .timeline-article .content-left:after {
-    content: " ";
-    right: auto;
-    left: -11px;
-    top: 20%;
-    border: 6px solid transparent;
-    border-right-color: white;
-    position: absolute;
+    display: none;
   }
 
   .timeline-article .content-right:before {
     content: " ";
     right: auto;
-    left: -12px;
-    top: 20%;
-    border: 6px solid transparent;
-    border-right-color: #696969;
+    left: -60px;
+    top: 10px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: #696969;
+    border-radius: 1px;
     position: absolute;
   }
 
   .timeline-article .content-right:after {
-    content: " ";
-    right: auto;
-    left: -11px;
-    top: 20%;
-    border: 6px solid transparent;
-    border-right-color: white;
-    position: absolute;
+    display: none;
   }
 }
 
