@@ -349,7 +349,7 @@ input:checked+.slider:before {
 
 .timeline-article .content-left-container,
 .timeline-article .content-right-container {
-  max-width: 44%;
+  max-width: 43%;
   width: 100%;
 }
 
