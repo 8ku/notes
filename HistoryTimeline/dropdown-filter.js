@@ -10,13 +10,27 @@ document.addEventListener('DOMContentLoaded', function() {
   var toggleSwitch = document.getElementById('toggleFilters');
   var filterWrapper = document.querySelector('.filter-wrapper');
 
-  toggleSwitch.addEventListener('change', function() {
-    if (this.checked) {
-      filterWrapper.style.display = 'block';
-    } else {
-      filterWrapper.style.display = 'none';
-    }
-  });
+  function setFilterVisibility(show) {
+    if (!filterWrapper) return;
+    filterWrapper.style.display = show ? 'block' : 'none';
+  }
+
+  function updateTimelineCenteredClass() {
+    const timeline = document.getElementById('conference-timeline');
+    if (!timeline || !filterWrapper) return;
+    const isHidden = window.getComputedStyle(filterWrapper).display === 'none';
+    timeline.classList.toggle('timeline-centered', isHidden);
+  }
+
+  // initialize from current toggle state
+  if (toggleSwitch) {
+    setFilterVisibility(toggleSwitch.checked);
+    updateTimelineCenteredClass();
+    toggleSwitch.addEventListener('change', function() {
+      setFilterVisibility(this.checked);
+      updateTimelineCenteredClass();
+    });
+  }
 
   // Initialize noUiSlider for date range
   var dateSlider = document.getElementById('dateSliderContainer');
