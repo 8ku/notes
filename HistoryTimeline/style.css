@@ -1,5 +1,7 @@
 :root {
   letter-spacing: 0.6;
+  --screen-width: 100vw;
+  --filter-popup-width: 260px;
 }
 
 body {
@@ -134,7 +136,7 @@ input:checked+.slider:before {
   position: fixed;
   top: 56px;
   right: 40px;
-  max-width: 260px;
+  max-width: var(--filter-popup-width);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -300,14 +302,14 @@ input:checked+.slider:before {
 
 #conference-timeline {
   position: relative;
-  max-width: 900px;
-  width: 100%;
-  margin: 0 24% 0 auto;
+  max-width: calc(var(--screen-width) - var(--filter-popup-width) - 80px);
+  margin: 0 calc(var(--filter-popup-width) + 40px) 0 auto;
 }
 
 /* When filters are hidden, center the timeline */
 #conference-timeline.timeline-centered {
   margin: 0 auto;
+  max-width: calc(var(--screen-width) - 160px);
 }
 
 #conference-timeline .timeline-start,
@@ -532,8 +534,10 @@ input:checked+.slider:before {
 /*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 830px) {
 
-  #conference-timeline {
+  #conference-timeline,
+  #conference-timeline.timeline-centered {
     margin: 0 auto;
+    max-width: calc(var(--screen-width) - 160px);
   }
 
   #conference-timeline .timeline-start,
