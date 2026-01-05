@@ -2,6 +2,9 @@
   letter-spacing: 0.6;
   --screen-width: 100vw;
   --filter-popup-width: 260px;
+  --conference-timeline-width: calc(var(--screen-width) - var(--filter-popup-width) - 80px);
+  --conference-timeline-centered-width: calc(var(--screen-width) - 160px);
+  --content-container-max-width: calc(var(--conference-timeline-width)*0.43);
 }
 
 body {
@@ -302,14 +305,14 @@ input:checked+.slider:before {
 
 #conference-timeline {
   position: relative;
-  max-width: calc(var(--screen-width) - var(--filter-popup-width) - 80px);
+  max-width: var(--conference-timeline-width);
   margin: 0 calc(var(--filter-popup-width) + 40px) 0 auto;
 }
 
 /* When filters are hidden, center the timeline */
 #conference-timeline.timeline-centered {
   margin: 0 auto;
-  max-width: calc(var(--screen-width) - 160px);
+  max-width: var(--conference-timeline-centered-width);
 }
 
 #conference-timeline .timeline-start,
@@ -356,7 +359,7 @@ input:checked+.slider:before {
 
 .timeline-article .content-left-container,
 .timeline-article .content-right-container {
-  max-width: 43%;
+  max-width: var(--content-container-max-width);
   width: 100%;
 }
 
@@ -478,14 +481,16 @@ input:checked+.slider:before {
   content: " ";
   top: 20px;
   transform: translateY(-50%);
-  width: 65px;
+  /* width: 65px; */
+  width: calc((var(--conference-timeline-width) - var(--content-container-max-width) * 2 ) /2);
   height: 1px;
   background-color: #696969;
   border-radius: 1px;
 }
 
 .timeline-article .content-left:before {
-  right: -65px;
+  /* right: -65px; */
+  right: calc((var(--conference-timeline-width) - var(--content-container-max-width) * 2 ) / -2);
 }
 
 .timeline-article .content-left:after {
@@ -493,7 +498,8 @@ input:checked+.slider:before {
 }
 
 .timeline-article .content-right:before {
-  left: -66px;
+  /* left: -66px; */
+  left: calc((var(--conference-timeline-width) - var(--content-container-max-width) * 2 ) / -2);
 }
 
 .timeline-article .content-right:after {
@@ -532,12 +538,13 @@ input:checked+.slider:before {
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
+/* It affects the size of the display on the iPad, don't know why. */
 @media only screen and (max-width: 830px) {
 
   #conference-timeline,
   #conference-timeline.timeline-centered {
     margin: 0 auto;
-    max-width: calc(var(--screen-width) - 160px);
+    max-width: var(--conference-timeline-centered-width);
   }
 
   #conference-timeline .timeline-start,
@@ -599,6 +606,8 @@ input:checked+.slider:before {
     border-radius: 1px;
     position: absolute;
   }
+
+
   .timeline-article .content-left:after {
     display: none;
   }
