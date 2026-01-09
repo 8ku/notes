@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function setFilterVisibility(show) {
     if (!filterWrapper) return;
     filterWrapper.style.display = show ? 'block' : 'none';
+    document.documentElement.style.setProperty('--filter-popup-width', show ? '260px' : '80px');
   }
 
   function updateTimelineCenteredClass() {
