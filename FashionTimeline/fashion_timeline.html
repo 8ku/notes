@@ -1,0 +1,1301 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>History Timeline</title>
+
+  <base target="_blank">
+
+  <!-- noUiSlider CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css">
+
+  <!-- noUiSlider JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900' rel='stylesheet'
+    type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <!-- // Fonts -->
+
+</head>
+
+<body>
+  <div class="nav">
+    <a class="nav-btn" href="https://www.bakumatata.com/notes/"><i class="fa-solid fa-map-location-dot"></i></a>
+    <label class="switch">
+      <input type="checkbox" id="toggleFilters" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- Filter Options -->
+  <div class="filter-wrapper">
+
+    <!-- Date Filter -->
+    <div class="filter-options">
+      <div id="dateSliderContainer"></div>
+      <div id="dateSliderInfo">
+        <div class="date-display">
+          <span id="dateRangeStart">1000 BC</span> - <span id="dateRangeEnd">3000 AD</span>
+        </div>
+        <div class="date-inputs-container">
+          <div class="date-input-group">
+            <input type="text" id="startDateInput" placeholder="-1000/1000 BC" />
+          </div>
+          <div class="date-input-group">
+            <label><i class="fa-solid fa-arrow-right"></i></label>
+            <input type="text" id="endDateInput" placeholder="3000/3000 AD" />
+          </div>
+        </div>
+        <!-- Area Filter -->
+        <div class="filter-options">
+          <div id="dropdownAreaButton" class="dropdown-button">
+            Select Areas <i class="fa fa-caret-down"></i>
+          </div>
+          <div id="selectedAreasDisplay" class="selected-areas-display"></div>
+          <div id="dropdownAreaMenu" class="dropdown-menu">
+            <label><input type="checkbox" class="area-option" value="all" checked> All Areas</label>
+            <label><input type="checkbox" class="area-option" value="China"> China</label>
+            <label><input type="checkbox" class="area-option" value="Japan"> Japan</label>
+            <label><input type="checkbox" class="area-option" value="Greece"> Greece</label>
+            <label><input type="checkbox" class="area-option" value="Rome"> Rome</label>
+            <label><input type="checkbox" class="area-option" value="UK"> UK</label>
+            <label><input type="checkbox" class="area-option" value="France"> France</label>
+            <label><input type="checkbox" class="area-option" value="Europe"> Europe</label>
+            <label><input type="checkbox" class="area-option" value="North America"> North America</label>
+            <label><input type="checkbox" class="area-option" value="South America"> South America</label>
+            <!-- Add other areas as needed -->
+            <div class="areaSelectionBtn">
+              <button id="confirmAreaSelection" class="confirm-btn">Confirm</button>
+            </div>
+          </div>
+        </div>
+        <button id="confirmDateSelection" class="confirm-btn">Confirm</button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- Vertical Timeline -->
+  <section id="conference-timeline">
+    <div class="timeline-start">Start</div>
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">610 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">610 B.C. - 560 B.C.</span>
+              <h4 class="area">Greece</h4>
+            </div>
+            <p>早期阿提卡黑彩陶器逐步产生，陶器上描绘着许多身着长短希顿袍的画像，袍面上有带状几何何图案。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">600</span>
+          <span class="month">BC</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">550 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">550 B.C. - 530 B.C.</span>
+              <h4 class="area">Greece</h4>
+            </div>
+            <p>画家阿玛西斯在一只油罐上描绘了女性生产织物的场景，画中的女性们身着带图業的希顿式服装。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">500 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">500 B.C.</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>西南地区的北部开始制作丝兰围裙、包以及编织便鞋</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">500</span>
+          <span class="month">BC</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">500 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">500 B.C. - 300 B.C.</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>统治秘鲁中北部的查文王国的工匠们生产了绘图棉织物，更加偏南地区也发掘出许多这样的织物。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">480 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">480 B.C. - 404 B.C.</span>
+              <h4 class="area">Greece</h4>
+            </div>
+            <p>雅典城的黃金年代，古希腊城邦经济紧荣，政权稳定，文化昌盛。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">447 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">447 B.C. - 438 B.C.</span>
+              <h4 class="area">Greece</h4>
+            </div>
+            <p>雅典兴建了帕特农神庙。其雕塑和装饰细节中都描绘了古代服饰的样貌。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->    
+       
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">400 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">400 B.C. - 200 B.C.</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>活跃于秘鲁南部海滨地区的帕拉卡斯王国的织工制作出哥伦布发现美洲大陆前最精致的刺绣品。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">400</span>
+          <span class="month">BC</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">220 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">220 B.C. - 167 B.C.</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>罗马人将他们已知的几乎全部有人居住的地区都纳入了统治范围。历更学家波利比奥斯将其成就记述在著作〈历史》中。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">300</span>
+          <span class="month">BC</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">200 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">200 B.C.</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>罗马共和国在借用希腊模式的基础上逐渐形成了自己的公民、行政和军事文化。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">200</span>
+          <span class="month">BC</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">149 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">149 B.C. - 146 B.C.</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>随着马其顿人、阿哈伊並同盟和迦太基人的战败，罗马将希腊和非洲吞并为自己的行省。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article --> 
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">47 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">47 B.C. - 43 B.C.</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>杰出的政治家、著作家和雄辦家西寒罗一直将罗马服饰的隐喻和习语用作强有力的修辞武器，</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">100</span>
+          <span class="month">BC</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">27 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">27 B.C. - A.D. 14</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>罗马帝国第一位皇帝奥古斯都宣布，只有那些<b>只穿托加不系斗篷的人才能进入罗马广场</b>。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article --> 
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">66 BC</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 66</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>在为皇帝尼禄担任了"奢华生活品位的绝对权威人物"之后，佩特洛尼乌斯自茶身亡。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">79 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 79</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>维苏威火山喷发，埋没了庞贝和赫库兰尼姆，留下罗马城邦生活面貌一直供人们去了解。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">100 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 100</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>手指编织织品开始变得更加复杂化和多样化。编织式样也更加本地化。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">100</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">100 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 100 - 500</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>秘鲁北部的莫希人制作的艺术品有精细织物，绘制着不同人物的陶器和复杂的珠宝。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">114 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 114</span>
+              <h4 class="area">Rome</h4>
+            </div>
+            <p>图拉真纪念柱的兴建是为了纪念图拉真皇帝远征达契亚得胜。纪念柱上延续不绝的环绕带状浮雕让我们对罗马军队服饰有了广泛的印象。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">400 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 400 - 550</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>在玻利维亚蒂瓦纳科的的喀喀湖附近，有着满是精致雕刻的石块；几百英里以外地方的织物上也有着类似的图案。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">400</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">500 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 500 - 800</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>秘鲁中部产生的瓦里帝国从高地蒂瓦纳科的纺织技术中学习了很多，可能还学习了他们的宗教信仰。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">500</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">600 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 600</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>西南地区北部的四角地区开始制作极富装饰性的丝兰便鞋、女性围裙和包袱带</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">600</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">620 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 620</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>双综线提花织机投入使用。第一根综线用于底面编织，第二根则用于织造花纹。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">630 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 630</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>皇家宝库中储藏着带有成对野鸡、相抵的羊群、飞翔的凤凰和游鱼图案的织锦。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">641 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 641</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>太宗皇帝接见吐蕃使节时穿着日常的圆领袍衫、头戴黑色幞头，而没有身着正式礼服。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">650 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 650</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>棉花被从墨西哥引入进来，在西南地区南部的主要河谷地区广泛种植。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">684 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 684</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>女性普遍穿着低领服饰。外出时，女性会头戴宽檐帷帽，面容并无遮挡。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">691 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 691</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>女皇武则天在宴会中赐大臣们一顶银高的冠，这一物品迅速流行起来。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">700 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 700</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>西南地区的南部生产出带综线的织机，采用的是背带式织机的形式，</p>
+          </div>
+        </div>
+        <div class="content-left-container">
+          <div class="century">700 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 700</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>织工们开始使用纬线在织物上织造花纹。这种织造图案的方法更为简单，并逐渐代替了传统的经面纺织。</p>
+            <p>纬面纺织促使缂丝技木产生，但因其织造过程需要耗费大量的劳动，因此缂丝服饰在几个世纪之后才出现。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">700</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">713 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 713</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>胡服（即外族胡人服饰）开始在女性之中流行起来。其他时兴的还有花钿（一种额饰）和义髻。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">725 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 725</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>织机纺出的棉织物占据主导地位的地区集中在西南地区的南部。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">750 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 750</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>人民每年要交纳740万匹丝。一匹约合39英尺（约12米）。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">756 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 756</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>杨贵妃作霓装羽衣舞。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">794 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 794</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>日本都城从奈良连至平安京。</p>
+            <p>束带装被来纳为天皇、大臣和贵族们正式场合的礼服。束带装由蓬松的白绔和黃色外袍组成。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">800 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 800</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>轻容纱成为今安徽省毫州的特产。两大家族对其织造方法严格保密，从而垄断了轻容纱的生产。</p>
+          </div>
+        </div>
+
+        <div class="content-right-container">
+          <div class="century">800 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 800</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>佛教开始传遍日本，其传播主要是通过两大密宗宗派——天台宗和真言宗完成的。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">100</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">827 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 827</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>文宗皇帝下令规定服饰衣袖宽度限制在17英寸（约40厘米）以内，但收效甚微。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">895 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 895</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>富裕的平安人民源源不断地从中国进口高质量的织物，这种行为即使在两国官方中断往来后也没有停止。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1000 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1000</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>清少纳言作《枕草子》。书中记述了她在平安朝皇宫做女官时的见闸。</p>
+            <p>紫式部作《源氏物语）。其中对衣衫的详细描绘，表达出她对流行的热情。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1000</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1050 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1050</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>棉花开始在西南地区北部灌溉条件良好的地区广泛种植。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1068 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1068</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>藤原氏一族被后三条天皇（1068—1073年间在位）推翻。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1074 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1074</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>禁令将宫妇的衣袍限制在5层之内。在此之前所穿着的十二单衣重达40磅（约15千克）。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1100 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1100</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>西南地区北部有了真正的织机，采用的是宽直立式织机和背带式织机的形式。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1100</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1100 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1100 - 1450</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>奇穆王国形成了先进的棉纺、编织和羽织技术，昌昌遗址的砖墙上也出现了和这些织物上同样的图案。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1142 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1142</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>藤原皇后的待臣源间佐助写下《女官服色》，其中汇集了各种时令的服色搭配。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1150 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1150</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>织机生产的棉织物在整个西南地区都被用于日常和仪式穿着。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1172 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1172</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>最初穿在宫廷服饰之下做里衣的小袖开始为平安贵族作为外衣穿用。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1185 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1185</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>源氏一族掌权，建立了镰仓幕府，日本都城从平安京近至镰仓。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1190 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1190</span>
+              <h4 class="area">Japan</h4>
+            </div>
+            <p>平安时代末期，各武士家族崛起、武士掌推了政权，日本进入封建社会时代。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1327 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1327</span>
+              <h4 class="area">UK</h4>
+            </div>
+            <p>愛德华二世创建了圆桌社，骑士时代由此开始。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1300</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1348 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1348 - 1349</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p><b>黑死病</b>导致了封建制的结束，农奴迁至村镇和城市。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1350 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1350</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>用以连系衣物的 “尖包头系带”出现。系带从孔眼中穿过，上面一般还有金属装饰。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1365 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1365</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>禁奢令禁止马夫、仆人和工匠使用羊毛衣料，一码羊绒衣料花货要超过1先令1便士。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1400 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1400</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>基瓦会堂中的壁画记录了西南地区北部仪式服饰的多样性。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1400</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1400 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1400 - 1500</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>都城位于库斯科的印加王国建立起独特的石雕风格，他们的织物中也出现了棱角分明的抽象几何图形。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="century">1405 AD</div>
+          <div class="content-left">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1405 - 1433</span>
+              <h4 class="area">China</h4>
+            </div>
+            <p>中国郑和的船队穿越印度洋到达印度、阿拉伯和非洲东海岸以扩大中国的影响力，宣示其主权。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1419 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1419</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>在其父无畏者约输的葬礼上，勃艮第公爵好人菲利普开创了<b>葬礼服着黑色</b>的传统。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->  
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1420 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1420</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>黑色毛皮，比如紫貂皮、麝猫皮和海狸皮开始流行、尤其是俄国黑羔羊皮最受欢迎。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->  
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1434 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1434</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>画家扬·凡·艾克创作了《阿东诺芬尼夫妇像》，画作最著名的地方在于其中出现了男女通用的胡普兰袍。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->  
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1450 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1450 - 1500</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>印加王国吸收了其他民族，诸如钱凯王国的政体，还学习了其服饰风格，形成了混合其他地区风格的印加风格。</p>
+            <p>印加人制作出托卡普，其织物就是一整块织锦。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1453 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1453</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>君士坦丁堡的陷落标志着拜占庭帝国统治的终结，奥斯曼帝国开始壮大。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->  
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1480 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1480</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>男士尖头鞋上的尖角长度达到了不切实际的程度，于是遭到了禁奢令的限制。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->  
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1485 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1485</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>亨利·都铎建立了一个全新的君主王朝，政局稳定，重视国内安泰，而非强调兵较。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->  
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1498 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1498</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>探险家瓦斯科·达·伽马率领无敌舰队从葡萄牙出发抵达了印度，开辟了第一条海上丝绸之路。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->  
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1500 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1500</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>印加王国领土扩张到极致，从今天的哥伦比亚南部一直达到了智利和阿根廷北部。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1500</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1501 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1501</span>
+              <h4 class="area">UK</h4>
+            </div>
+            <p>阿拉贡的凯瑟琳于亨利七世时代嫁给了亚瑟王子。地的陪嫁人员将<b>撑裙</b>传到了英国。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1509 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1509</span>
+              <h4 class="area">UK</h4>
+            </div>
+            <p>亨利七世去世之后，其子亨利八世继承了王位。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1520 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1520</span>
+              <h4 class="area">UK</h4>
+            </div>
+            <p>亨利八世和法国国王弗兰西斯一世在一场名为金布战役的宴会中相见。两位国王竞相炫耀自己宫廷的富丽程度。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1520 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1520 - 1530</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>欧洲採险家，其中就包括西班牙人弗朗西斯科·皮萨罗，开始进入安第斯山脉中部地区。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1532 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1532</span>
+              <h4 class="area">South America</h4>
+            </div>
+            <p>印加王国皇帝阿塔瓦尔帕会见西班牙探险家。这些探险者将其抓获，作为索要赎金的人质，之后将其处死。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1536 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1536</span>
+              <h4 class="area">France</h4>
+            </div>
+            <p>意大利丝织工迁入里昂，这里成了法国养蚕业的中心。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1540 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1540</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>与欧洲人的接触引发了西南地区织物生产、使用和贸易的重大变化。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1555 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1555</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>俄国公司建立。它一直垄斯英俄贸易直到1698年。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1556 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1556</span>
+              <h4 class="area">Europe</h4>
+            </div>
+            <p>腓力二世维承了西班牙哈布斯堡王朝的王位，成为这个世界帝国和许多美洲殖民地的统治者。</p>
+          </div>
+        </div>
+      </div>
+      <!-- // Article -->
+
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-right-container">
+          <div class="century">1600 AD</div>
+          <div class="content-right">
+            <div class="timeAndArea">
+              <span class="period">A.D. 1600</span>
+              <h4 class="area">North America</h4>
+            </div>
+            <p>纳瓦霍人开始从普书布洛人那里学习织机纺织的技巧。</p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1600</span>
+          <span class="month">AD</span>
+        </div>
+      </div>
+      <!-- // Article -->
+
+
+
+    </div>
+    <div class="timeline-end">Now</div>
+  </section>
+  <!-- // Vertical Timeline -->
+
+  <script src="dropdown-filter.js"></script>
+
+</body>
+
+</html>
