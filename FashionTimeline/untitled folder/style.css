@@ -1,6 +1,27 @@
 :root {
-  --font-family: "Source Han Serif", "Noto Serif", "Noto Serif SC", 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
   letter-spacing: 0.6;
+  --screen-width: 100vw;
+  --filter-popup-width: 260px;
+  --conference-timeline-width: calc(var(--screen-width) - var(--filter-popup-width) - 80px);
+  --conference-timeline-centered-width: calc(var(--screen-width) - 160px);
+  --content-container-max-width: calc(var(--conference-timeline-width)*0.43);
+}
+
+body {
+  font-family:
+    "Source Han Serif",
+    "Noto Serif",
+    "Noto Serif SC",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 .confirm-btn,
@@ -33,8 +54,12 @@ body {
 } */
 
 .nav a i {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   color: #242424;
+}
+
+.nav a i:hover {
+  color: #cbc03d;
 }
 
 /* switch */
@@ -112,25 +137,19 @@ input:checked+.slider:before {
 /* dropdown selection */
 .filter-wrapper {
   position: fixed;
-  /* Fixed position */
   top: 56px;
   right: 40px;
-  /* Distance from the right of the page */
-  max-width: 360px;
+  max-width: var(--filter-popup-width);
   display: flex;
-  /* Use Flexbox */
   flex-direction: column;
   gap: 10px;
-  /* Space between filters */
   z-index: 1000;
-  /* Ensure it stays on top of other elements */
   background-color: #fff;
-  /* Background color */
-  border-radius: 10px;
+  border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
   padding: 10px;
-  /* Some padding */
   box-sizing: border-box;
+  border: 1px solid #696969c6;
 }
 
 .filter-options {
@@ -172,10 +191,11 @@ input:checked+.slider:before {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
-  right: 1px;
+  top: -178px;
+  right: 115%;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 2px;
+  border: 1px solid #696969c6;
   min-width: 260px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px !important;
   z-index: 1;
@@ -187,6 +207,11 @@ input:checked+.slider:before {
   padding: 10px;
   clear: both;
   font-weight: normal;
+}
+
+.area-list {
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .dropdown-menu .areaSelectionBtn {
@@ -222,11 +247,11 @@ input:checked+.slider:before {
 
 #dateSliderContainer {
   padding: 10px;
-  margin: 20px;
+  margin: 0 20px 20px;
 }
 
 #dateSliderInfo {
-  margin: 22px 16px 0 16px;
+  margin: 2px 16px 0 16px;
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -252,7 +277,7 @@ input:checked+.slider:before {
 }
 
 .noUi-connect {
-  background: #242424;
+  background: #696969;
 }
 
 .noUi-connects {
@@ -268,10 +293,10 @@ input:checked+.slider:before {
 .noUi-handle {
   background-color: #ffffff;
   /* Change handle color */
-  border: 1px solid #dddddd;
+  border: 1px solid #ccc;
   /* Change handle border */
   border-radius: 50%;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
 }
 
 .noUi-handle:before {
@@ -284,15 +309,16 @@ input:checked+.slider:before {
 
 /* slider */
 
-
-
-/*===== Vertical Timeline =====*/
-
 #conference-timeline {
   position: relative;
-  max-width: 920px;
-  width: 100%;
+  max-width: var(--conference-timeline-width);
+  margin: 0 calc(var(--filter-popup-width) + 40px) 0 auto;
+}
+
+/* When filters are hidden, center the timeline */
+#conference-timeline.timeline-centered {
   margin: 0 auto;
+  max-width: var(--conference-timeline-centered-width);
 }
 
 #conference-timeline .timeline-start,
@@ -339,7 +365,7 @@ input:checked+.slider:before {
 
 .timeline-article .content-left-container,
 .timeline-article .content-right-container {
-  max-width: 44%;
+  max-width: var(--content-container-max-width);
   width: 100%;
 }
 
@@ -352,9 +378,9 @@ input:checked+.slider:before {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
-  color: #6097bc;
+  color: #7e7e7e;
   text-align: right;
-  margin-top: 4px;
+  margin-top: 12px;
   transform: translateY(0);
   transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
@@ -362,7 +388,7 @@ input:checked+.slider:before {
 
 
 .timeline-author a {
-  color: #6097bc;
+  color: #7e7e7e;
   transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
   font-weight: 700;
   font-size: 11px;
@@ -374,7 +400,7 @@ input:checked+.slider:before {
 
 .timeline-author i {
   font-size: 20px;
-  color: #6097bc;
+  color: #7e7e7e;
   transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
   /* transform: translateY(0); */
   cursor: pointer;
@@ -387,36 +413,40 @@ input:checked+.slider:before {
   transform: translateY(-2px);
 }
 
-.timeline-article .content-left,
-.timeline-article .content-right {
-  position: relative;
-  width: auto;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
-  border-radius: 10px;
-  padding: 10px 18px;
-}
+
 
 .timeline-article p {
   margin: 0 0 0 0;
   padding: 0;
   font-weight: 400;
   color: #242424;
-  font-size: 14px;
+  font-size: 0.85rem;
   line-height: 24px;
   position: relative;
+  margin-bottom: 8px;
 }
 
 .timeline-article h4 {
   margin: 4 0;
   color: #797979;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
 .timeline-article h3 {
-  margin: 0 0 8 0;
-  font-size: 16px;
+  margin: 2 0 8 0;
+  font-size: 1rem;
   color: #242424;
+}
+
+.period {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.timeAndArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .timeline-article p span.article-number {
@@ -436,24 +466,50 @@ input:checked+.slider:before {
   float: right;
 }
 
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #696969;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+  border-radius: 2px;
+  padding: 10px 18px;
+}
+
+.timeline-article .content-left {
+  text-align: right;
+}
+
 .timeline-article .content-left:before,
 .timeline-article .content-right:before {
   position: absolute;
-  top: 10px;
-  font-size: 23px;
-  font-family: "FontAwesome";
-  color: #fff;
-  border-radius: 2px;
+  content: " ";
+  top: 20px;
+  transform: translateY(-50%);
+  /* width: 65px; */
+  width: calc((var(--conference-timeline-width) - var(--content-container-max-width) * 2) /2);
+  height: 1px;
+  background-color: #696969;
+  border-radius: 1px;
 }
 
 .timeline-article .content-left:before {
-  content: "\f0da";
-  right: -8px;
+  /* right: -65px; */
+  right: calc((var(--conference-timeline-width) - var(--content-container-max-width) * 2) / -2);
+}
+
+.timeline-article .content-left:after {
+  display: none;
 }
 
 .timeline-article .content-right:before {
-  content: "\f0d9";
-  left: -8px;
+  /* left: -66px; */
+  left: calc((var(--conference-timeline-width) - var(--content-container-max-width) * 2) / -2);
+}
+
+.timeline-article .content-right:after {
+  display: none;
 }
 
 .timeline-article .meta-date {
@@ -463,10 +519,9 @@ input:checked+.slider:before {
   width: 80px;
   height: 62px;
   margin-left: -40px;
-  color: #fff;
-  border-radius: 10px;
-  border: 1px solid #696969;
-  background: #696969;
+  color: #696969;
+  border-top: 2px solid #696969;
+  background: #F0F0F0;
 }
 
 .timeline-article .meta-date .date,
@@ -489,7 +544,14 @@ input:checked+.slider:before {
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
+/* It affects the size of the display on the iPad, don't know why. */
 @media only screen and (max-width: 830px) {
+
+  #conference-timeline,
+  #conference-timeline.timeline-centered {
+    margin: 0 auto;
+    max-width: var(--conference-timeline-centered-width);
+  }
 
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
@@ -530,18 +592,56 @@ input:checked+.slider:before {
     min-height: 65px;
   }
 
+  .timeline-article .content-left {
+    text-align: left;
+  }
+
+  .timeline-article .content-left .timeAndArea {
+    flex-direction: row-reverse;
+  }
+
   .timeline-article .content-left:before {
-    content: "\f0d9";
+    content: " ";
     right: auto;
-    left: -8px;
+    left: -60px;
+    top: 10px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: #696969;
+    border-radius: 1px;
+    position: absolute;
+  }
+
+
+  .timeline-article .content-left:after {
+    display: none;
   }
 
   .timeline-article .content-right:before {
+    content: " ";
+    right: auto;
+    left: -60px;
+    top: 10px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: #696969;
+    border-radius: 1px;
+    position: absolute;
+  }
+
+  .timeline-article .content-right:after {
     display: none;
   }
 }
 
 @media only screen and (max-width: 400px) {
+  #conference-timeline {
+    max-width: 360px;
+  }
+
+
   .timeline-article p {
     margin: 0;
   }
@@ -562,13 +662,15 @@ input:checked+.slider:before {
 /* Date Inputs */
 .date-inputs-container {
   display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 8px;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: -webkit-fill-available;
 }
 
 .date-input-group {
-  display: flex;
+  display: contents;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -577,17 +679,17 @@ input:checked+.slider:before {
 }
 
 .date-input-group label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 
 .date-input-group input {
   padding: 8px 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 14px;
   font-family: inherit;
-  width: 260px;
+  width: inherit;
 }
 
 .date-input-group input:focus {
@@ -598,7 +700,30 @@ input:checked+.slider:before {
 
 .date-display {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 12px;
+  color: #696969;
 }
 
-/* Date Inputs */
+#dropdownSideMenu {
+  padding: 10px;
+  position: absolute;
+  top: -279px;
+  right: 115%;
+  left: auto;
+  width: 520px;
+  max-height:600px;
+  border: 1px solid #696969c6;
+}
+
+.leftList,
+.rightList {
+  max-height: 250px; 
+  overflow-y: auto;
+}
+
+.areaLeft,
+.areaRight {
+  margin: 10px;
+  font-weight: bold;
+
+}
