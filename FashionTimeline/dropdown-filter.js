@@ -1,4 +1,34 @@
+const areaOptions = [
+  { value: 'all', label: 'All Areas', leftLabel: 'All Areas on Left', rightLabel: 'All Areas on Right', areaChecked: true, leftChecked: false, rightChecked: false },
+  { value: 'China', label: 'China', areaChecked: false, leftChecked: true, rightChecked: false },
+  { value: 'Japan', label: 'Japan', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'Greece', label: 'Greece', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'Rome', label: 'Rome', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'UK', label: 'UK', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'France', label: 'France', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'Europe', label: 'Europe', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'North America', label: 'North America', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'South America', label: 'South America', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'India', label: 'India', areaChecked: false, leftChecked: false, rightChecked: false }
+];
+
+function generateAreaList(options, type) {
+  return options.map(opt => {
+    let label = opt.label;
+    let checked = opt[type + 'Checked'] ? 'checked' : '';
+    let className = type === 'area' ? 'area-option' : `side-${type}-option`;
+    if (type === 'left' && opt.leftLabel) label = opt.leftLabel;
+    if (type === 'right' && opt.rightLabel) label = opt.rightLabel;
+    return `<label><input type="checkbox" class="${className}" value="${opt.value}" ${checked}> ${label}</label>`;
+  }).join('');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+  // Populate the lists
+  document.querySelector('#dropdownAreaMenu .area-list').innerHTML = generateAreaList(areaOptions, 'area');
+  document.querySelector('.leftList').innerHTML = generateAreaList(areaOptions, 'left');
+  document.querySelector('.rightList').innerHTML = generateAreaList(areaOptions, 'right');
+
   const dropdownAreaButton = document.getElementById('dropdownAreaButton');
   const dropdownAreaMenu = document.getElementById('dropdownAreaMenu');
   const confirmAreaButton = document.getElementById('confirmAreaSelection');
@@ -442,10 +472,20 @@ function filterContent() {
         // Side assignment
         if (selectedLeftAreas.includes('all') || selectedLeftAreas.includes(area)) {
           container.className = 'content-left-container';
+          // Update inner content div class to match
+          const innerContent = container.querySelector('.content-left, .content-right');
+          if (innerContent) {
+            innerContent.className = 'content-left';
+          }
           container.style.display = '';
           hasVisibleContainer = true;
         } else if (selectedRightAreas.includes('all') || selectedRightAreas.includes(area)) {
           container.className = 'content-right-container';
+          // Update inner content div class to match
+          const innerContent = container.querySelector('.content-left, .content-right');
+          if (innerContent) {
+            innerContent.className = 'content-right';
+          }
           container.style.display = '';
           hasVisibleContainer = true;
         } else {
