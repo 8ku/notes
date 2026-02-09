@@ -369,6 +369,18 @@ input:checked+.slider:before {
   width: 100%;
 }
 
+/* Ensure multiple containers on the same side stack vertically
+   (prevents two left- or two right-containers from lining up horizontally) */
+.timeline-article .content-right-container + .content-right-container {
+  clear: right;
+  margin-top: 10px;
+}
+
+.timeline-article .content-left-container + .content-left-container {
+  clear: left;
+  margin-top: 10px;
+}
+
 .timeline-article .timeline-author {
   display: flex;
   flex-direction: row;

@@ -9,7 +9,7 @@ const areaOptions = [
   { value: 'Europe', label: 'Europe', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'North America', label: 'North America', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'South America', label: 'South America', areaChecked: false, leftChecked: false, rightChecked: true },
-  { value: 'India', label: 'India', areaChecked: false, leftChecked: false, rightChecked: false }
+  { value: 'India', label: 'India', areaChecked: false, leftChecked: false, rightChecked: true }
 ];
 
 function generateAreaList(options, type) {
