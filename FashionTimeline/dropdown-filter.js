@@ -8,6 +8,7 @@ const areaOptions = [
   { value: 'France', label: 'France', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'Europe', label: 'Europe', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'North America', label: 'North America', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'Latin America', label: 'Latin America', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'South America', label: 'South America', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'India', label: 'India', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'Africa', label: 'Africa', areaChecked: false, leftChecked: false, rightChecked: true }
