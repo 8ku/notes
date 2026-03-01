@@ -6,6 +6,7 @@ const areaOptions = [
   { value: 'Rome', label: 'Rome', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'UK', label: 'UK', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'France', label: 'France', areaChecked: false, leftChecked: false, rightChecked: true },
+  { value: 'Spain', label: 'Spain', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'Europe', label: 'Europe', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'North America', label: 'North America', areaChecked: false, leftChecked: false, rightChecked: true },
   { value: 'Latin America', label: 'Latin America', areaChecked: false, leftChecked: false, rightChecked: true },
